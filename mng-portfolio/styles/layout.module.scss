@@ -1,0 +1,17 @@
+@use "variables.module";
+@use "mixins.module";
+
+// header
+.header-container {
+  border: 1px solid blue;
+  @include mixins.row-between;
+}
+
+// footer
+.footer-container {
+  border: 1px solid blue;
+  @include mixins.row-center;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
