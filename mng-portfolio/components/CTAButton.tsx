@@ -7,12 +7,13 @@ const cx = classnames.bind(styles);
 type ButtonProps = {
   href: string;
   text: string;
+  dark: boolean;
 };
 
-export default function CTAButton({ href, text }: ButtonProps) {
+export default function CTAButton({ href, text, dark }: ButtonProps) {
   return (
     <a href={`${href}`}>
-      <Button className={cx("cta-button")}>{text}</Button>
+      <Button className={cx("cta-button", `${dark && "dark"}`)}>{text}</Button>
     </a>
   );
 }

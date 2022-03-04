@@ -2,10 +2,35 @@ import Head from "next/head";
 import { NextPage } from "next/types";
 import classnames from "classnames/bind";
 import styles from "../styles/layout.module.scss";
+import GalleryCard from "../components/GalleryCard";
+
+import mtn from "./assets/may-mnt.jpeg";
+import paint from "../assets/may-paint.jpeg";
+import bread from "../assets/may-bread.jpeg";
+import bread2 from "../assets/may-bread2.jpeg";
+import plant from "../assets/may-plant.jpeg";
+import pup from "../assets/may-pup.jpeg";
+import weld from "../assets/may-weld.jpeg";
+import woodworking from "../assets/may-woodworking.jpeg";
 
 const cx = classnames.bind(styles);
 
 const About: NextPage = () => {
+  const galleryImages = [
+    { img: paint, description: "Acrylic Paint" },
+    { img: bread, description: "Sourdough Foccacia made with Kenny" },
+    { img: bread2, description: "Sourdough made with Kenny" },
+    {
+      img: plant,
+      description: "A very expensive plant that I did not buy",
+    },
+    { img: pup, description: "Hugging a puppy that isn't mine" },
+    {
+      img: weld,
+      description: "Blacksmithin a knife that can only cut butter",
+    },
+    { img: woodworking, description: "Made a workbench!" },
+  ];
   return (
     <>
       <Head>
@@ -19,15 +44,10 @@ const About: NextPage = () => {
 
       <div className={cx("about-container")}>
         <div>Picture placeholder</div>
-        <div>
+        <div className={cx("quote")}>
           “I have no special talent, I am only passionately curious” - Albert
           Einstein
         </div>
-        <p>
-          Hi I'm May. I've been known as a HR and Recruiting Partner. Developer.
-          User Advocate. UX Researcher.
-        </p>
-
         <p>
           While my experience has been a windy road, what stands to be
           consistent is that I approach life as a life-long learner driven to
@@ -57,8 +77,10 @@ const About: NextPage = () => {
         </p>
 
         <p>
-          In my spare time I enjoy trying new creative hobbies and prioritize
-          good food, travel, and activities with the people I'm closest with.{" "}
+          I thrive on trying new creative hobbies and then moving onto the next,
+          there's always something new exciting to learn! I try to prioritize
+          good food, travel, and spending time doing engaging activities with my
+          friends.
         </p>
         <p>Current Pandemic Hobby List Includes:</p>
         <ul>
@@ -72,6 +94,12 @@ const About: NextPage = () => {
           <li>Woodworking</li>
           <li>Yoga, (off-brand) Cycling, and Weightlifting</li>
         </ul>
+
+        <div className={cx("may-gallery")}>
+          {galleryImages.map(({ img, description }) => (
+            <GalleryCard img={img} description={description} />
+          ))}
+        </div>
       </div>
     </>
   );

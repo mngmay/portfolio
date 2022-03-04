@@ -20,7 +20,7 @@ export default function Logo() {
           <span className={cx("logo-m")}>M</span>
           <span className={cx("logo-n")}>N</span>
         </div>
-        <Typography variant="subtitle2" className={cx("logo-full-name")}>
+        <Typography variant="subtitle1" className={cx("logo-full-name")}>
           May Ng
         </Typography>
       </div>

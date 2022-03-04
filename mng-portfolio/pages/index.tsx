@@ -2,6 +2,11 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Hero from "../components/layout/Hero";
 import Projects from "../components/Projects";
+import AboutSummary from "../components/AboutSummary";
+import classnames from "classnames/bind";
+import styles from "../styles/layout.module.scss";
+
+const cx = classnames.bind(styles);
 
 const Home: NextPage = () => {
   return (
@@ -13,7 +18,12 @@ const Home: NextPage = () => {
       </Head>
 
       <Hero />
-      <Projects />
+      <div className={cx("section")}>
+        <AboutSummary />
+      </div>
+      <div className={cx("section")}>
+        <Projects />
+      </div>
     </div>
   );
 };

@@ -1,0 +1,84 @@
+@use "variables.module";
+@use "mixins.module";
+
+.mirror {
+  transform: scaleX(-1);
+}
+
+// about section
+
+.past-self {
+  @include mixins.col-center;
+  width: 100%;
+
+  > * {
+    margin: variables.$tinyPadding;
+  }
+}
+
+.past-roles {
+  @include mixins.row-between;
+  width: 100%;
+  max-width: 600px;
+
+  li {
+    color: variables.$seattleGray;
+    font-style: italic;
+  }
+}
+
+.mini-bio {
+  .icon {
+    width: 20px;
+    margin: 2px;
+  }
+
+  > * {
+    margin: variables.$stdPadding;
+    @include mixins.row-center;
+  }
+}
+
+// about page
+
+.may-gallery {
+  @include mixins.row-center;
+  border: 2px solid red;
+}
+
+.gallery-card-container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.gallery-image {
+  width: 100%;
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.gallery-card-container:hover .gallery-image {
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.gallery-card-container:hover .middle {
+  opacity: 1;
+  cursor: pointer;
+}

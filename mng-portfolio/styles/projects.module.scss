@@ -1,10 +1,38 @@
 @use "variables.module";
 @use "mixins.module";
 
-.projects-container {
-  border: 1px solid pink;
+.project-card-container {
+  border: 1px solid green;
+  padding: variables.$stdPadding;
+  height: 300px;
 }
 
-.case-study-card-container {
-  border: 1px solid green;
+.project-card-container:hover {
+  background-color: rgba(variables.$seattleGray, 0.65);
+  cursor: pointer;
+}
+
+.gallery-card-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border: 2px solid red;
+}
+
+.gallery-image {
+  width: 100%;
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.container:hover .gallery-image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
 }

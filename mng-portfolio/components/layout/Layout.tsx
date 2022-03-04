@@ -15,10 +15,12 @@ export default function Layout({ children }: LayoutProps) {
   return (
     <>
       <Header />
-      <Container className={cx("container")}>
-        <main>{children}</main>
-      </Container>
-      <Footer />
+      <div className={cx("relative-to-header")}>
+        <Container className={cx("container")}>
+          <main>{children}</main>
+        </Container>
+        <Footer />
+      </div>
     </>
   );
 }

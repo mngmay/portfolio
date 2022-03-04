@@ -44,16 +44,17 @@ const muiTheme = responsiveFontSizes(
         fontSize: 10,
       },
       subtitle1: {
-        fontSize: 20,
+        fontSize: 12,
       },
       subtitle2: {
-        fontSize: 12,
+        fontSize: 10,
       },
       button: {
         fontSize: 12,
       },
     },
   }),
+  
   { disableAlign: true }
 );
 export default muiTheme;

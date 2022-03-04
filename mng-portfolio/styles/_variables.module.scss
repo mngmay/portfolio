@@ -2,7 +2,10 @@
 
 $lightFontColor: white;
 $lightIconColor: #c8ece9;
-$CTAButtonColor: #21b2a6;
+$secondaryColor: #21b2a6;
+$lightSecondaryColor: #c8ece9;
+$CTAButtonColor: $secondaryColor;
+$seattleGray: #848688;
 
 // padding & margin
 $tinyPadding: 5px;
