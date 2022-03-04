@@ -1,35 +1,17 @@
 import "../styles/reset.scss";
 import "../styles/globals.scss";
+import CssBaseline from "@mui/material/CssBaseline";
+import muiTheme from "../styles/muiTheme";
 
 import type { AppProps } from "next/app";
-import Layout from "../components/Layout";
+import Layout from "../components/layout/Layout";
 import * as React from "react";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { orange } from "@mui/material/colors";
-
-declare module "@mui/material/styles" {
-  interface Theme {
-    status: {
-      danger: string;
-    };
-  }
-  // allow configuration using `createTheme`
-  interface ThemeOptions {
-    status?: {
-      danger?: string;
-    };
-  }
-}
-
-const theme = createTheme({
-  status: {
-    danger: orange[500],
-  },
-});
+import { ThemeProvider } from "@mui/material/styles";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={muiTheme}>
+      <CssBaseline />
       <Layout>
         <Component {...pageProps} />
       </Layout>

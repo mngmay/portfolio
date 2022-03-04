@@ -1,17 +1,110 @@
 @use "variables.module";
 @use "mixins.module";
 
+.container {
+  min-height: calc(100vh - 150px);
+}
+
+.full-width {
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+
+// Links cursor
+.logo,
+.social-icon {
+  cursor: pointer;
+}
+
 // header
 .header-container {
-  border: 1px solid blue;
   @include mixins.row-between;
+  max-height: 80px;
+}
+
+.logo {
+  position: relative;
+  @include mixins.col-center;
+  margin: variables.$stdPadding;
+  width: 80px;
+  height: 80px;
+}
+
+.logo-abbrv {
+  @include mixins.row-center;
+  font-size: 3rem;
+}
+
+.logo-n {
+  position: relative;
+  top: 0.5rem;
+  right: 0.25rem;
+  transform: scale(-1, 1);
+}
+
+.logo-full-name {
+  position: relative;
+  right: 0.2rem;
+  margin-top: 2px;
+}
+
+.navbar {
+  @include mixins.row-around;
+  position: absolute;
+  right: 0;
+  padding: variables.$smPadding;
+  width: 100%;
+  max-width: 50%;
+}
+
+// hero
+.hero-image {
+  @include mixins.col-center;
+  height: calc(100vh - 200px);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/hero-img.jpeg");
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-content {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: variables.$lightFontColor;
+
+  .social-media-container {
+    color: variables.$lightIconColor;
+  }
+}
+
+.hero-text {
+  > * {
+    padding: variables.$tinyPadding;
+  }
+}
+
+.hero-myname {
+  font-size: 5rem;
 }
 
 // footer
 .footer-container {
-  border: 1px solid blue;
-  @include mixins.row-center;
   width: 100%;
+  padding: 20px;
+}
+
+.social-media-container {
+  @include mixins.row-center;
+}
+
+.copyright {
   position: absolute;
-  bottom: 0;
+  right: 10px;
+  font-size: 0.75rem;
 }

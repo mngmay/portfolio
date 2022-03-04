@@ -1,6 +1,0 @@
-@use "variables.module";
-@use "mixins.module";
-
-.social-media-container {
-  @include mixins.row-center;
-}

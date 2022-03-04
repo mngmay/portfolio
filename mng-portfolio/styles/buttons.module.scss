@@ -1,0 +1,10 @@
+@use "variables.module";
+@use "mixins.module";
+
+.cta-button {
+  background-color: variables.$CTAButtonColor;
+  padding: 5px 20px;
+  color: variables.$lightFontColor;
+  border-radius: 5px;
+  text-transform: uppercase;
+}

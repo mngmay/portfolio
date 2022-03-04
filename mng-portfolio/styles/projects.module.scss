@@ -1,0 +1,10 @@
+@use "variables.module";
+@use "mixins.module";
+
+.projects-container {
+  border: 1px solid pink;
+}
+
+.case-study-card-container {
+  border: 1px solid green;
+}
