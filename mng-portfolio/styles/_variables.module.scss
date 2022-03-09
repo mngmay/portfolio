@@ -1,9 +1,9 @@
 // colors
 
 $lightFontColor: white;
-$lightIconColor: #c8ece9;
+$lightColor: #c8ece9;
+$lightIconColor: $lightColor;
 $secondaryColor: #21b2a6;
-$lightSecondaryColor: #c8ece9;
 $CTAButtonColor: $secondaryColor;
 $seattleGray: #848688;
 
@@ -11,8 +11,18 @@ $seattleGray: #848688;
 $tinyPadding: 5px;
 $smPadding: 10px;
 $stdPadding: 20px;
+$lgPadding: 30px;
+
+// misc
+
+$thinSectionDivider: 2px solid rgba($seattleGray, 0.1);
+$sectionDivider: 5px solid rgba($seattleGray, 0.1);
 
 // breakpts
 
 $mobile: 400px;
 $tablet: 800px;
+
+:export {
+  seattleGray: $seattleGray;
+}

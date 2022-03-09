@@ -7,8 +7,8 @@ const cx = classnames.bind(styles);
 export default function Footer() {
   return (
     <div className={cx("footer-container")}>
-      <SocialMedia />
-      <p className={cx("copyright")}>Design and coded by May Ng © 2022 </p>
+      <SocialMedia parent="footer-container" />
+      <p className={cx("copyright")}>Designed and coded by May Ng © 2022 </p>
     </div>
   );
 }

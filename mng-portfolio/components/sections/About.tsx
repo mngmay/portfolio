@@ -4,11 +4,13 @@ import { Typography } from "@mui/material";
 import PanToolIcon from "@mui/icons-material/PanTool";
 import CoffeeIcon from "@mui/icons-material/Coffee";
 import PetsIcon from "@mui/icons-material/Pets";
-import FavoriteIcon from "@mui/icons-material/Favorite";
+import CTAButton from "./../CTAButton";
 
 import classnames from "classnames/bind";
-import styles from "../styles/about.module.scss";
-import CTAButton from "./CTAButton";
+import utilStyles from "../../styles/utility.module.scss";
+import sectionStyles from "../../styles/sections.module.scss";
+
+const styles = { ...utilStyles, ...sectionStyles };
 
 const cx = classnames.bind(styles);
 
@@ -16,7 +18,7 @@ export default function AboutSummary() {
   return (
     <>
       <Typography variant="h2">Who I Am</Typography>
-      <Box sx={{ flexGrow: 1 }} className={cx("about-section")}>
+      <Box sx={{ flexGrow: 1 }} className={cx("section", "about-container")}>
         <Grid container spacing={2}>
           <Grid item xs={12} className={cx("past-self")}>
             <ul className={cx("past-roles")}>
@@ -40,15 +42,22 @@ export default function AboutSummary() {
               us and craft solutions built on understanding and technical
               know-how.
             </Typography>
-            <Typography>
-              I'm a leftie <PanToolIcon className={cx("icon", "mirror")} />,
-              drink my coffee black <CoffeeIcon className={cx("icon")} />, and
-              will be that person who looks longingly at your dog as you pass me
-              on the street <PetsIcon className={cx("icon")} />
-              <FavoriteIcon className={cx("icon")} />.
-            </Typography>
+
+            <Grid container item direction="row" justifyContent="center">
+              <Typography className={cx("fun-facts")}>
+                <PanToolIcon className={cx("icon", "mirror")} />
+                I'm a leftie
+                <br />
+                <CoffeeIcon className={cx("icon")} /> I drink my coffee black
+                yet love milk tea (50% sweet + boba)
+                <br /> <PetsIcon className={cx("icon")} />
+                I'm that person who looks longingly at your pet as we pass on
+                the street
+              </Typography>
+            </Grid>
           </Grid>
         </Grid>
+
         <Grid container item direction="row" justifyContent="center">
           <CTAButton href="/about" text="Learn More About Me" />
         </Grid>

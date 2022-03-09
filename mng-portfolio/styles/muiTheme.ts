@@ -1,6 +1,7 @@
 import variables from './_variables.module.scss';
 import { responsiveFontSizes, createTheme } from '@mui/material';
 
+
 const muiTheme = responsiveFontSizes(
   createTheme({
     typography: {
@@ -37,6 +38,9 @@ const muiTheme = responsiveFontSizes(
       h6: {
         fontSize: 12,
       },
+      navLink: {
+        fontSize:22,
+      },
       body1: {
         fontSize: 12,
       },
@@ -47,14 +51,17 @@ const muiTheme = responsiveFontSizes(
         fontSize: 12,
       },
       subtitle2: {
-        fontSize: 10,
+        fontSize: 12,
+        fontStyle: 'italic',
+        color: variables.seattleGray,
+    
       },
       button: {
         fontSize: 12,
       },
     },
   }),
-  
+
   { disableAlign: true }
 );
 export default muiTheme;

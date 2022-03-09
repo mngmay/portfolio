@@ -1,9 +1,12 @@
 import { Typography } from "@mui/material";
 import classnames from "classnames/bind";
-import styles from "../../styles/layout.module.scss";
+import heroStyles from "../../styles/hero.module.scss";
+import utilStyles from "../../styles/utility.module.scss";
 import CTAButton from "../CTAButton";
 import SocialMedia from "./SocialMedia";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
+
+const styles = { ...utilStyles, ...heroStyles };
 
 const cx = classnames.bind(styles);
 
@@ -26,8 +29,8 @@ export default function Hero() {
           </div>
         </div>
         <div className={cx("hero-contact")}>
-          <CTAButton href="mail:mngmay@gmail.com" text="Contact" dark />
-          <SocialMedia />
+          <CTAButton href="mail:mngmay@gmail.com" text="Contact" />
+          <SocialMedia parent="hero-contact" />
         </div>
       </div>
       <div className={cx("learn-more")}>

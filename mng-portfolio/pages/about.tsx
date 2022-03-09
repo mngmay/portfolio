@@ -1,36 +1,18 @@
 import Head from "next/head";
 import { NextPage } from "next/types";
 import classnames from "classnames/bind";
-import styles from "../styles/layout.module.scss";
+import styles from "../styles/about.module.scss";
 import GalleryCard from "../components/GalleryCard";
+import { Typography } from "@mui/material";
+import Grid from "@mui/material/Grid";
+import utilStyles from "../styles/utility.module.scss";
 
-import mtn from "./assets/may-mnt.jpeg";
-import paint from "../assets/may-paint.jpeg";
-import bread from "../assets/may-bread.jpeg";
-import bread2 from "../assets/may-bread2.jpeg";
-import plant from "../assets/may-plant.jpeg";
-import pup from "../assets/may-pup.jpeg";
-import weld from "../assets/may-weld.jpeg";
-import woodworking from "../assets/may-woodworking.jpeg";
+import galleryImages from "../constants/data";
 
 const cx = classnames.bind(styles);
+const ucx = classnames.bind(utilStyles);
 
 const About: NextPage = () => {
-  const galleryImages = [
-    { img: paint, description: "Acrylic Paint" },
-    { img: bread, description: "Sourdough Foccacia made with Kenny" },
-    { img: bread2, description: "Sourdough made with Kenny" },
-    {
-      img: plant,
-      description: "A very expensive plant that I did not buy",
-    },
-    { img: pup, description: "Hugging a puppy that isn't mine" },
-    {
-      img: weld,
-      description: "Blacksmithin a knife that can only cut butter",
-    },
-    { img: woodworking, description: "Made a workbench!" },
-  ];
   return (
     <>
       <Head>
@@ -43,46 +25,38 @@ const About: NextPage = () => {
       </Head>
 
       <div className={cx("about-container")}>
-        <div>Picture placeholder</div>
-        <div className={cx("quote")}>
-          “I have no special talent, I am only passionately curious” - Albert
-          Einstein
+        <div className={cx("about-banner")}>
+          <div className={cx("about-picture")} />
+          <div className={cx("quote")}>
+            <Typography variant="h2">
+              “I have no special talent, I am only passionately curious”
+            </Typography>
+            <Typography variant="h2" className={cx("quoter")}>
+              - Albert Einstein
+            </Typography>
+          </div>
         </div>
-        <p>
-          While my experience has been a windy road, what stands to be
-          consistent is that I approach life as a life-long learner driven to
-          understand the different pieces and perspectives that make up our
-          human experience.
-        </p>
+        <Typography variant="h1">My Story</Typography>
+        <Typography>
+          Hometown and upbringing, set path lack of passion. Achieved goals but
+          then what?
+        </Typography>
+        <Typography>
+          Gained exp in different jobs, seemed to fit only one aspect of my
+          personality or values at a time. Found UX which lets me practice it
+          all.
+        </Typography>
+        <Typography></Typography>
 
-        <p>
-          First generation immigrant that followed the path expected of me.
-          Didn't always know what I wanted. Took a few different explorations to
-          gain experience to better identify and understand the aspects of my
-          skills and interests and connect them to a field I could build a
-          future in.
-        </p>
-
-        <p>
-          I have hope that the field of UX can continue to foster compassion
-          towards the human experience in a world that is increasingly run by
-          machines and technology. I leverage my experiences and my knowledge to
-          foster genuine connections with users and my partners who are experts
-          in their fields.
-        </p>
-
-        <p>
-          Enjoy giving back to the community and dedicate time to contribute
-          through the design guild I'm a part of.
-        </p>
-
-        <p>
+        <Typography>
           I thrive on trying new creative hobbies and then moving onto the next,
           there's always something new exciting to learn! I try to prioritize
           good food, travel, and spending time doing engaging activities with my
           friends.
-        </p>
-        <p>Current Pandemic Hobby List Includes:</p>
+        </Typography>
+        <Typography variant="h3">
+          Current Pandemic Hobby List Includes:
+        </Typography>
         <ul>
           <li>
             Baking Bread - (Sourdough start's name is Kenny and I almost killed
@@ -94,6 +68,16 @@ const About: NextPage = () => {
           <li>Woodworking</li>
           <li>Yoga, (off-brand) Cycling, and Weightlifting</li>
         </ul>
+
+        {/* 
+        It takes a village, give a thanks and appreciation to the people who helped me to get here
+        
+        * Grace Lau and Jill Christ as my main UX Research & IA mentors, and all the people at DIA Design Guild
+        * Matt Wong, Abby Tiffany, Rosalind - people who didn't know me but took time to tell me their exp and encourage me
+        * Tommy Coleman, Ethan Hickey, Kevin Tou, Justine Lai for being the best team and friends I could ask for to get me through my dev days
+        * Jackie K and Jackie K for mentoring and managing me during the start of my professional journey 
+        * and many more awesome people who build my support network :) Without you I wouldn't be able to take the risks I have to try things
+        */}
 
         <div className={cx("may-gallery")}>
           {galleryImages.map(({ img, description }) => (

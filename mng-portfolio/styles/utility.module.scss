@@ -1,0 +1,121 @@
+@use "variables.module";
+@use "mixins.module";
+
+// Links cursor
+.logo,
+.social-icon,
+.link,
+.external-link {
+  cursor: pointer;
+}
+
+// Logo
+
+.logo {
+  position: relative;
+  @include mixins.col-center;
+  margin: variables.$stdPadding;
+  width: 80px;
+  height: 80px;
+}
+
+.logo:hover {
+  border: 1px solid variables.$lightIconColor;
+
+  .logo-abbrv {
+    color: rgba(variables.$secondaryColor, 0.5);
+  }
+}
+
+.logo-abbrv {
+  @include mixins.row-center;
+  font-size: 3rem;
+}
+
+.logo-n {
+  position: relative;
+  top: 0.5rem;
+  right: 0.25rem;
+  transform: scale(-1, 1);
+}
+
+.logo-full-name {
+  position: relative;
+  // right: 0.2rem;
+  margin-top: 2px;
+}
+
+// Social Media
+.social-media-container {
+  @include mixins.row-between;
+  margin: variables.$smPadding 0;
+  max-width: 150px;
+
+  > * {
+    border: 1px solid transparent;
+    margin: 0 variables.$tinyPadding;
+  }
+
+  > *:hover {
+    color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+.sm-hero-contact.social-media-container {
+  color: variables.$lightIconColor;
+
+  > *:hover {
+    color: rgba(variables.$lightIconColor, 0.5);
+    border: 1px solid variables.$lightIconColor;
+  }
+}
+
+// Transformations
+
+.mirror {
+  transform: scaleX(-1);
+}
+
+.full-width {
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50.7% - 50vw);
+}
+
+// Cards with hover overlay
+.card-container {
+  position: relative;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  opacity: 1;
+  display: block;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.card-info {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  @include mixins.col-center;
+  background-color: rgba(variables.$seattleGray, 0.2);
+  padding: variables.$smPadding;
+}
+
+.card-container:hover .card-image {
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.card-container:hover .card-info {
+  opacity: 1;
+  cursor: pointer;
+}

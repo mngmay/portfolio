@@ -10,9 +10,14 @@
 }
 
 .cta-button:hover {
-  background-color: rgba(variables.$seattleGray, 0.65);
+  background-color: rgba(variables.$secondaryColor, 0.5);
 }
 
-.cta-button:hover.dark {
-  background-color: rgba(variables.$secondaryColor, 0.5);
+.external-link {
+  border: 1px solid transparent;
+  border-bottom: 1px solid variables.$lightColor;
+}
+
+.external-link:hover {
+  color: rgba(variables.$secondaryColor, 0.75);
 }

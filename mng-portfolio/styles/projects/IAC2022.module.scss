@@ -1,0 +1,38 @@
+@use "../variables.module";
+@use "../mixins.module";
+
+.case-study-container {
+  h1 {
+    border-bottom: 2px solid variables.$secondaryColor;
+    padding-bottom: variables.$tinyPadding;
+    margin-bottom: variables.$smPadding;
+  }
+}
+
+.project-section {
+  padding: variables.$stdPadding 0;
+  border-bottom: variables.$sectionDivider;
+
+  p {
+    margin: variables.$tinyPadding 0;
+  }
+
+  label {
+    color: variables.$secondaryColor;
+  }
+}
+
+.team,
+.details {
+  label {
+    margin-right: variables.$smPadding;
+  }
+
+  > * {
+    padding: variables.$tinyPadding 0;
+  }
+}
+
+.description-top {
+  padding-top: variables.$smPadding;
+}

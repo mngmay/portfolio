@@ -12,12 +12,12 @@ type GalleryCardProps = {
 
 export default function GalleryCard({ img, description }: GalleryCardProps) {
   return (
-    <div className={cx("gallery-card-container")}>
+    <div className={cx("gallery-card-container")} key={`${img}`}>
       <div className={cx("gallery-image")}>
         <Image src={img} alt={description} layout="fill" />
       </div>
-      <div className={cx("middle")}>
-        <div className={cx("description")}>{description}</div>
+      <div className={cx("image-info")}>
+        <Typography className={cx("description")}>{description}</Typography>
       </div>
     </div>
   );

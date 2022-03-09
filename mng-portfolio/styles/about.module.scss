@@ -1,68 +1,62 @@
 @use "variables.module";
 @use "mixins.module";
 
-.mirror {
-  transform: scaleX(-1);
-}
-
-// about section
-
-.past-self {
-  @include mixins.col-center;
-  width: 100%;
-
-  > * {
-    margin: variables.$tinyPadding;
-  }
-}
-
-.past-roles {
-  @include mixins.row-between;
-  width: 100%;
-  max-width: 600px;
-
-  li {
-    color: variables.$seattleGray;
-    font-style: italic;
-  }
-}
-
-.mini-bio {
-  .icon {
-    width: 20px;
-    margin: 2px;
-  }
-
-  > * {
-    margin: variables.$stdPadding;
-    @include mixins.row-center;
-  }
-}
-
 // about page
 
-.may-gallery {
+.about-banner {
   @include mixins.row-center;
-  border: 2px solid red;
+
+  > * {
+    padding: 0 30px;
+  }
+}
+
+.about-picture {
+  position: relative;
+  background-image: url("../assets/may-mtn.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 300px;
+  width: 250px;
+  height: 300px;
+  border-radius: 20px;
+}
+
+.quote {
+  position: relative;
+  color: variables.$seattleGray;
+  font-style: italic;
+  max-width: 60%;
+}
+
+.quoter {
+  position: absolute;
+  right: 100px;
+}
+
+.may-gallery {
+  @include mixins.col-center;
 }
 
 .gallery-card-container {
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
 }
 
 .gallery-image {
   width: 100%;
+  height: auto;
   opacity: 1;
   display: block;
-  width: 100%;
-  height: auto;
   transition: 0.5s ease;
   backface-visibility: hidden;
 }
 
-.middle {
+.image-info {
+  width: 100%;
+  height: 100%;
   transition: 0.5s ease;
   opacity: 0;
   position: absolute;
@@ -70,7 +64,9 @@
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  text-align: center;
+  @include mixins.col-center;
+  background-color: rgba(variables.$seattleGray, 0.2);
+  padding: variables.$smPadding;
 }
 
 .gallery-card-container:hover .gallery-image {
@@ -78,7 +74,7 @@
   cursor: pointer;
 }
 
-.gallery-card-container:hover .middle {
+.gallery-card-container:hover .image-info {
   opacity: 1;
   cursor: pointer;
 }

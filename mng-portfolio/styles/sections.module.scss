@@ -1,0 +1,44 @@
+@use "variables.module";
+@use "mixins.module";
+
+/* Sections on the homepage after the hero */
+
+// about section
+.past-self {
+  @include mixins.col-center;
+  width: 100%;
+
+  > * {
+    margin: variables.$tinyPadding;
+  }
+}
+
+.past-roles {
+  @include mixins.row-between;
+  width: 100%;
+  max-width: 60%;
+
+  li {
+    color: variables.$seattleGray;
+    font-style: italic;
+  }
+}
+
+.mini-bio {
+  .icon {
+    position: relative;
+    top: 8px;
+    height: 1.5rem;
+    margin: 2px;
+  }
+
+  > * {
+    margin: variables.$stdPadding;
+    margin-top: 0;
+  }
+}
+
+// projects section
+.project-card-container {
+  height: 300px;
+}
