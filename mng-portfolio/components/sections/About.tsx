@@ -35,20 +35,26 @@ export default function AboutSummary() {
           </Grid>
           <Grid item xs={12} className={cx("mini-bio")}>
             <Typography>
-              I lean into my belief that UX has the power to bring evolving
+              I strive to apply UX as a superpower capable of bringing more
               compassion to the human experience in a world that is increasingly
               reliant on machines and technology.
             </Typography>
             <Typography>
-              Curiousity and empathy drive me to learn about the people around
-              us and craft solutions built on understanding and technical
-              know-how.
+              Curiousity and empathy drive me to connect and learn about the
+              people around us. I thrive on uncovering insights on user behavior
+              and use that knowledge to guide product direction and solutions
+              built on understanding and technical know-how.
+            </Typography>
+            <Typography>
+              I love to learn new things and am frequently dabbling in different
+              hobbies. If I were a cat, my curiousity would have killed me by
+              now.
             </Typography>
           </Grid>
 
           <Grid container item xs={12} direction="row" justifyContent="center">
             <Typography className={cx("fun-facts")}>
-              <PanToolIcon className={cx("icon", "mirror")} />
+              <PanToolIcon className={cx("icon")} />
               I'm a leftie
               <br />
               <CoffeeIcon className={cx("icon")} />
