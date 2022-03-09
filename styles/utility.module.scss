@@ -10,15 +10,18 @@
 }
 
 // colors
-
 .emphasis {
   @include mixins.row-start;
   color: variables.$alert;
   font-style: italic;
 }
 
-// Logo
+// information
+.disclaimer {
+  margin-bottom: variables.$tinyPadding;
+}
 
+// Logo
 .logo {
   position: relative;
   @include mixins.col-center;
@@ -49,7 +52,7 @@
 
 .logo-full-name {
   position: relative;
-  // right: 0.2rem;
+  right: 0.1rem;
   margin-top: 2px;
 }
 

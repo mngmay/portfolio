@@ -7,10 +7,24 @@
     padding-bottom: variables.$tinyPadding;
     margin-bottom: variables.$smPadding;
   }
+
+  h3 {
+    margin-bottom: variables.$tinyPadding;
+  }
+
+  ul:not(:first) {
+    list-style-type: square;
+    margin-inline-end: variables.$tinyPadding;
+    padding-inline-start: variables.$stdPadding;
+
+    li {
+      margin-bottom: -10px;
+    }
+  }
 }
 
 .project-section {
-  padding: variables.$stdPadding 0;
+  padding: variables.$smPadding 0;
   border-bottom: variables.$sectionDivider;
 
   p {
@@ -27,12 +41,8 @@
   label {
     margin-right: variables.$smPadding;
   }
-
-  > * {
-    padding: variables.$tinyPadding 0;
-  }
 }
 
-.description-top {
-  padding-top: variables.$smPadding;
+.impact {
+  @include mixins.row-start;
 }

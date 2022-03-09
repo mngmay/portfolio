@@ -18,12 +18,8 @@ export default function ContactMe() {
           </Grid>
           <Grid item xs={12} className={cx("contact")}>
             <Typography>
-              Some of my most fulfilling work has come from happenstance.
-            </Typography>
-            <Typography>
-              I{`'`}m open to opportunities to join a full time team or
-              collaborate on projects and see where we can push to create better
-              experiences for someone out there.
+              I{`'`}m currently open to opportunities to join a full time team
+              or collaborate on projects.
             </Typography>
           </Grid>
           <Grid container item xs={12} justifyContent="center">
