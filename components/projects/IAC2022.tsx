@@ -249,7 +249,7 @@ const IAC2022 = () => {
           <Grid container justifyContent="center" item xs={12}>
             <CTAButton
               href="https://www.canva.com/design/DAE6Uu8Db6E/j3B_7DiXtwsm8rrHhAZlLQ/view?utm_content=DAE6Uu8Db6E&utm_campaign=designshare&utm_medium=link&utm_source=shareyourdesignpanel"
-              text="Research Plan Slide Dgeck"
+              text="Research Plan Slide Deck"
             />
           </Grid>
         </Grid>
