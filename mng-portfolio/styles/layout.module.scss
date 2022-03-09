@@ -3,6 +3,7 @@
 
 .container {
   min-height: calc(100vh - 150px);
+  color: variables.$primaryColor;
 }
 
 .relative-to-header {
@@ -23,7 +24,7 @@
 // header
 .header-container {
   position: fixed;
-  background-color: white;
+  background-color: variables.$offWhite;
   z-index: 100;
   width: 100%;
   top: 0;
@@ -48,9 +49,11 @@
 // footer
 
 .footer-container {
+  position: relative;
+  bottom: 0;
   @include mixins.row-center;
   min-height: 90px;
-  background-color: white;
+  background-color: variables.$offWhite;
 }
 
 .copyright {

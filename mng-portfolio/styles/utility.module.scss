@@ -9,6 +9,14 @@
   cursor: pointer;
 }
 
+// colors
+
+.emphasis {
+  @include mixins.row-start;
+  color: variables.$alert;
+  font-style: italic;
+}
+
 // Logo
 
 .logo {

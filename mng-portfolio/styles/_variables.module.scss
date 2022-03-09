@@ -1,9 +1,12 @@
 // colors
 
-$lightFontColor: white;
+$primaryColor: #21272d;
+$secondaryColor: #21b2a6;
+$offWhite: #faf9f6;
+$lightFontColor: $offWhite;
+$fontColor: $primaryColor;
 $lightColor: #c8ece9;
 $lightIconColor: $lightColor;
-$secondaryColor: #21b2a6;
 $CTAButtonColor: $secondaryColor;
 $seattleGray: #848688;
 $alert: #ed4933;

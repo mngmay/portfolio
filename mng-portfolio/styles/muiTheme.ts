@@ -31,7 +31,9 @@ const muiTheme = responsiveFontSizes(
         color: variables.seattleGray,
       },
       h4: {
-        fontSize: 16,
+        fontSize: 13,
+        fontStyle: 'italic',
+        color: variables.seattleGray,
       },
       h5: {
         fontSize: 14,
