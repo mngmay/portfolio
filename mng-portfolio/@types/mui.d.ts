@@ -5,7 +5,7 @@ declare module '@mui/material/styles' {
     interface TypographyVariants {
       navLink: React.CSSProperties;
       cardTitle: React.CSSProperties;
-      disclaimer: React.CSSProperties.
+      disclaimer: React.CSSProperties;
     }
   
     // allow configuration using `createTheme`
