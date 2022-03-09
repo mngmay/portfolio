@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import React from "react";
-import * as All from "../../components/projects";
+import * as Projects from "../../components/projects";
 import classnames from "classnames/bind";
 import styles from "../../styles/projects.module.scss";
 import Error404 from "../../components/Error404";
@@ -12,19 +12,19 @@ const ProjectPage = () => {
   const { slug } = router.query;
 
   const checkSlug = (slug: string | string[] | undefined) => {
-    if (slug) {
-      if (Array.isArray(slug)) {
-        return;
-      } else {
-        const newSlug: string = slug;
-        return newSlug;
-      }
+    if (!slug || Array.isArray(slug)) {
+      return;
+    } else {
+      const newSlug: string = slug;
+      return newSlug;
     }
   };
 
-  const newSlug = checkSlug(slug);
+  // hack - need to better understand important from index as * and using string to index * object type
+  const projects: { [key: string]: () => JSX.Element } = { ...Projects };
 
-  const ProjectComponent = newSlug;
+  const newSlug: string | undefined = checkSlug(slug);
+  const ProjectComponent = newSlug ? projects[newSlug] : false;
 
   return (
     <div className={cx("project-page-container")}>

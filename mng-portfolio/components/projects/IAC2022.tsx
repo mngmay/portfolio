@@ -33,41 +33,48 @@ const IAC2022 = () => {
         </Grid>
         <Grid container item xs={12} sm={10} className={cx("information")}>
           <Grid item xs={12} sm={6}>
-            <Typography>
-              <ul className={cx("team")}>
-                <li>
+            <ul className={cx("team")}>
+              <li>
+                <Typography>
                   <label>Client:</label>
                   <StyledExternalLink href="https://www.theiaconference.com/">
                     IAC
                   </StyledExternalLink>
-                </li>
-                <li>
+                </Typography>
+              </li>
+              <li>
+                <Typography>
+                  {" "}
                   <label>Sponsor:</label>
                   <StyledExternalLink href="https://www.sanity.io/">
                     Sanity
                   </StyledExternalLink>
-                </li>
-                <li>
+                </Typography>
+              </li>
+              <li>
+                <Typography>
                   <label> Contractor:</label>
                   <StyledExternalLink href="https://www.diadesign.io/">
                     DIA Design Guild
                   </StyledExternalLink>
-                </li>
-              </ul>
-            </Typography>
+                </Typography>
+              </li>
+            </ul>
           </Grid>
           <Grid item xs={12} sm={6}>
-            <Typography>
-              <ul className={cx("details")}>
-                <li>
+            <ul className={cx("details")}>
+              <li>
+                <Typography>
                   <label>My Role:</label> UXR, IA, Content Strategy
-                </li>
+                </Typography>
+              </li>
 
-                <li>
+              <li>
+                <Typography>
                   <label>Duration:</label> ~5-7 months (volunteer hours)
-                </li>
-              </ul>
-            </Typography>
+                </Typography>
+              </li>
+            </ul>
           </Grid>
 
           <Typography className={cx("description-top")}>
@@ -100,12 +107,12 @@ const IAC2022 = () => {
           </Typography>
           <Typography variant="h3">What We Know</Typography>
           <Typography>
-            IAC wants a permanent website with events being promoted on it. No
-            more rebuilding from scratch.
+            IAC wants a permanent website that will be maintained. No more
+            building from scratch.
           </Typography>
           <Typography>
-            IAC will be using Sanity as the headless CMS for managing data. It
-            is up to our team to create the content model based on our findings.
+            IAC will be using Sanity as the headless CMS for managing data
+            moving forward.
           </Typography>
         </Grid>
       </Grid>
@@ -116,7 +123,12 @@ const IAC2022 = () => {
           {/* What to look out for */}
           <Typography variant="h3">Discovery</Typography>
         </Grid>
-
+        Our fresh team of volunteers needed to identify who to talk to in the
+        community to get as much of the picture as possible. With over 20 years
+        of content and changing hands, we talked with stakeholders from IAC and
+        Sanity, and as many volunteers as we could get in touch with to identify
+        where this project was in the process and what information we could use
+        as a launching point.
         <Grid item xs={12}>
           {/* What to look out for */}
           <Typography variant="h3">
