@@ -27,7 +27,8 @@ const muiTheme = responsiveFontSizes(
         fontSize: 22,
       },
       h3: {
-        fontSize: 18,
+        fontSize: 14,
+        color: variables.seattleGray,
       },
       h4: {
         fontSize: 16,
@@ -39,7 +40,10 @@ const muiTheme = responsiveFontSizes(
         fontSize: 12,
       },
       navLink: {
-        fontSize:22,
+        fontSize: 22,
+      },
+      cardTitle: {
+        fontSize: 25,
       },
       body1: {
         fontSize: 12,
@@ -56,6 +60,7 @@ const muiTheme = responsiveFontSizes(
         color: variables.seattleGray,
     
       },
+
       button: {
         fontSize: 12,
       },

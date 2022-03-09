@@ -31,11 +31,9 @@ export const galleryImages = [
   ];
 
 export const projectData = [
-  {img: paint, title: "IAC Content Model & Website Redesign", description: "TBD", slug: "IAC2022" }, 
+  {img: paint, title: `IAC Model & Website Redesign`, description: "TBD", slug: "IAC2022" }, 
   {img: paint, title: "World IA Day 2022", description: "TBD", slug: "WIADLA2022" }, 
-  {img: paint, title: "Example Project", description: "TBD", slug: "Test2022" }, 
-  {img: paint, title: "Example Project", description: "TBD", slug: "Test2023" }, 
-  {img: paint, title: "Example Project", description: "TBD", slug: "Test2024" }, 
+
 ];
 
 export default galleryImages

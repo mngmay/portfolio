@@ -7,7 +7,7 @@ import projectStyles from "../../styles/projects/IAC2022.module.scss";
 import utilStyles from "../../styles/utility.module.scss";
 import CTAButton from "../CTAButton";
 
-const styles = { ...projectStyles, ...utilStyles };
+const styles = { ...utilStyles, ...projectStyles };
 const cx = classnames.bind(styles);
 
 const IAC2022 = () => {
@@ -16,7 +16,7 @@ const IAC2022 = () => {
       <Grid item xs={12}>
         <Typography variant="h1">IAC Model and Website Redesign</Typography>
         <Typography variant="subtitle2">
-          From Chaotic Event to Steadfast Brand Presence & Community Resource
+          Chaotic Event to Steadfast Brand Presence & Community Resource
         </Typography>
       </Grid>
 
@@ -71,34 +71,43 @@ const IAC2022 = () => {
           </Grid>
 
           <Typography className={cx("description-top")}>
-            The IAC is a professional conference offering talks and workshops on
-            the field of Information Architecture. The event is historically
-            held at rotating host cities in North America. Due to the changes
-            brought about by the COVID-19 pandemic, it has recently adapted to
-            being held as a virtual conference.
+            The IAC is a conference that offers professional talks and workshops
+            on the field of Information Architecture. It offers recordings of
+            the speaker sessions as a resource to those who attend the previous
+            year. This event is rebuilt from the ground up each year, with each
+            iteration having its own organizer leads and website.
           </Typography>
 
+          <Typography variant="h3">Problem Space</Typography>
           <Typography>
-            With a history of over 20 years, this conference's organizers,
-            volunteers, and technology platforms have switched hands many times
-            over. The constant change has resulted in inconsistent content
-            models, gaps in information, and extra work for the succeeding team.
+            With a history of over 20 years, the constant change of organizers,
+            volunteers, and technology platforms has resulted in inconsistent
+            content models, gaps in knowledge, and an extremely strenuous
+            adoption process for the succeeding team.
           </Typography>
         </Grid>
-        <Grid item xs={12}></Grid>
       </Grid>
 
       <Grid container item xs={12} className={cx("project-section")}>
-        <Grid item alignSelf="center" xs={12} sm={3}>
+        <Grid item alignSelf="center" xs={12} sm={2}>
           <Typography variant="h2">Objective</Typography>
         </Grid>
-        <Grid
-          container
-          item
-          xs={12}
-          sm={9}
-          className={cx("information")}
-        ></Grid>
+        <Grid item xs={12} sm={10} className={cx("information")}>
+          <Typography variant="h3">Goal</Typography>
+          <Typography>
+            Create a standard for IAC's content so that adoption and management
+            is easier for the next team.
+          </Typography>
+          <Typography variant="h3">What We Know</Typography>
+          <Typography>
+            IAC wants a permanent website with events being promoted on it. No
+            more rebuilding from scratch.
+          </Typography>
+          <Typography>
+            IAC will be using Sanity as the headless CMS for managing data. It
+            is up to our team to create the content model based on our findings.
+          </Typography>
+        </Grid>
       </Grid>
 
       <Grid container item xs={12} className={cx("project-section")}>

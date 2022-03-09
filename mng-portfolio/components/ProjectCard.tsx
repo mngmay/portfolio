@@ -28,8 +28,7 @@ export default function ProjectCard({
           <Image src={img} alt={title} layout="fill" />
         </div>
         <div className={cx("card-info")}>
-          <Typography variant="h3">{title}</Typography>
-          <Typography>{description}</Typography>
+          <Typography variant="cardTitle">{title}</Typography>
         </div>
       </div>
     </Link>

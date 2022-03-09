@@ -9,7 +9,7 @@
   width: 100%;
 
   > * {
-    margin: variables.$tinyPadding;
+    margin-bottom: variables.$tinyPadding;
   }
 }
 
@@ -24,7 +24,15 @@
   }
 }
 
-.mini-bio {
+@media (max-width: variables.$mobile) {
+  .past-roles {
+    @include mixins.col-center;
+  }
+}
+
+.mini-bio,
+.contact,
+.fun-facts {
   .icon {
     position: relative;
     top: 8px;
@@ -36,6 +44,10 @@
     margin: variables.$stdPadding;
     margin-top: 0;
   }
+}
+
+.learn-more-cta {
+  margin-top: variables.$stdPadding;
 }
 
 // projects section

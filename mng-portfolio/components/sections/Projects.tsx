@@ -11,19 +11,23 @@ const cx = classnames.bind(styles);
 export default function Projects() {
   return (
     <>
-      <Typography variant="h2">My Work</Typography>
       <Box sx={{ flexGrow: 1 }} className={cx("section", "projects-container")}>
-        <Grid container spacing={2}>
-          {projectData.map(({ img, title, description, slug }) => (
-            <Grid item xs={12} sm={6} md={4} key={title}>
-              <ProjectCard
-                img={img}
-                title={title}
-                description={description}
-                slug={`projects/${slug}`}
-              />
-            </Grid>
-          ))}
+        <Grid container>
+          <Grid item xs={12}>
+            <Typography variant="h2">My Work</Typography>
+          </Grid>
+          <Grid container spacing={2} item>
+            {projectData.map(({ img, title, description, slug }) => (
+              <Grid item xs={12} sm={6} md={4} key={title}>
+                <ProjectCard
+                  img={img}
+                  title={title}
+                  description={description}
+                  slug={`projects/${slug}`}
+                />
+              </Grid>
+            ))}
+          </Grid>
         </Grid>
       </Box>
     </>

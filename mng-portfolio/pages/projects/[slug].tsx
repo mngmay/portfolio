@@ -11,8 +11,20 @@ const ProjectPage = () => {
   const router = useRouter();
   const { slug } = router.query;
 
-  // TODO: Fix this type error
-  const ProjectComponent = slug ? All[slug] : null;
+  const checkSlug = (slug: string | string[] | undefined) => {
+    if (slug) {
+      if (Array.isArray(slug)) {
+        return;
+      } else {
+        const newSlug: string = slug;
+        return newSlug;
+      }
+    }
+  };
+
+  const newSlug = checkSlug(slug);
+
+  const ProjectComponent = newSlug;
 
   return (
     <div className={cx("project-page-container")}>

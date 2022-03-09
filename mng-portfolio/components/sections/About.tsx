@@ -17,9 +17,11 @@ const cx = classnames.bind(styles);
 export default function AboutSummary() {
   return (
     <>
-      <Typography variant="h2">Who I Am</Typography>
       <Box sx={{ flexGrow: 1 }} className={cx("section", "about-container")}>
-        <Grid container spacing={2}>
+        <Grid container>
+          <Grid item xs={12}>
+            <Typography variant="h2">Who I Am</Typography>
+          </Grid>
           <Grid item xs={12} className={cx("past-self")}>
             <ul className={cx("past-roles")}>
               <Typography>I've been the:</Typography>
@@ -42,23 +44,30 @@ export default function AboutSummary() {
               us and craft solutions built on understanding and technical
               know-how.
             </Typography>
+          </Grid>
 
-            <Grid container item direction="row" justifyContent="center">
-              <Typography className={cx("fun-facts")}>
-                <PanToolIcon className={cx("icon", "mirror")} />
-                I'm a leftie
-                <br />
-                <CoffeeIcon className={cx("icon")} /> I drink my coffee black
-                yet love milk tea (50% sweet + boba)
-                <br /> <PetsIcon className={cx("icon")} />
-                I'm that person who looks longingly at your pet as we pass on
-                the street
-              </Typography>
-            </Grid>
+          <Grid container item xs={12} direction="row" justifyContent="center">
+            <Typography className={cx("fun-facts")}>
+              <PanToolIcon className={cx("icon", "mirror")} />
+              I'm a leftie
+              <br />
+              <CoffeeIcon className={cx("icon")} />
+              I drink my coffee black yet love milk tea (50% sweet + boba)
+              <br />
+              <PetsIcon className={cx("icon")} />
+              I'm that person who looks longingly at your pet as we pass on the
+              street
+            </Typography>
           </Grid>
         </Grid>
 
-        <Grid container item direction="row" justifyContent="center">
+        <Grid
+          container
+          item
+          direction="row"
+          justifyContent="center"
+          className={cx("learn-more-cta")}
+        >
           <CTAButton href="/about" text="Learn More About Me" />
         </Grid>
       </Box>
