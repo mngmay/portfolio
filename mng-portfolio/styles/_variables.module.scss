@@ -6,6 +6,7 @@ $lightIconColor: $lightColor;
 $secondaryColor: #21b2a6;
 $CTAButtonColor: $secondaryColor;
 $seattleGray: #848688;
+$alert: #ed4933;
 
 // padding & margin
 $tinyPadding: 5px;
@@ -26,4 +27,5 @@ $tablet: 800px;
 :export {
   seattleGray: $seattleGray;
   secondaryColor: $secondaryColor;
+  alert: $alert;
 }

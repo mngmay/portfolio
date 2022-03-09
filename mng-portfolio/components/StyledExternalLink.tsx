@@ -13,7 +13,12 @@ type LinkProps = {
 
 export default function StyledExternalLink({ children, href }: LinkProps) {
   return (
-    <a href={`${href}`} target="_blank" className={cx("external-link")}>
+    <a
+      href={`${href}`}
+      target="_blank"
+      rel="noreferrer"
+      className={cx("external-link")}
+    >
       {children}
     </a>
   );

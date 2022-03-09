@@ -29,7 +29,7 @@ export default function Navbar() {
         </a>
       </span>
       <span>
-        <a href="mailto: mngmay@gmail.com">
+        <a href="mailto: mngmay@gmail.com" target="_blank" rel="noreferrer">
           <Typography variant="navLink">Contact </Typography>
         </a>
       </span>

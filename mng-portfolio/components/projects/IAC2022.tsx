@@ -32,6 +32,12 @@ const IAC2022 = () => {
           <Typography variant="h2">About</Typography>
         </Grid>
         <Grid container item xs={12} sm={10} className={cx("information")}>
+          <Grid item xs={12}>
+            <Typography variant="disclaimer">
+              This project is still underway. Below is my current proposal on
+              how I'd conduct this study to meet our client and user objectives.
+            </Typography>
+          </Grid>
           <Grid item xs={12} sm={6}>
             <ul className={cx("team")}>
               <li>
@@ -44,7 +50,6 @@ const IAC2022 = () => {
               </li>
               <li>
                 <Typography>
-                  {" "}
                   <label>Sponsor:</label>
                   <StyledExternalLink href="https://www.sanity.io/">
                     Sanity
@@ -118,32 +123,68 @@ const IAC2022 = () => {
       </Grid>
 
       <Grid container item xs={12} className={cx("project-section")}>
-        <Typography variant="h2">The Work</Typography>
+        <Grid item alignSelf="center" xs={12} sm={2}>
+          <Typography variant="h2">The Work</Typography>
+        </Grid>
         <Grid item xs={12}>
           {/* What to look out for */}
           <Typography variant="h3">Discovery</Typography>
+
+          <Typography>
+            Our fresh team of volunteers needed to identify who to talk to in
+            the community to get as much of the picture as possible. We talked
+            with stakeholders from IAC and Sanity, and as many volunteers as we
+            could get in touch with to identify where this project was in the
+            process and what information we could use as a launching point.
+          </Typography>
+
+          <ul>
+            <li>
+              <Typography>
+                List of archived content from former, now disabled IAC events
+              </Typography>
+            </li>
+            <li>
+              <Typography>
+                Initial progress on tagging of past talk topics
+              </Typography>
+            </li>
+            <li>
+              <Typography>
+                Initial research about the IA community from another team
+              </Typography>
+            </li>
+          </ul>
         </Grid>
-        Our fresh team of volunteers needed to identify who to talk to in the
-        community to get as much of the picture as possible. With over 20 years
-        of content and changing hands, we talked with stakeholders from IAC and
-        Sanity, and as many volunteers as we could get in touch with to identify
-        where this project was in the process and what information we could use
-        as a launching point.
         <Grid item xs={12}>
           {/* What to look out for */}
           <Typography variant="h3">
             Information Architecture & Content Model
           </Typography>
+          <Typography>
+            We took inventory of the current information architecture of the
+            existing website and analyzed it in comparison to other major
+            conferences related to the IA/UX fields using a competitor matrix.
+          </Typography>
+          <Typography>
+            Our team is currently under processes gathering as many of the
+            former assets as possible in order to do an initial round of
+            categorization for content tags. Once complete, we plan to run a
+            series of Card Sort and Tree Tests with users in order to tag and
+            structure IAC content.
+          </Typography>
         </Grid>
-        <Grid item spacing={2} xs={12}>
+
+        <Grid item alignSelf="center" xs={12} sm={2}>
           {/* Research methods & why */}
+
           <Typography variant="h3">Research</Typography>
-          <Grid container item justifyContent="center" xs={12}>
-            <CTAButton
-              href="https://www.canva.com/design/DAE6Uu8Db6E/j3B_7DiXtwsm8rrHhAZlLQ/view?utm_content=DAE6Uu8Db6E&utm_campaign=designshare&utm_medium=link&utm_source=shareyourdesignpanel"
-              text="Research Plan"
-            />
-          </Grid>
+        </Grid>
+        <Grid container item justifyContent="center" xs={12}>
+          <CTAButton
+            href="https://www.canva.com/design/DAE6Uu8Db6E/j3B_7DiXtwsm8rrHhAZlLQ/view?utm_content=DAE6Uu8Db6E&utm_campaign=designshare&utm_medium=link&utm_source=shareyourdesignpanel"
+            text="Research Plan"
+          />
         </Grid>
         <Grid item xs={12}>
           {/* What to look out for */}

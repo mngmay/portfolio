@@ -13,13 +13,17 @@ type SocialMediaProps = {
 export default function SocialMedia({ parent }: SocialMediaProps) {
   return (
     <div className={cx("social-media-container", `sm-${parent}`)}>
-      <a href="mailto: mngmay@gmail.com">
+      <a href="mailto: mngmay@gmail.com" target="_blank" rel="noreferrer">
         <EmailIcon className="social-icon" />
       </a>
-      <a href="https://www.linkedin.com/in/mngmay/" target="_blank">
+      <a
+        href="https://www.linkedin.com/in/mngmay/"
+        target="_blank"
+        rel="noreferrer"
+      >
         <LinkedInIcon className="social-icon" />
       </a>
-      <a href="https://twitter.com/mngmay" target="_blank">
+      <a href="https://twitter.com/mngmay" target="_blank" rel="noreferrer">
         <TwitterIcon className="social-icon" />
       </a>
     </div>
