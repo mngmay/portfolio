@@ -37,7 +37,8 @@ const IAC2022 = () => {
           <Grid item xs={12}>
             <Typography variant="disclaimer">
               This project is still underway. Below is my current proposal on
-              how I'd conduct this study to meet our client and user objectives.
+              how I{`'`}d conduct this study to meet our client and user
+              objectives.
             </Typography>
           </Grid>
           <Grid item xs={12} sm={6}>
@@ -144,7 +145,7 @@ const IAC2022 = () => {
         </Grid>
         <Grid item xs={12} sm={10}>
           <Typography variant="h3">
-            Identify & Meet "Knowledge Holders"
+            Identify & Meet {`"`}Knowledge Holders{`"`}
           </Typography>
 
           <Typography>
@@ -248,7 +249,7 @@ const IAC2022 = () => {
           <Grid container justifyContent="center" item xs={12}>
             <CTAButton
               href="https://www.canva.com/design/DAE6Uu8Db6E/j3B_7DiXtwsm8rrHhAZlLQ/view?utm_content=DAE6Uu8Db6E&utm_campaign=designshare&utm_medium=link&utm_source=shareyourdesignpanel"
-              text="Research Plan Slide Deck"
+              text="Research Plan Slide Dgeck"
             />
           </Grid>
         </Grid>

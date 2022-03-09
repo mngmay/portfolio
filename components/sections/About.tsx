@@ -24,13 +24,13 @@ export default function AboutSummary() {
           </Grid>
           <Grid item xs={12} className={cx("past-self")}>
             <ul className={cx("past-roles")}>
-              <Typography>I've been the:</Typography>
+              <Typography>I{`'`}ve been the:</Typography>
               <li>End User</li>
               <li>HR Partner</li>
               <li>Recruiter</li>
               <li>Web Developer</li>
             </ul>
-            <Typography>Now, I'm a multi-faceted</Typography>
+            <Typography>Now, I{`'`}m a multi-faceted</Typography>
             <Typography variant="h2">UX Researcher</Typography>
           </Grid>
           <Grid item xs={12} className={cx("mini-bio")}>
@@ -54,15 +54,13 @@ export default function AboutSummary() {
 
           <Grid container item xs={12} direction="row" justifyContent="center">
             <Typography className={cx("fun-facts")}>
-              <PanToolIcon className={cx("icon")} />
-              I'm a leftie
+              <PanToolIcon className={cx("icon")} />I{`'`}m a leftie
               <br />
               <CoffeeIcon className={cx("icon")} />
               I drink my coffee black yet love milk tea (50% sweet + boba)
               <br />
-              <PetsIcon className={cx("icon")} />
-              I'm that person who looks longingly at your pet as we pass on the
-              street
+              <PetsIcon className={cx("icon")} />I{`'`}m that person who looks
+              longingly at your pet as we pass on the street
             </Typography>
           </Grid>
         </Grid>

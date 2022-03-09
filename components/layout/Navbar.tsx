@@ -14,12 +14,12 @@ export default function Navbar() {
   return (
     <div className={cx("navbar", "link")}>
       <span>
-        <Link href="/">
+        <Link href="/" passHref>
           <Typography variant="navLink">Home</Typography>
         </Link>
       </span>
       <span>
-        <Link href="/about">
+        <Link href="/about" passHref>
           <Typography variant="navLink">About</Typography>
         </Link>
       </span>

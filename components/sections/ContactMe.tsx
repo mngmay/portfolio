@@ -14,16 +14,16 @@ export default function ContactMe() {
       <Box sx={{ flexGrow: 1 }} className={cx("contact-me-container")}>
         <Grid container>
           <Grid item xs={12}>
-            <Typography variant="h2">Let's Work Together!</Typography>
+            <Typography variant="h2">Let{`'`}s Work Together!</Typography>
           </Grid>
           <Grid item xs={12} className={cx("contact")}>
             <Typography>
               Some of my most fulfilling work has come from happenstance.
             </Typography>
             <Typography>
-              I'm open to opportunities to join a full time team or collaborate
-              on projects and see where we can push to create better experiences
-              for someone out there.
+              I{`'`}m open to opportunities to join a full time team or
+              collaborate on projects and see where we can push to create better
+              experiences for someone out there.
             </Typography>
           </Grid>
           <Grid container item xs={12} justifyContent="center">

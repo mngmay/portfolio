@@ -22,7 +22,7 @@ export default function ProjectCard({
   slug,
 }: ProjectCardProps) {
   return (
-    <Link href={slug}>
+    <Link href={slug} passHref>
       <div className={cx("card-container", "project-card-container")}>
         <div className={cx("card-image")}>
           <Image src={img} alt={title} layout="fill" />

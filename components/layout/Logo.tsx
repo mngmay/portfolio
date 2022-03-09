@@ -10,7 +10,7 @@ const cx = classnames.bind(styles);
 
 export default function Logo() {
   return (
-    <Link href="/">
+    <Link href="/" passHref>
       <div className={cx("logo")}>
         <div className={cx("logo-abbrv")}>
           <span className={cx("logo-m")}>M</span>

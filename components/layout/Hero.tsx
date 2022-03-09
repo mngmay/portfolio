@@ -23,7 +23,7 @@ export default function Hero() {
           </div>
           <div className={cx("intro-description")}>
             <Typography variant="subtitle1">
-              I'm a <strong>UX Researcher</strong> in{" "}
+              I{`'`}m a <strong>UX Researcher</strong> in{" "}
               <strong>Seattle, WA</strong>
             </Typography>
           </div>

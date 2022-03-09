@@ -50,17 +50,17 @@ const About: NextPage = () => {
 
         <Typography>
           I thrive on trying new creative hobbies and then moving onto the next,
-          there's always something new exciting to learn! I try to prioritize
-          good food, travel, and spending time doing engaging activities with my
-          friends.
+          there{`'`}s always something new exciting to learn! I try to
+          prioritize good food, travel, and spending time doing engaging
+          activities with my friends.
         </Typography>
         <Typography variant="h3">
           Current Pandemic Hobby List Includes:
         </Typography>
         <ul>
           <li>
-            Baking Bread - (Sourdough start's name is Kenny and I almost killed
-            him)
+            Baking Bread - (Sourdough start{`'`}s name is Kenny and I almost
+            killed him)
           </li>
           <li>Houseplants</li>
           <li>Drawing and Painting</li>
@@ -81,7 +81,7 @@ const About: NextPage = () => {
 
         <div className={cx("may-gallery")}>
           {galleryImages.map(({ img, description }) => (
-            <GalleryCard img={img} description={description} />
+            <GalleryCard img={img} description={description} key={`${img}`} />
           ))}
         </div>
       </div>
