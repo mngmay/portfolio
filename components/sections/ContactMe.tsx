@@ -16,7 +16,13 @@ export default function ContactMe() {
           <Grid item xs={12}>
             <Typography variant="h2">Let{`'`}s Work Together!</Typography>
           </Grid>
-          <Grid item xs={12} className={cx("contact")}>
+          <Grid
+            container
+            item
+            xs={12}
+            className={cx("contact")}
+            justifyContent="center"
+          >
             <Typography>
               I{`'`}m currently open to opportunities to join a full time team
               or collaborate on projects.

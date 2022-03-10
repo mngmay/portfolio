@@ -3,7 +3,7 @@ import Grid from "@mui/material/Grid";
 import classnames from "classnames/bind";
 import StyledExternalLink from "../StyledExternalLink";
 import Image from "next/image";
-import projectStyles from "../../styles/projects/IAC2022.module.scss";
+import projectStyles from "../../styles/projects/projectPage.module.scss";
 import utilStyles from "../../styles/utility.module.scss";
 import CTAButton from "../CTAButton";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
@@ -91,22 +91,28 @@ const IAC2022 = () => {
               </li>
             </ul>
           </Grid>
+          <Grid item xs={12}>
+            <Typography variant="h3">IAC</Typography>
+            <Typography>
+              The{" "}
+              <StyledExternalLink href="https://www.theiaconference.com/">
+                IAC
+              </StyledExternalLink>{" "}
+              is a conference that offers professional talks and workshops on
+              the field of Information Architecture. It offers recordings of the
+              speaker sessions as a resource to those who attend the previous
+              year. This event is rebuilt from the ground up each year, with
+              each iteration having its own organizer leads and website.
+            </Typography>
 
-          <Typography>
-            The IAC is a conference that offers professional talks and workshops
-            on the field of Information Architecture. It offers recordings of
-            the speaker sessions as a resource to those who attend the previous
-            year. This event is rebuilt from the ground up each year, with each
-            iteration having its own organizer leads and website.
-          </Typography>
-
-          <Typography variant="h3">Problem Space</Typography>
-          <Typography>
-            With a history of over 20 years, the constant change of organizers,
-            volunteers, and technology platforms has resulted in inconsistent
-            content models, gaps in knowledge, and an extremely strenuous
-            adoption process for the succeeding team.
-          </Typography>
+            <Typography variant="h3">Problem Space</Typography>
+            <Typography>
+              With a history of over 20 years, the constant change of
+              organizers, volunteers, and technology platforms has resulted in
+              inconsistent content models, gaps in knowledge, and an extremely
+              strenuous adoption process for the succeeding team.
+            </Typography>
+          </Grid>
         </Grid>
       </Grid>
 
@@ -129,7 +135,7 @@ const IAC2022 = () => {
             </Typography>
           </Grid>
           <Grid item xs={12} sm={6}>
-            <Typography variant="h3">We Know Client Wants</Typography>
+            <Typography variant="h3">Client Wants</Typography>
 
             <Typography>
               A permanent website that will be maintained.{" "}
@@ -161,7 +167,7 @@ const IAC2022 = () => {
           <Typography>
             Our fresh team of volunteers needed to identify who to talk to in
             the community to get as much of the picture as possible. We talked
-            with stakeholders from IAC and Sanity, and as many volunteers as we
+            with stakeholders from IAC, Sanity, and as many volunteers as we
             could get in touch with to learn the history of IAC and identify
             where this project was in the process.
           </Typography>
@@ -236,6 +242,7 @@ const IAC2022 = () => {
             <CTAButton
               href="https://www.canva.com/design/DAE6Uu8Db6E/j3B_7DiXtwsm8rrHhAZlLQ/view?utm_content=DAE6Uu8Db6E&utm_campaign=designshare&utm_medium=link&utm_source=shareyourdesignpanel"
               text="Research Plan Slide Deck"
+              external
             />
           </Grid>
           <Grid container spacing={2} item xs={12}>
@@ -351,8 +358,9 @@ const IAC2022 = () => {
         <Grid item xs={12} sm={10}>
           <Typography variant="h3">Hypotheses</Typography>
           <Typography>
-            Migrating to a persistent and consistent data model likely remove
-            some blockers and hesitance towards getting involved with IAC.
+            Migrating to a persistent and consistent data model will likely
+            remove some blockers and hesitance towards getting involved with
+            IAC.
           </Typography>
           <Typography>
             A lot of content bloat will be cut, leaving streamlined and
@@ -360,10 +368,10 @@ const IAC2022 = () => {
             experience and stronger understanding of IAC and its offerings.
           </Typography>
           <Typography>
-            Consolidation and standardization of conference resources creates
-            opportunity to provide different offerings and more value. This has
-            potential to reach a wider and more diverse audience and generate
-            year-round revenue.
+            Consolidation and standardization of conference resources will
+            create opportunity to provide different offerings and more value.
+            This has potential to reach a wider and more diverse audience and
+            generate year-round revenue.
           </Typography>
 
           <Grid container item xs={12} sm={10} className={cx("impact")}>
@@ -407,7 +415,8 @@ const IAC2022 = () => {
             </Grid>
             <Grid item xs={5}>
               <Typography variant="body2" className={cx("emphasis")}>
-                Improved future events and attracting a different tier of users
+                Improved future events and attracting a more diverse set of
+                users
               </Typography>
             </Grid>
           </Grid>

@@ -11,6 +11,11 @@ $CTAButtonColor: $secondaryColor;
 $seattleGray: #848688;
 $alert: #ed4933;
 
+// hover styles
+$linkHover: rgba($secondaryColor, 0.7);
+$lightLinkHover: rgba($lightIconColor, 0.5);
+$lightBorderHover: 1px solid $lightIconColor;
+
 // padding & margin
 $tinyPadding: 5px;
 $smPadding: 10px;
@@ -18,7 +23,6 @@ $stdPadding: 20px;
 $lgPadding: 30px;
 
 // misc
-
 $thinSectionDivider: 2px solid rgba($seattleGray, 0.1);
 $sectionDivider: 5px solid rgba($seattleGray, 0.1);
 

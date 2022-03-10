@@ -21,6 +21,22 @@
   margin-bottom: variables.$tinyPadding;
 }
 
+.small-divider {
+  color: variables.$secondaryColor;
+  margin: variables.$tinyPadding;
+}
+
+// Transformations
+.mirror {
+  transform: scaleX(-1);
+}
+
+.full-width {
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50.7% - 50vw);
+}
+
+// Specific reusable components
 // Logo
 .logo {
   position: relative;
@@ -31,10 +47,9 @@
 }
 
 .logo:hover {
-  border: 1px solid variables.$lightIconColor;
-
+  border: variables.$lightBorderHover;
   .logo-abbrv {
-    color: rgba(variables.$secondaryColor, 0.5);
+    color: variables.$linkHover;
   }
 }
 
@@ -76,20 +91,9 @@
   color: variables.$lightIconColor;
 
   > *:hover {
-    color: rgba(variables.$lightIconColor, 0.5);
-    border: 1px solid variables.$lightIconColor;
+    color: variables.$lightLinkHover;
+    border: variables.$lightBorderHover;
   }
-}
-
-// Transformations
-
-.mirror {
-  transform: scaleX(-1);
-}
-
-.full-width {
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50.7% - 50vw);
 }
 
 // Cards with hover overlay

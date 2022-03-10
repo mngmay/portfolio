@@ -29,7 +29,7 @@ export default function Hero() {
           </div>
         </div>
         <div className={cx("hero-contact")}>
-          <CTAButton href="mail:mngmay@gmail.com" text="Contact" />
+          <CTAButton href="mailto: mngmay@gmail.com" text="Contact" external />
           <SocialMedia parent="hero-contact" />
         </div>
       </div>

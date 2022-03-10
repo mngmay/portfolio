@@ -41,7 +41,7 @@
   max-width: 50%;
 
   > *:hover {
-    color: variables.$secondaryColor;
+    color: variables.$linkHover;
     border-bottom: 2px solid variables.$lightColor;
   }
 }
@@ -54,6 +54,7 @@
   @include mixins.row-center;
   min-height: 90px;
   background-color: variables.$offWhite;
+  margin-top: variables.$stdPadding;
 }
 
 .copyright {

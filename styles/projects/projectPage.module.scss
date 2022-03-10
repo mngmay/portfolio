@@ -13,6 +13,13 @@
   }
 }
 
+.team,
+.details {
+  label {
+    margin-right: variables.$smPadding;
+  }
+}
+
 .project-section {
   padding: variables.$smPadding 0;
   border-bottom: variables.$sectionDivider;
@@ -24,6 +31,8 @@
   label {
     color: variables.$secondaryColor;
   }
+
+  // Research Layout
 
   ul.learnings,
   ul.success {
@@ -39,13 +48,7 @@
   .success-yes {
     margin-bottom: 0;
   }
-}
-
-.team,
-.details {
-  label {
-    margin-right: variables.$smPadding;
-  }
+  // --------- End Research Layout
 }
 
 .slidedeck {

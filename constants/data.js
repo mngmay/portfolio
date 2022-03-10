@@ -7,6 +7,7 @@ import weld from "../assets/may-weld.jpeg";
 import woodworking from "../assets/may-woodworking.jpeg";
 import ramen from "../assets/may-ramen.jpeg";
 
+
 export const galleryImages = [
     { img: paint, description: "Acrylic Paint" },
     { img: bread, description: "Sourdough Foccacia made with Kenny" },
@@ -32,7 +33,7 @@ export const galleryImages = [
 
 export const projectData = [
   {img: paint, title: `IAC Model & Website Redesign`, description: "TBD", slug: "IAC2022" }, 
-  {img: paint, title: "World IA Day 2022", description: "TBD", slug: "WIADLA2022" }, 
+  {img: paint, title: `World IA Day Virtual Event`, description: "TBD", slug: "WIADLA2022" }, 
 
 ];
 
