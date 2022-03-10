@@ -28,7 +28,7 @@ export default function AboutSummary() {
               <li>End User</li>
               <li>HR Partner</li>
               <li>Recruiter</li>
-              <li>Web Developer</li>
+              <li>Developer</li>
             </ul>
             <Typography>Now, I{`'`}m a multi-faceted</Typography>
             <Typography variant="h2">UX Researcher</Typography>

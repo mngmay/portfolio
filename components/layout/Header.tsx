@@ -1,15 +1,40 @@
-import Navbar from "./Navbar";
+import { useState } from "react";
 import Logo from "./Logo";
+import NavLinks from "./NavLinks";
+import NavDrawer from "./NavDrawer";
+import NavBar from "./NavBar";
+import { useTheme } from "@mui/material/styles";
+import { useMediaQuery } from "@mui/material";
 import classnames from "classnames/bind";
-import styles from "../../styles/layout.module.scss";
+import utilStyles from "../../styles/utility.module.scss";
+import layoutStyles from "../../styles/layout.module.scss";
 
+const styles = { ...utilStyles, ...layoutStyles };
 const cx = classnames.bind(styles);
 
 export default function Header() {
+  const theme = useTheme();
+  const smDown = useMediaQuery(theme.breakpoints.down("sm"));
+  console.log(smDown, "brkpt");
+  const [drawerOpen, setDrawerOpen] = useState(false);
+
+  const toggleDrawer = () => {
+    setDrawerOpen(!drawerOpen);
+  };
+
+  // Convert to MUI AppBar/ToolBar and update theme palette when there's time?
   return (
-    <div className={cx("header-container")}>
+    <div className={cx("header")}>
       <Logo />
-      <Navbar />
+      {smDown ? (
+        <NavDrawer open={drawerOpen} toggleDrawer={toggleDrawer}>
+          <NavLinks />
+        </NavDrawer>
+      ) : (
+        <NavBar>
+          <NavLinks />
+        </NavBar>
+      )}
     </div>
   );
 }

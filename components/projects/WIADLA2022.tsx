@@ -16,7 +16,7 @@ const WIADLA2022 = () => {
         <Typography variant="h1">
           World IA Day
           <span className={cx("small-divider")}>/</span>
-          Los Angeles
+          LA
           <span className={cx("small-divider")}>/</span>
           2022
         </Typography>

@@ -22,7 +22,7 @@
 }
 
 // header
-.header-container {
+.header {
   position: fixed;
   background-color: variables.$offWhite;
   z-index: 100;
@@ -32,17 +32,41 @@
   height: 90px;
 }
 
-.navbar {
-  @include mixins.row-around;
+.nav-bar {
   position: absolute;
   right: 0;
   padding: variables.$smPadding;
   width: 100%;
   max-width: 50%;
 
+  .nav-links {
+    @include mixins.row-around;
+  }
+}
+
+.nav-hamburger {
+  position: relative;
+  right: variables.$stdPadding;
+}
+
+.nav-links,
+.nav-hamburger {
   > *:hover {
     color: variables.$linkHover;
     border-bottom: 2px solid variables.$lightColor;
+  }
+}
+
+.nav-drawer {
+  .nav-links {
+    width: calc(variables.$mobile - 100px);
+    height: 100%;
+    max-height: 200px;
+    @include mixins.col-center;
+    > * {
+      padding: variables.$tinyPadding;
+      margin: variables.$tinyPadding;
+    }
   }
 }
 
