@@ -16,7 +16,7 @@
 .team,
 .details {
   label {
-    margin-right: variables.$smPadding;
+    margin-right: variables.$stdPadding;
   }
 }
 
@@ -58,5 +58,11 @@
 .impact {
   > * {
     @include mixins.row-start;
+  }
+}
+
+@media (max-width: variables.$mobile) {
+  .project-step {
+    padding-bottom: variables.$tinyPadding;
   }
 }

@@ -99,10 +99,11 @@ const IAC2022 = () => {
                 IAC
               </StyledExternalLink>{" "}
               is a conference that offers professional talks and workshops on
-              the field of Information Architecture. It offers recordings of the
-              speaker sessions as a resource to those who attend the previous
-              year. This event is rebuilt from the ground up each year, with
-              each iteration having its own organizer leads and website.
+              the field of Information Architecture. In addition to the event,
+              it offers recordings of the speaker sessions as a resource to
+              those who attend for the year. This event is rebuilt from the
+              ground up annually, with each iteration having its own organizer
+              leads and website.
             </Typography>
 
             <Typography variant="h3">Problem Space</Typography>
@@ -117,7 +118,13 @@ const IAC2022 = () => {
       </Grid>
 
       <Grid container item xs={12} className={cx("project-section")}>
-        <Grid item alignSelf="center" xs={12} sm={2}>
+        <Grid
+          item
+          alignSelf="center"
+          xs={12}
+          sm={2}
+          className={cx("project-step")}
+        >
           <Typography variant="h2">Objective</Typography>
         </Grid>
 
@@ -126,8 +133,7 @@ const IAC2022 = () => {
             <Typography variant="h3">Goal</Typography>
             <Typography>
               Make the adoption and management of IAC easier for future
-              organizers by creating a consistent and scalable content model so
-              that
+              organizers by creating a consistent and scalable content model.
             </Typography>
             <Typography>
               Build and migrate the new site with existing content and create
@@ -156,7 +162,13 @@ const IAC2022 = () => {
       </Grid>
 
       <Grid container item xs={12} className={cx("project-section")}>
-        <Grid item alignSelf="center" xs={12} sm={2}>
+        <Grid
+          item
+          alignSelf="center"
+          xs={12}
+          sm={2}
+          className={cx("project-step")}
+        >
           <Typography variant="h2">Discovery</Typography>
         </Grid>
         <Grid item xs={12} sm={10}>
@@ -204,7 +216,13 @@ const IAC2022 = () => {
       </Grid>
 
       <Grid container item xs={12} className={cx("project-section")}>
-        <Grid item alignSelf="center" xs={12} sm={2}>
+        <Grid
+          item
+          alignSelf="center"
+          xs={12}
+          sm={2}
+          className={cx("project-step")}
+        >
           <Typography variant="h2">Research</Typography>
         </Grid>
         <Grid
@@ -302,7 +320,13 @@ const IAC2022 = () => {
         </Grid>
       </Grid>
       <Grid container item xs={12} className={cx("project-section")}>
-        <Grid item alignSelf="center" xs={12} sm={2}>
+        <Grid
+          item
+          alignSelf="center"
+          xs={12}
+          sm={2}
+          className={cx("project-step")}
+        >
           <Typography variant="h2">Findings</Typography>
         </Grid>
         <Grid container spacing={1} item xs={10}>
@@ -352,7 +376,13 @@ const IAC2022 = () => {
       </Grid>
 
       <Grid container item xs={12} className={cx("project-section")}>
-        <Grid item alignSelf="center" xs={12} sm={2}>
+        <Grid
+          item
+          alignSelf="center"
+          xs={12}
+          sm={2}
+          className={cx("project-step")}
+        >
           <Typography variant="h2">Reflection</Typography>
         </Grid>
         <Grid item xs={12} sm={10}>

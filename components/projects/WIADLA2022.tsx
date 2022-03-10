@@ -124,7 +124,13 @@ const WIADLA2022 = () => {
       </Grid>
 
       <Grid container item xs={12} className={cx("project-section")}>
-        <Grid item alignSelf="center" xs={12} sm={2}>
+        <Grid
+          item
+          alignSelf="center"
+          xs={12}
+          sm={2}
+          className={cx("project-step")}
+        >
           <Typography variant="h2">Objective</Typography>
         </Grid>
 
@@ -152,7 +158,13 @@ const WIADLA2022 = () => {
       </Grid>
 
       <Grid container item xs={12} className={cx("project-section")}>
-        <Grid item alignSelf="center" xs={12} sm={2}>
+        <Grid
+          item
+          alignSelf="center"
+          xs={12}
+          sm={2}
+          className={cx("project-step")}
+        >
           <Typography variant="h2">Discovery</Typography>
         </Grid>
         <Grid item xs={12} sm={10}>
@@ -161,7 +173,13 @@ const WIADLA2022 = () => {
       </Grid>
 
       <Grid container item xs={12} className={cx("project-section")}>
-        <Grid item alignSelf="center" xs={12} sm={2}>
+        <Grid
+          item
+          alignSelf="center"
+          xs={12}
+          sm={2}
+          className={cx("project-step")}
+        >
           <Typography variant="h2">Approach</Typography>
         </Grid>
         <Grid item xs={12} sm={10}>
@@ -170,7 +188,13 @@ const WIADLA2022 = () => {
       </Grid>
 
       <Grid container item xs={12} className={cx("project-section")}>
-        <Grid item alignSelf="center" xs={12} sm={2}>
+        <Grid
+          item
+          alignSelf="center"
+          xs={12}
+          sm={2}
+          className={cx("project-step")}
+        >
           <Typography variant="h2">Reflection</Typography>
         </Grid>
         <Grid item xs={12} sm={10}>
