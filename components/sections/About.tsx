@@ -46,9 +46,9 @@ export default function AboutSummary() {
               built on understanding and technical know-how.
             </Typography>
             <Typography>
-              I love to learn new things and am frequently dabbling in different
-              hobbies. If I were a cat, my curiousity would have killed me by
-              now.
+              I love to learn new things - exploring within my previous roles
+              helped me to find coding and tech, and that's how I found my way
+              to UX! If I were a cat, my curiousity would have killed me by now.
             </Typography>
           </Grid>
 
