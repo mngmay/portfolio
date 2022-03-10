@@ -1,3 +1,5 @@
+import React from "react";
+import { forwardRef } from "react";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import { Typography } from "@mui/material";
@@ -14,15 +16,24 @@ const styles = { ...utilStyles, ...sectionStyles };
 
 const cx = classnames.bind(styles);
 
-export default function AboutSummary() {
+type AboutSummaryProps = {
+  ref: React.MutableRefObject<HTMLInputElement>;
+};
+
+export default forwardRef(function AboutSummary({ ref }: AboutSummaryProps) {
   return (
     <>
-      <Box sx={{ flexGrow: 1 }} className={cx("section", "about-container")}>
+      <Box
+        sx={{ flexGrow: 1 }}
+        className={cx("section", "about-container")}
+        ref={ref}
+      >
         <Grid container>
           <Grid item xs={12}>
             <Typography variant="h2">Who I Am</Typography>
           </Grid>
           <Grid item xs={12} className={cx("past-self")}>
+            {/*Change to past roles -> UX Researcher */}
             <ul className={cx("past-roles")}>
               <Typography>I{`'`}ve been the:</Typography>
               <li>End User</li>
@@ -54,7 +65,7 @@ export default function AboutSummary() {
 
           <Grid container item xs={12} direction="row" justifyContent="center">
             <Typography className={cx("fun-facts")}>
-              <PanToolIcon className={cx("icon")} />I{`'`}m a leftie
+              <PanToolIcon className={cx("icon", "mirror")} />I{`'`}m a leftie
               <br />
               <CoffeeIcon className={cx("icon")} />
               I drink my coffee black yet love milk tea (50% sweet + boba)
@@ -77,4 +88,4 @@ export default function AboutSummary() {
       </Box>
     </>
   );
-}
+});

@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import React, { useRef, forwardRef } from "react";
 import Head from "next/head";
 import Hero from "../components/layout/Hero";
 import Projects from "../components/sections/Projects";
@@ -10,6 +11,17 @@ import styles from "../styles/layout.module.scss";
 const cx = classnames.bind(styles);
 
 const Home: NextPage = () => {
+  const aboutRef = useRef<HTMLInputElement | null>(null);
+
+  function handleScrollClick(
+    refTarget: React.MutableRefObject<HTMLInputElement | null>
+  ) {
+    if (refTarget.current) {
+      refTarget.current.scrollIntoView({ behavior: "smooth" });
+    }
+    return;
+  }
+
   return (
     <div>
       <Head>
@@ -18,9 +30,9 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Hero />
+      <Hero handleScrollClick={handleScrollClick(aboutRef)} />
       <div className={cx("section")}>
-        <About />
+        <About ref={aboutRef} />
       </div>
       <div className={cx("section")}>
         <Projects />

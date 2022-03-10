@@ -1,3 +1,4 @@
+import React from "react";
 import { Typography } from "@mui/material";
 import classnames from "classnames/bind";
 import heroStyles from "../../styles/hero.module.scss";
@@ -10,7 +11,11 @@ const styles = { ...utilStyles, ...heroStyles };
 
 const cx = classnames.bind(styles);
 
-export default function Hero() {
+type HeroProps = {
+  handleScrollClick: () => void;
+};
+
+export default function Hero({ handleScrollClick }: HeroProps) {
   return (
     <div className={cx("hero-image", "full-width")}>
       <div className={cx("hero-content")}>
@@ -33,7 +38,7 @@ export default function Hero() {
           <SocialMedia parent="hero-contact" />
         </div>
       </div>
-      <div className={cx("learn-more")}>
+      <div className={cx("learn-more")} onClick={handleScrollClick}>
         <Typography>Learn More</Typography>
         <ArrowDownwardIcon />
       </div>

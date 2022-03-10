@@ -16,6 +16,7 @@
 .project-section:last-child {
   border: none;
 }
+
 .team,
 .details {
   label {
@@ -38,7 +39,8 @@
   // Research Layout
 
   ul.learnings,
-  ul.success {
+  ul.success,
+  ul.painpoints {
     list-style-type: square;
     margin-inline-end: variables.$tinyPadding;
     padding-inline-start: variables.$stdPadding;
@@ -70,3 +72,12 @@
     padding-bottom: variables.$tinyPadding;
   }
 }
+
+// Icons
+
+.icon-align-center.small-icon {
+  position: relative;
+  top: variables.$smPadding;
+  margin: 0 variables.$tinyPadding;
+}
+// --------- End Icons

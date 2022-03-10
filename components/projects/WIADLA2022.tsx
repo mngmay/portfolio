@@ -2,9 +2,15 @@ import { Typography } from "@mui/material";
 import Grid from "@mui/material/Grid";
 import classnames from "classnames/bind";
 import StyledExternalLink from "../StyledExternalLink";
+import PublicIcon from "@mui/icons-material/Public";
 import Image from "next/image";
 import projectStyles from "../../styles/projects/projectPage.module.scss";
 import utilStyles from "../../styles/utility.module.scss";
+import {
+  retroStop,
+  retroContinue,
+  retroStart,
+} from "../../assets/projects/WIADLA2022";
 
 const styles = { ...utilStyles, ...projectStyles };
 const cx = classnames.bind(styles);
@@ -89,13 +95,16 @@ const WIADLA2022 = () => {
                 <Typography>
                   <label>My Role:</label> Event Experience Designer
                   <span className={cx("small-divider")}>/</span>
+                  <br />
                   Event Volunteer
                 </Typography>
               </li>
 
               <li>
                 <Typography>
-                  <label>Duration:</label> 1 week (volunteer hours)
+                  <label>Duration:</label> 2 months total{" "}
+                  <span className={cx("small-divider")}>/</span> <br />2 weeks
+                  for self (volunteer hours)
                 </Typography>
               </li>
             </ul>
@@ -110,9 +119,19 @@ const WIADLA2022 = () => {
                 WIAD
               </StyledExternalLink>{" "}
               is a professional event that's held on the same day in cities
-              across the world. People with an interest in fields related to
-              Information Architecture come together to present their work,
-              learn from others, and celebrate the field.
+              across the world. People with an interest in Information
+              Architecture and adjacent fields come together to present their
+              work, learn from others, and celebrate.
+            </Typography>
+            <Typography variant="h3">Gather</Typography>
+            <Typography>
+              Each event is unique in the way they choose to host and organize
+              for WIAD. For 2022, the local LA chapter used one of their
+              sponsors,{" "}
+              <StyledExternalLink href="https://app.gather.town/app">
+                Gather
+              </StyledExternalLink>{" "}
+              as the hosting platform.
             </Typography>
             <Typography variant="h3">Problem Space</Typography>
             <Typography>
@@ -136,18 +155,22 @@ const WIADLA2022 = () => {
 
         <Grid container spacing={2} item xs={12} sm={10}>
           <Grid item xs={12} sm={6}>
-            <Typography variant="h3">Goal</Typography>
+            <Typography variant="h3">Goals</Typography>
             <Typography>
-              Design a space that integrates the WIAD 2022 theme of "A Connected
-              World".
+              Host an event that fosters community and excitement for the field
+              of Information Architecture!
             </Typography>
             <Typography>
-              Create supporting onboarding materials to ensure a smooth event
-              experience.
+              Design a space that integrates the WIAD 2022 theme of "A Connected
+              World" and create materials that ensure a smooth user experience.
             </Typography>
           </Grid>
           <Grid item xs={12} sm={6}>
             <Typography variant="h3">Should Include</Typography>
+            <Typography>Sponsors and presenting speakers</Typography>
+            <Typography>
+              Attracting an audience to attend the local LA chapter
+            </Typography>
             <Typography>Thanks and appreciation to event sponsors</Typography>
 
             <Typography>
@@ -167,8 +190,33 @@ const WIADLA2022 = () => {
         >
           <Typography variant="h2">Discovery</Typography>
         </Grid>
-        <Grid item xs={12} sm={10}>
-          Understanding Gather and WIAD process
+        <Grid container spacing={1} item xs={12} sm={10}>
+          <Grid item xs={12}>
+            <Typography variant="h3">What's Needed for WIAD?</Typography>
+          </Grid>
+          <Grid item xs={12}>
+            <Typography variant="h3">Learning New Technology</Typography>
+            We found that our platform, Gather, seemed to be very much in the
+            development face and lacked a lot of usability and acccesibility
+            features. This made the barrier to entry for the event seemingly
+            higher
+          </Grid>
+          <Grid item xs={12}>
+            <Typography variant="h3">Pain Points</Typography>
+            <ul className={cx("painpoints")}>
+              <li>
+                <Typography>
+                  First WIAD for the volunteer team - lack of familiarity
+                </Typography>
+              </li>
+              <li>
+                <Typography>No process or resource documentation</Typography>
+              </li>
+              <li>
+                <Typography>Gather usability and accessibilty</Typography>
+              </li>
+            </ul>
+          </Grid>
         </Grid>
       </Grid>
 
@@ -197,8 +245,72 @@ const WIADLA2022 = () => {
         >
           <Typography variant="h2">Reflection</Typography>
         </Grid>
-        <Grid item xs={12} sm={10}>
-          What I'd do differently
+        <Grid container item xs={12} sm={10}>
+          <Grid item xs={12}>
+            <Typography variant="h3">The Experience</Typography>
+          </Grid>
+
+          <Grid item xs={12}>
+            <Typography variant="h3">Would I Recommend Gather?</Typography>
+            <Typography>
+              I see Gather being better suited to groups that would use it for
+              frequent occurences. An extended period of time to gain
+              familiarity with the features and the limitations would be
+              essential for a smooth user experience.
+            </Typography>
+            <Typography>
+              At the stage of development that this platform was in during WIAD
+              2022, a one-time event with unknown attendees is not an optimal
+              use-case. I'd hold off on recommending it for these situations
+              until more quality of life and accessiblity features have been
+              integrated.
+            </Typography>
+            <Typography>
+              Overall, Gather is pursuing an awesome concept and their
+              partnership was extremely appreciated. Our team hopes that the
+              feedback we were able to relay back to the team helps them to
+              continue building a more connected world!
+              <PublicIcon
+                fontSize="small"
+                className={cx("icon-align-center", "small-icon")}
+              />
+            </Typography>
+          </Grid>
+          <Grid item xs={12}>
+            <Typography variant="h3">Here We Come, WIAD 2023!</Typography>
+            <Typography>
+              Our team came together to discuss and reflect on the things we'd
+              stop, continue, and start in order to create an even better
+              experience for future WIAD events.
+            </Typography>
+            <Grid container spacing={1} item sm={12}>
+              <Grid item xs={12} sm={4}>
+                <Image
+                  src={retroStop}
+                  alt="Miro board of things that should stop"
+                  width={300}
+                  height={300}
+                />
+              </Grid>
+              <Grid item xs={12} sm={4}>
+                <Image
+                  src={retroContinue}
+                  alt="Miro board of things we should keep doing"
+                  width={300}
+                  height={300}
+                />
+              </Grid>
+
+              <Grid item xs={12} sm={4}>
+                <Image
+                  src={retroStart}
+                  alt="Miro board of ideas to start"
+                  width={300}
+                  height={300}
+                />
+              </Grid>
+            </Grid>
+          </Grid>
         </Grid>
       </Grid>
     </Grid>

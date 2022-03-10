@@ -36,6 +36,10 @@
   margin-right: calc(50.7% - 50vw);
 }
 
+.row-center {
+  @include mixins.row-center;
+}
+
 // Specific reusable components
 // Logo
 .logo {
