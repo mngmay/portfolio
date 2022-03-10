@@ -51,7 +51,7 @@ const muiTheme = responsiveFontSizes(
         fontSize: 12,
       },
       body2: {
-        fontSize: 10,
+        fontSize: 11,
       },
       subtitle1: {
         fontSize: 12,

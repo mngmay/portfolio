@@ -11,16 +11,6 @@
   h3 {
     margin-bottom: variables.$tinyPadding;
   }
-
-  ul:not(:first) {
-    list-style-type: square;
-    margin-inline-end: variables.$tinyPadding;
-    padding-inline-start: variables.$stdPadding;
-
-    li {
-      margin-bottom: -10px;
-    }
-  }
 }
 
 .project-section {
@@ -34,6 +24,21 @@
   label {
     color: variables.$secondaryColor;
   }
+
+  ul.learnings,
+  ul.success {
+    list-style-type: square;
+    margin-inline-end: variables.$tinyPadding;
+    padding-inline-start: variables.$stdPadding;
+
+    li {
+      margin-bottom: -10px;
+    }
+  }
+
+  .success-yes {
+    margin-bottom: 0;
+  }
 }
 
 .team,
@@ -43,6 +48,12 @@
   }
 }
 
+.slidedeck {
+  margin-bottom: variables.$stdPadding;
+}
+
 .impact {
-  @include mixins.row-start;
+  > * {
+    @include mixins.row-start;
+  }
 }

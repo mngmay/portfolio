@@ -132,11 +132,12 @@ const IAC2022 = () => {
             <Typography variant="h3">We Know Client Wants</Typography>
 
             <Typography>
-              A permanent website that will be maintained.
-              <div className={cx("emphasis")}>
-                Single Event Model <ArrowRightAltIcon /> Permanent Brand Model.
-              </div>
+              A permanent website that will be maintained.{" "}
             </Typography>
+            <Typography variant="body2" className={cx("emphasis")}>
+              Single Event Model <ArrowRightAltIcon /> Permanent Brand Model.
+            </Typography>
+
             <Typography>
               To use{" "}
               <StyledExternalLink href="https://www.sanity.io/">
@@ -211,11 +212,10 @@ const IAC2022 = () => {
           <Grid item xs={12}>
             <Typography variant="h3">Research Considerations</Typography>
             <Typography>
-              This project's priority is on the organizer experience, while
-              understanding and designing toward the attendee experience guides
-              us towards a more future-proof content model. The insights that
-              our team will uncover from users will be used to determine a model
-              that is sustainable and scalable for the internal teams.
+              This project's priority is on the organizer experience. The
+              insights that our team uncovers from users will be used to
+              determine a model that is sustainable and scalable for the
+              internal teams.
             </Typography>
             <Typography>
               Despite being a major website overhaul, I chose to approach the
@@ -226,7 +226,13 @@ const IAC2022 = () => {
               redesign.
             </Typography>
           </Grid>
-          <Grid container justifyContent="center" item xs={12}>
+          <Grid
+            container
+            justifyContent="center"
+            item
+            xs={12}
+            className={cx("slidedeck")}
+          >
             <CTAButton
               href="https://www.canva.com/design/DAE6Uu8Db6E/j3B_7DiXtwsm8rrHhAZlLQ/view?utm_content=DAE6Uu8Db6E&utm_campaign=designshare&utm_medium=link&utm_source=shareyourdesignpanel"
               text="Research Plan Slide Deck"
@@ -238,7 +244,17 @@ const IAC2022 = () => {
               <ul>
                 <li>
                   <Typography>
-                    <label>User Interviews:</label> Focus on mental model of
+                    <label> Existing Research:</label> IA & IAC Community
+                    Research is currently under evaluation by another team and
+                    will be reviewed and taken into consideration for this
+                    project.
+                  </Typography>
+                </li>
+
+                <li>
+                  <Typography>
+                    <label>Early User Interviews:</label> Focus on current
+                    organizer/volunteer experience, user mental model of
                     conference value and logistics, relationship to professional
                     growth, and content/resources considered worthwhile and
                     desirable.
@@ -246,10 +262,9 @@ const IAC2022 = () => {
                 </li>
                 <li>
                   <Typography>
-                    <label> Existing Research:</label> IA & IAC Community
-                    Research is currently under evaluation by another team and
-                    will be reviewed and taken into consideration for this
-                    project.
+                    <label>Late User Interviews:</label> Re-evaluate organizer &
+                    volunteer impression and ability to understand and adopt the
+                    new process.
                   </Typography>
                 </li>
               </ul>
@@ -273,44 +288,55 @@ const IAC2022 = () => {
               <Typography>
                 <label>End to End Testing:</label> Validate that users are able
                 to achieve all necessary functionality and have a painless
-                experience visiting the site. Ideally, this would be moderated,
-                and I can gain an understanding of the user's impression and
-                understanding of IAC.
+                experience visiting the site.
               </Typography>
             </Grid>
           </Grid>
         </Grid>
-        <Grid container item xs={12} className={cx("project-section")}>
-          <Grid item alignSelf="center" xs={12} sm={2}>
-            <Typography variant="h2">Findings</Typography>
-          </Grid>
-          <Grid item xs={12} sm={10}>
+      </Grid>
+      <Grid container item xs={12} className={cx("project-section")}>
+        <Grid item alignSelf="center" xs={12} sm={2}>
+          <Typography variant="h2">Findings</Typography>
+        </Grid>
+        <Grid container spacing={1} item xs={10}>
+          <Grid item xs={12} sm={6}>
             <Typography variant="h3">What We Hope to Learn</Typography>
             <ul className={cx("learnings")}>
               <li>
                 <Typography>
-                  Process and time to launch a new event page is reduced.
+                  What information is vital to ensure proper adoption and
+                  management of IAC events?
                 </Typography>
               </li>
               <li>
                 <Typography>
-                  Users are able to complete core needs and find past conference
-                  content of interest more efficiently and with reduced
-                  confusion.
+                  What encourages or discourages participation from volunteers
+                  and attendees?
                 </Typography>
               </li>
             </ul>
-            <Typography variant="h3">How We{`'`}ll Know Success</Typography>
-            <ul className={cx("success-metrics")}>
+          </Grid>
+          <Grid item xs={12} sm={6}>
+            <Typography variant="h3">Did We Meet Our Objective?</Typography>
+            <Typography className={cx("success-yes", "emphasis")}>
+              Yes, if...
+            </Typography>
+            <ul className={cx("success")}>
               <li>
                 <Typography>
-                  Process and time to launch a new event page is reduced.
+                  Time to launch a new event page is reduced
                 </Typography>
               </li>
               <li>
                 <Typography>
-                  Users are able to complete core needs and find past conference
-                  content of interest
+                  Clear standard for content management and process is easy to
+                  understand for organizers
+                </Typography>
+              </li>
+              <li>
+                <Typography>
+                  Users are able to complete fundamental tasks and find content
+                  of interest
                 </Typography>
               </li>
             </ul>
@@ -323,47 +349,68 @@ const IAC2022 = () => {
           <Typography variant="h2">Reflection</Typography>
         </Grid>
         <Grid item xs={12} sm={10}>
-          {/* Hypothesis */}
           <Typography variant="h3">Hypotheses</Typography>
           <Typography>
-            Migrating to a persistent and consistent data model will ease a lot
-            of pain for organizers and likely remove some level of hesitance
-            towards getting involved.
+            Migrating to a persistent and consistent data model likely remove
+            some blockers and hesitance towards getting involved with IAC.
           </Typography>
           <Typography>
-            I predict that there is a lot of opportunity to simplify and
-            streamline the content and IA structure. Reducing the bloat of
-            repetitive content and navigation will provide clarity to users on
-            the IAC brand and ability to navigate.
+            A lot of content bloat will be cut, leaving streamlined and
+            simplified IA and content. This will result in a smoother user
+            experience and stronger understanding of IAC and its offerings.
           </Typography>
           <Typography>
-            With the true-up of conference resources, IAC will have potential to
-            create different offerings and generate more value. This creates
-            increased potential at reaching a wider and more diverse audience,
-            as well as an opportunity to generate year-round revenue.
+            Consolidation and standardization of conference resources creates
+            opportunity to provide different offerings and more value. This has
+            potential to reach a wider and more diverse audience and generate
+            year-round revenue.
           </Typography>
-          <Typography variant="h3">Impact</Typography>
-          <ul className={cx("impact")}>
-            <li>
-              <Typography>
-                Smoother organizer and attendee experience <ArrowRightAltIcon />{" "}
+
+          <Grid container item xs={12} sm={10} className={cx("impact")}>
+            <Grid item xs={12}>
+              <Typography variant="h3">Impact</Typography>
+            </Grid>
+            <Grid item xs={5}>
+              <Typography variant="body2">
+                Smoother organizer and attendee experience
+              </Typography>
+            </Grid>
+            <Grid container item xs={2}>
+              <ArrowRightAltIcon fontSize="large" />
+            </Grid>
+            <Grid item xs={5}>
+              <Typography variant="body2" className={cx("emphasis")}>
                 Increased numbers in volunteers and newcomers
               </Typography>
-            </li>
-            <li>
-              <Typography>
-                Stronger brand and offerings <ArrowRightAltIcon /> Increased
-                validity as a major player in the field of IA
+            </Grid>
+            <Grid item xs={5}>
+              <Typography variant="body2">
+                Stronger brand and offerings
               </Typography>
-            </li>
-            <li>
-              <Typography>
-                Potential year-round revenue generation (subcription content){" "}
-                <ArrowRightAltIcon /> Improved future events and attracting a
-                different tier of users
+            </Grid>
+            <Grid item xs={2}>
+              <ArrowRightAltIcon fontSize="large" />
+            </Grid>
+            <Grid item xs={5}>
+              <Typography variant="body2" className={cx("emphasis")}>
+                Increased validity as a major player in the field of IA
               </Typography>
-            </li>
-          </ul>
+            </Grid>
+            <Grid item xs={5}>
+              <Typography variant="body2">
+                Potential year-round revenue generation
+                <br /> (subcription content)
+              </Typography>
+            </Grid>
+            <Grid item xs={2}>
+              <ArrowRightAltIcon fontSize="large" />
+            </Grid>
+            <Grid item xs={5}>
+              <Typography variant="body2" className={cx("emphasis")}>
+                Improved future events and attracting a different tier of users
+              </Typography>
+            </Grid>
+          </Grid>
         </Grid>
       </Grid>
     </Grid>
