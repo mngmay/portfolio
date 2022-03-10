@@ -61,6 +61,11 @@ const muiTheme = responsiveFontSizes(
         fontStyle: 'italic',
         color: variables.seattleGray,
       },
+      caption: {
+        fontSize: 11,
+        fontStyle: 'italic',
+        color: variables.seattleGray,
+      },
       disclaimer: {
         fontSize: 14,
         fontStyle: 'italic',

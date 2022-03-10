@@ -286,7 +286,7 @@ const WIADLA2022 = () => {
               an even better experience for future WIAD events.
             </Typography>
             <Grid container spacing={1} item sm={12}>
-              <Grid item xs={12} sm={4}>
+              <Grid item xs={12} sm={4} className={cx("miro-container")}>
                 <Image
                   src={retroStop}
                   alt="Miro board of things that should stop"
@@ -311,28 +311,38 @@ const WIADLA2022 = () => {
                   height={300}
                 />
               </Grid>
-              <Grid item sm={12}>
-                <Typography variant="h3">Key Takeaways</Typography>
-                <ul className={cx("key-takeaways")}>
-                  <li>
-                    <Typography>
-                      More time to plan, organize, and onboard everyone as a
-                      team
-                    </Typography>
-                  </li>
-                  <li>
-                    <Typography>
-                      Documented Guide for general WIAD information, process &
-                      resources{" "}
-                    </Typography>
-                  </li>
-                  <li>
-                    <Typography>
-                      Develop a central "go-to" repository for assets and
-                      project information
-                    </Typography>
-                  </li>
-                </ul>
+              <Grid item xs={12}>
+                <Typography variant="caption">
+                  Team Retroactive Reflection Process on Miro - stop, continue,
+                  start
+                </Typography>
+              </Grid>
+              <Grid container item sm={12}>
+                <Grid item xs={12}>
+                  <Typography variant="h3">Key Takeaways</Typography>
+                </Grid>
+                <Grid item xs={12}>
+                  <ul className={cx("key-takeaways")}>
+                    <li>
+                      <Typography>
+                        More time to plan, organize, and onboard everyone as a
+                        team
+                      </Typography>
+                    </li>
+                    <li>
+                      <Typography>
+                        Documented Guide for general WIAD information, process &
+                        resources{" "}
+                      </Typography>
+                    </li>
+                    <li>
+                      <Typography>
+                        Develop a central "go-to" repository for assets and
+                        project information
+                      </Typography>
+                    </li>
+                  </ul>
+                </Grid>
               </Grid>
             </Grid>
           </Grid>
