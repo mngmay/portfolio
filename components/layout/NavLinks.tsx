@@ -11,6 +11,7 @@ const cx = classnames.bind(styles);
 export const navLinks = [
   { link: "/", text: "Home", external: false },
   { link: "/about", text: "About", external: false },
+  { link: "/projects", text: "My Work", external: false },
   { link: resume, text: "Resume", external: true },
   { link: `mailto: mngmay@gmail.com`, text: "Contact", external: true },
 ];

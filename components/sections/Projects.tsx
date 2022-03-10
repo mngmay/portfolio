@@ -13,7 +13,7 @@ export default function Projects() {
     <>
       <Box sx={{ flexGrow: 1 }} className={cx("section", "projects-container")}>
         <Grid container>
-          <Grid item xs={12}>
+          <Grid item xs={12} className={cx("section-header")}>
             <Typography variant="h2">My Work</Typography>
           </Grid>
           <Grid container spacing={2} item>
