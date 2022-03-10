@@ -15,18 +15,30 @@ export const navLinks = [
   { link: `mailto: mngmay@gmail.com`, text: "Contact", external: true },
 ];
 
-const NavLinks = () => {
+type NavLinkProps = {
+  toggleDrawer?: () => void;
+};
+
+const NavLinks = ({ toggleDrawer }: NavLinkProps) => {
   return (
     <ul className={cx("nav-links")}>
       {navLinks.map(({ link, text, external }) => {
         return external ? (
-          <li className={cx("link")} key={link}>
+          <li
+            className={cx("link")}
+            key={`atag-${link}`}
+            onClick={toggleDrawer}
+          >
             <a href={link} target="_blank" rel="noreferrer">
               <Typography variant="navLink">{text}</Typography>
             </a>
           </li>
         ) : (
-          <li className={cx("link")} key={link}>
+          <li
+            className={cx("link")}
+            key={`link-${link}`}
+            onClick={toggleDrawer}
+          >
             <Link href={link} passHref>
               <Typography variant="navLink">{text}</Typography>
             </Link>

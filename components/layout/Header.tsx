@@ -27,7 +27,7 @@ export default function Header() {
       <Logo />
       {smDown ? (
         <NavDrawer open={drawerOpen} toggleDrawer={toggleDrawer}>
-          <NavLinks />
+          <NavLinks toggleDrawer={toggleDrawer} />
         </NavDrawer>
       ) : (
         <NavBar>
