@@ -2,9 +2,6 @@
 @use "mixins.module";
 
 .project-page-container {
-  position: relative;
-  top: variables.$lgPadding;
-
   .section-header {
     padding-bottom: variables.$smPadding;
   }

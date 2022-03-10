@@ -13,6 +13,9 @@
   }
 }
 
+.project-section:last-child {
+  border: none;
+}
 .team,
 .details {
   label {
@@ -48,6 +51,7 @@
   .success-yes {
     margin-bottom: 0;
   }
+
   // --------- End Research Layout
 }
 
