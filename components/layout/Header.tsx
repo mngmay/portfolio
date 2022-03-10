@@ -13,10 +13,9 @@ const styles = { ...utilStyles, ...layoutStyles };
 const cx = classnames.bind(styles);
 
 export default function Header() {
+  const [drawerOpen, setDrawerOpen] = useState(false);
   const theme = useTheme();
   const smDown = useMediaQuery(theme.breakpoints.down("sm"));
-  console.log(smDown, "brkpt");
-  const [drawerOpen, setDrawerOpen] = useState(false);
 
   const toggleDrawer = () => {
     setDrawerOpen(!drawerOpen);
