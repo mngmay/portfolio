@@ -279,9 +279,11 @@ const WIADLA2022 = () => {
           <Grid item xs={12}>
             <Typography variant="h3">Here We Come, WIAD 2023!</Typography>
             <Typography>
-              Our team came together to discuss and reflect on the things we'd
-              stop, continue, and start in order to create an even better
-              experience for future WIAD events.
+              Our team came together to discuss and reflect on the things we'd{" "}
+              <span className={cx("emphasis")}>stop</span>,{" "}
+              <span className={cx("emphasis")}>continue</span>, and{" "}
+              <span className={cx("emphasis")}>start</span> in order to create
+              an even better experience for future WIAD events.
             </Typography>
             <Grid container spacing={1} item sm={12}>
               <Grid item xs={12} sm={4}>
@@ -308,6 +310,29 @@ const WIADLA2022 = () => {
                   width={300}
                   height={300}
                 />
+              </Grid>
+              <Grid item sm={12}>
+                <Typography variant="h3">Key Takeaways</Typography>
+                <ul className={cx("key-takeaways")}>
+                  <li>
+                    <Typography>
+                      More time to plan, organize, and onboard everyone as a
+                      team
+                    </Typography>
+                  </li>
+                  <li>
+                    <Typography>
+                      Documented Guide for general WIAD information, process &
+                      resources{" "}
+                    </Typography>
+                  </li>
+                  <li>
+                    <Typography>
+                      Develop a central "go-to" repository for assets and
+                      project information
+                    </Typography>
+                  </li>
+                </ul>
               </Grid>
             </Grid>
           </Grid>

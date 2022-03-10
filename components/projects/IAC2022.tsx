@@ -146,7 +146,7 @@ const IAC2022 = () => {
             <Typography>
               A permanent website that will be maintained.{" "}
             </Typography>
-            <Typography variant="body2" className={cx("emphasis")}>
+            <Typography variant="body2" className={cx("emphasis", "row-start")}>
               Single Event Model <ArrowRightAltIcon /> Permanent Brand Model.
             </Typography>
 

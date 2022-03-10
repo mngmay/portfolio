@@ -40,7 +40,8 @@
 
   ul.learnings,
   ul.success,
-  ul.painpoints {
+  ul.painpoints,
+  .key-takeaways {
     list-style-type: square;
     margin-inline-end: variables.$tinyPadding;
     padding-inline-start: variables.$stdPadding;

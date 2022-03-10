@@ -11,7 +11,6 @@
 
 // colors
 .emphasis {
-  @include mixins.row-start;
   color: variables.$alert;
   font-style: italic;
 }
@@ -40,6 +39,9 @@
   @include mixins.row-center;
 }
 
+.row-start {
+  @include mixins.row-start;
+}
 // Specific reusable components
 // Logo
 .logo {
