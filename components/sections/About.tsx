@@ -14,11 +14,10 @@ const styles = { ...utilStyles, ...sectionStyles };
 
 const cx = classnames.bind(styles);
 
-type AboutSummaryProps = {
-  ref: React.MutableRefObject<HTMLInputElement>;
-};
-
-export default forwardRef(function AboutSummary({ ref }: AboutSummaryProps) {
+export default forwardRef(function AboutSummary(
+  _,
+  ref: React.ForwardedRef<HTMLElement>
+) {
   return (
     <>
       <Box

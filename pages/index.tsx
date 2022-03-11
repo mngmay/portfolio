@@ -11,12 +11,10 @@ import styles from "../styles/layout.module.scss";
 const cx = classnames.bind(styles);
 
 const Home: NextPage = () => {
-  const aboutRef = useRef<HTMLInputElement | null>(null);
+  const aboutRef = useRef<HTMLElement>(null);
 
-  function handleScrollClick(
-    refTarget: React.MutableRefObject<HTMLInputElement | null>
-  ) {
-    if (refTarget.current) {
+  function handleScrollClick(refTarget: React.RefObject<HTMLElement>) {
+    if (refTarget && refTarget.current) {
       refTarget.current.scrollIntoView({ behavior: "smooth" });
     }
     return;
@@ -30,7 +28,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Hero handleScrollClick={handleScrollClick(aboutRef)} />
+      <Hero handleScrollClick={() => handleScrollClick(aboutRef)} />
       <div className={cx("section")}>
         <About ref={aboutRef} />
       </div>
