@@ -6,7 +6,6 @@ import PanToolIcon from "@mui/icons-material/PanTool";
 import CoffeeIcon from "@mui/icons-material/Coffee";
 import PetsIcon from "@mui/icons-material/Pets";
 import CTAButton from "./../CTAButton";
-
 import classnames from "classnames/bind";
 import utilStyles from "../../styles/utility.module.scss";
 import sectionStyles from "../../styles/sections.module.scss";
@@ -34,13 +33,13 @@ export default forwardRef(function AboutSummary({ ref }: AboutSummaryProps) {
           <Grid item xs={12} className={cx("past-self")}>
             {/*Change to past roles -> UX Researcher */}
             <ul className={cx("past-roles")}>
-              <Typography>I've been the:</Typography>
+              <Typography>I&#39;ve been the:</Typography>
               <li>End User</li>
               <li>HR Partner</li>
               <li>Recruiter</li>
               <li>Developer</li>
             </ul>
-            <Typography>Now, I'm a multi-faceted</Typography>
+            <Typography>Now, I&#39;m a multi-faceted</Typography>
             <Typography variant="h2">UX Researcher</Typography>
           </Grid>
           <Grid item xs={12} className={cx("mini-bio")}>
@@ -57,20 +56,23 @@ export default forwardRef(function AboutSummary({ ref }: AboutSummaryProps) {
             </Typography>
             <Typography>
               I love to learn new things - exploring within my previous roles
-              helped me to find coding and tech, and that's how I found my way
-              to UX! If I were a cat, my curiousity would have killed me by now.
+              helped me to find coding and tech, and that&#39;s how I found my
+              way to UX! If I were a cat, my curiousity would have killed me by
+              now.
             </Typography>
           </Grid>
 
           <Grid container item xs={12} direction="row" justifyContent="center">
             <Typography className={cx("fun-facts")}>
-              <PanToolIcon className={cx("icon", "mirror")} />I'm a leftie
+              <PanToolIcon className={cx("icon", "mirror")} />
+              I&#39;m a leftie
               <br />
               <CoffeeIcon className={cx("icon")} />
               I drink my coffee black yet love milk tea (50% sweet + boba)
               <br />
-              <PetsIcon className={cx("icon")} />I'm that person who looks
-              longingly at your pet as we pass on the street
+              <PetsIcon className={cx("icon")} />
+              I&#39;m that person who looks longingly at your pet as we pass on
+              the street
             </Typography>
           </Grid>
         </Grid>

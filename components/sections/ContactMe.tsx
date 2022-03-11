@@ -4,7 +4,7 @@ import { Typography } from "@mui/material";
 import CTAButton from "../CTAButton";
 
 import classnames from "classnames/bind";
-import utilStyles from "../../styles/sections.module.scss";
+import utilStyles from "../../styles/utility.module.scss";
 import sectionsStyles from "../../styles/sections.module.scss";
 
 const styles = { ...utilStyles, ...sectionsStyles };
@@ -37,8 +37,8 @@ export default function ContactMe() {
                 What is it like working with me? What can I bring to the table
                 as a person on your project? Here&#39;s just a few of the things
                 you can expect out of your{" "}
-                <span className={cx("emphasis")}>teammate experience"</span>{" "}
-                with May - the person.
+                <span className={cx("emphasis")}>teammate experience</span> with
+                May - the person.
               </Typography>
             </Grid>
           </Grid>

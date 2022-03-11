@@ -162,8 +162,9 @@ const WIADLA2022 = () => {
               of Information Architecture!
             </Typography>
             <Typography>
-              Design a space that integrates the WIAD 2022 theme of "A Connected
-              World" and create materials that ensure a smooth user experience.
+              Design a space that integrates the WIAD 2022 theme of &#34;A
+              Connected World&#34; and create materials that ensure a smooth
+              user experience.
             </Typography>
           </Grid>
           <Grid item xs={12} sm={6}>
@@ -338,8 +339,8 @@ const WIADLA2022 = () => {
                     </li>
                     <li>
                       <Typography>
-                        Develop a central "go-to" repository for assets and
-                        project information
+                        Develop a central &#34;go-to&#34; repository for assets
+                        and project information
                       </Typography>
                     </li>
                   </ul>

@@ -1,8 +1,8 @@
-import Drawer from "@mui/material/Drawer";
-import MenuIcon from "@mui/icons-material/Menu";
-import classnames from "classnames/bind";
-import layoutStyles from "../../styles/layout.module.scss";
-import utilStyles from "../../styles/utility.module.scss";
+import Drawer from '@mui/material/Drawer';
+import MenuIcon from '@mui/icons-material/Menu';
+import classnames from 'classnames/bind';
+import layoutStyles from '../../styles/layout.module.scss';
+import utilStyles from '../../styles/utility.module.scss';
 
 const styles = { ...utilStyles, ...layoutStyles };
 
@@ -19,21 +19,21 @@ export default function NavDrawer({
   open,
   toggleDrawer,
 }: NavDrawerProps) {
-  const anchor = "right";
+  const anchor = 'right';
   return (
-    <>
+    <nav role="navigation">
       <MenuIcon
         onClick={toggleDrawer}
-        className={cx("nav-hamburger", "icon-link")}
+        className={cx('nav-hamburger', 'icon-link')}
       />
       <Drawer
         anchor={anchor}
         open={open}
         onClose={toggleDrawer}
-        className={cx("nav-drawer")}
+        className={cx('nav-drawer')}
       >
         {children}
       </Drawer>
-    </>
+    </nav>
   );
 }

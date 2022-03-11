@@ -11,11 +11,11 @@ const ProjectPage = () => {
   const router = useRouter();
   const { slug } = router.query;
 
-  const checkSlug = (slug: string | string[] | undefined) => {
-    if (!slug || Array.isArray(slug)) {
+  const checkSlug = (slugToCheck: string | string[] | undefined) => {
+    if (!slugToCheck || Array.isArray(slugToCheck)) {
       return;
     } else {
-      const newSlug: string = slug;
+      const newSlug: string = slugToCheck;
       return newSlug;
     }
   };

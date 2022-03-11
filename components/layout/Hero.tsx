@@ -28,7 +28,7 @@ export default function Hero({ handleScrollClick }: HeroProps) {
           </div>
           <div className={cx("intro-description")}>
             <Typography variant="subtitle1">
-              I'm a <strong>UX Researcher</strong> in{" "}
+              I&#39;m a <strong>UX Researcher</strong> in{" "}
               <strong>Seattle, WA</strong>
             </Typography>
           </div>
@@ -38,7 +38,13 @@ export default function Hero({ handleScrollClick }: HeroProps) {
           <SocialMedia parent="hero-contact" />
         </div>
       </div>
-      <div className={cx("learn-more")} onClick={handleScrollClick}>
+      <div
+        className={cx("learn-more")}
+        onClick={handleScrollClick}
+        onKeyPress={handleScrollClick}
+        role="link"
+        tabIndex={0}
+      >
         <Typography>Learn More</Typography>
         <ArrowDownwardIcon />
       </div>

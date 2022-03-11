@@ -2,7 +2,7 @@ import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import { Typography } from "@mui/material";
 import ProjectCard from "./../ProjectCard";
-import { projectData } from "../../constants/data.js";
+import { projectData } from "../../constants/data";
 import classnames from "classnames/bind";
 import styles from "../../styles/projects.module.scss";
 

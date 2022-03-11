@@ -6,7 +6,7 @@
     },
     "ecmaVersion": 2020,
     "sourceType": "module",
-    "project": "./tsconfig.json",
+    "project": ["./tsconfig.json"],
     "babelOptions": {
       "presets": ["next/babel"]
     }
@@ -32,6 +32,9 @@
   "settings": {
     "react": {
       "version": "detect"
+    },
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx", "next.config.js"]
     }
   },
   "rules": {

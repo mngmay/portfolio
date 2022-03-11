@@ -3,8 +3,9 @@ var path = require('path');
 
 module.exports = {
   reactStrictMode: true,
+  trailingSlash: true,
   output: { path: path.resolve(__dirname, 'static'), },
-  webpack: (config, options) => {
+  webpack: (config) => {
     config.module.rules.push({
       test: /\.pdf/,
       type: 'asset/resource',
@@ -15,5 +16,4 @@ module.exports = {
 
     return config
 },
-
 }

@@ -2,7 +2,6 @@ import { Typography } from "@mui/material";
 import Grid from "@mui/material/Grid";
 import classnames from "classnames/bind";
 import StyledExternalLink from "../StyledExternalLink";
-import Image from "next/image";
 import projectStyles from "../../styles/projects/projectPage.module.scss";
 import utilStyles from "../../styles/utility.module.scss";
 import CTAButton from "../CTAButton";
@@ -44,7 +43,7 @@ const IAC2022 = () => {
           <Grid item xs={12} className={cx("disclaimer")}>
             <Typography variant="disclaimer">
               This project is still underway. Below is my current proposal on
-              how I'd conduct this study to meet our client and user
+              how I&#39;d conduct this study to meet our client and user
               objectives.
             </Typography>
           </Grid>
@@ -175,7 +174,7 @@ const IAC2022 = () => {
         </Grid>
         <Grid item xs={12} sm={10}>
           <Typography variant="h3">
-            Learn from "Knowledge Holders"
+            Learn from &#34;Knowledge Holders&#34;
           </Typography>
 
           <Typography>
@@ -192,7 +191,7 @@ const IAC2022 = () => {
           </Typography>
 
           <Grid item xs={12}>
-            <Typography variant="h3">What We're Working With</Typography>
+            <Typography variant="h3">What We&#39;re Working With</Typography>
             <Typography>
               I mapped out the information architecture of the existing website
               and analyzed it in comparison to other major conferences related
@@ -238,7 +237,7 @@ const IAC2022 = () => {
           <Grid item xs={12}>
             <Typography variant="h3">Research Considerations</Typography>
             <Typography>
-              This project's priority is on the organizer experience. The
+              This project&#39;s priority is on the organizer experience. The
               insights that our team uncovers from users will be used to
               determine a model that is sustainable and scalable for the
               internal teams.
