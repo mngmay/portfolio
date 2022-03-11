@@ -4,7 +4,7 @@ import retroStop from "./retro-stop.png"
 
 
 module.exports = {
-    retroStart,
-    retroContinue,
-    retroStop,
+    retroStart: retroStart,
+    retroContinue: retroContinue,
+    retroStop: retroStop,
 };

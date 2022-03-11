@@ -119,7 +119,7 @@ const WIADLA2022 = () => {
               <StyledExternalLink href="https://worldiaday.org">
                 WIAD
               </StyledExternalLink>{" "}
-              is a professional event that's held on the same day in cities
+              is a professional event that&#39;s held on the same day in cities
               across the world. People with an interest in Information
               Architecture and adjacent fields come together to present their
               work, learn from others, and celebrate.
@@ -193,7 +193,7 @@ const WIADLA2022 = () => {
         </Grid>
         <Grid container spacing={1} item xs={12} sm={10}>
           <Grid item xs={12}>
-            <Typography variant="h3">What's Needed for WIAD?</Typography>
+            <Typography variant="h3">What&#39;s Needed for WIAD?</Typography>
           </Grid>
           <Grid item xs={12}>
             <Typography variant="h3">Learning New Technology</Typography>
@@ -262,7 +262,7 @@ const WIADLA2022 = () => {
             <Typography>
               At the stage of development that this platform was in during WIAD
               2022, a one-time event with unknown attendees is not an optimal
-              use-case. I'd hold off on recommending it for these situations
+              use-case. I&#39;d hold off on recommending it for these situations
               until more quality of life and accessiblity features have been
               integrated.
             </Typography>
@@ -280,8 +280,8 @@ const WIADLA2022 = () => {
           <Grid item xs={12}>
             <Typography variant="h3">Here We Come, WIAD 2023!</Typography>
             <Typography>
-              Our team came together to discuss and reflect on the things we'd{" "}
-              <span className={cx("emphasis")}>stop</span>,{" "}
+              Our team came together to discuss and reflect on the things
+              we&#39;d <span className={cx("emphasis")}>stop</span>,{" "}
               <span className={cx("emphasis")}>continue</span>, and{" "}
               <span className={cx("emphasis")}>start</span> in order to create
               an even better experience for future WIAD events.

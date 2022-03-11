@@ -8,7 +8,7 @@ import woodworking from "../assets/may-woodworking.jpeg";
 import ramen from "../assets/may-ramen.jpeg";
 
 
-export const galleryImages = [
+const galleryImages = [
     { img: paint, description: "Acrylic Paint" },
     { img: bread, description: "Sourdough Foccacia made with Kenny" },
     {

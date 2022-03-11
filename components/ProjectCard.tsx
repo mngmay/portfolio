@@ -11,16 +11,10 @@ const cx = classnames.bind(styles);
 type ProjectCardProps = {
   img: StaticImageData;
   title: string;
-  description: string;
   slug: string;
 };
 
-export default function ProjectCard({
-  img,
-  title,
-  description,
-  slug,
-}: ProjectCardProps) {
+export default function ProjectCard({ img, title, slug }: ProjectCardProps) {
   return (
     <Link href={slug} passHref>
       <div className={cx("card-container", "project-card-container")}>

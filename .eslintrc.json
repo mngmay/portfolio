@@ -12,7 +12,7 @@
     }
   },
   "plugins": ["@emotion"],
-  "extends": ["next/core-web-vitals",
+  "extends": [
     "eslint:recommended",
     "airbnb-typescript",
     "plugin:@typescript-eslint/recommended",
@@ -20,6 +20,7 @@
     "plugin:jsx-a11y/recommended",
     "plugin:import/recommended",
     "plugin:react-hooks/recommended",
+    "plugin:@next/next/core-web-vitals",
     "prettier"
   ],
   "env": {

@@ -17,12 +17,11 @@ export default function Projects() {
             <Typography variant="h2">My Work</Typography>
           </Grid>
           <Grid container spacing={2} item>
-            {projectData.map(({ img, title, description, slug }) => (
+            {projectData.map(({ img, title, slug }) => (
               <Grid item xs={12} sm={6} md={4} key={title}>
                 <ProjectCard
                   img={img}
                   title={title}
-                  description={description}
                   slug={`projects/${slug}`}
                 />
               </Grid>

@@ -17,7 +17,7 @@ export default function ContactMe() {
       <Box sx={{ flexGrow: 1 }} className={cx("contact-me-container")}>
         <Grid container>
           <Grid item xs={12}>
-            <Typography variant="h2">Let's Work Together!</Typography>
+            <Typography variant="h2">Let&#39;s Work Together!</Typography>
           </Grid>
           <Grid
             container
@@ -28,15 +28,15 @@ export default function ContactMe() {
           >
             <Grid item xs={12}>
               <Typography>
-                I'm currently open to opportunities to join a full time team
+                I&#39;m currently open to opportunities to join a full time team
                 or collaborate on projects.
               </Typography>
             </Grid>
             <Grid item xs={12}>
               <Typography>
                 What is it like working with me? What can I bring to the table
-                as a person on your project? Here's just a few of the things you
-                can expect out of your{" "}
+                as a person on your project? Here&#39;s just a few of the things
+                you can expect out of your{" "}
                 <span className={cx("emphasis")}>teammate experience"</span>{" "}
                 with May - the person.
               </Typography>

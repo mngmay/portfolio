@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import React, { useRef, forwardRef } from "react";
+import React, { useRef } from "react";
 import Head from "next/head";
 import Hero from "../components/layout/Hero";
 import Projects from "../components/sections/Projects";

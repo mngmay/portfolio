@@ -48,7 +48,7 @@ const About: NextPage = () => {
 
         <Typography>
           I thrive on trying new creative hobbies and then moving onto the next,
-          there's always something new exciting to learn! I try to
+          there&#39;s always something new exciting to learn! I try to
           prioritize good food, travel, and spending time doing engaging
           activities with my friends.
         </Typography>
@@ -57,7 +57,7 @@ const About: NextPage = () => {
         </Typography>
         <ul>
           <li>
-            Baking Bread - (Sourdough start's name is Kenny and I almost
+            Baking Bread - (Sourdough start&#39;s name is Kenny and I almost
             killed him)
           </li>
           <li>Houseplants</li>
