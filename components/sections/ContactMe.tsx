@@ -52,7 +52,7 @@ export default function ContactMe() {
                 <li>
                   <Typography>
                     <FormatListBulletedIcon className={cx("icon")} />
-                    Never fear forgetting notes again - I&#39;m an avid
+                    Never fear not having notes again - I&#39;m an avid
                     documentor of all things and love my{" "}
                     <StyledExternalLink href="https://www.notion.so/product">
                       Notion

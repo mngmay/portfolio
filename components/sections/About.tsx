@@ -36,7 +36,7 @@ export default forwardRef(function AboutSummary(
 
             <Grid item xs={12} className={cx("mini-bio")}>
               <Typography>
-                In a world reiant on machines, I view UX Research as a
+                In a world reliant on machines, I view UX Research as a
                 superpower that leads to building solutions centered on
                 compassion to the human experience.
               </Typography>
