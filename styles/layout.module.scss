@@ -8,7 +8,7 @@
 
 .relative-to-header {
   position: relative;
-  top: variables.$headerSize + 10px;
+  top: variables.$headerSize;
 }
 
 .section {
@@ -31,7 +31,6 @@
   background-color: variables.$offWhite;
   z-index: 100;
   width: 100%;
-  top: 0;
   @include mixins.row-between;
   height: variables.$headerSize;
 }

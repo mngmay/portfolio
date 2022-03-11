@@ -1,17 +1,17 @@
-import { Typography } from "@mui/material";
-import Grid from "@mui/material/Grid";
-import classnames from "classnames/bind";
-import StyledExternalLink from "../StyledExternalLink";
-import projectStyles from "../../styles/projects/projectPage.module.scss";
-import utilStyles from "../../styles/utility.module.scss";
-import CTAButton from "../CTAButton";
-import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
+import { Typography } from '@mui/material';
+import Grid from '@mui/material/Grid';
+import classnames from 'classnames/bind';
+import StyledExternalLink from '../StyledExternalLink';
+import projectStyles from '../../styles/projects/projectPage.module.scss';
+import utilStyles from '../../styles/utility.module.scss';
+import CTAButton from '../CTAButton';
+import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 const styles = { ...utilStyles, ...projectStyles };
 const cx = classnames.bind(styles);
 
 const IAC2022 = () => {
   return (
-    <Grid container spacing={2} className={cx("case-study-container")}>
+    <Grid container spacing={2} className={cx('case-study-container')}>
       <Grid item xs={12}>
         <Typography variant="h1">IAC Model and Website Redesign</Typography>
         <Typography variant="subtitle2">
@@ -26,7 +26,7 @@ const IAC2022 = () => {
         spacing={1}
         item
         xs={12}
-        className={cx("project-section")}
+        className={cx('project-section')}
       >
         {/* Description */}
         <Grid item alignSelf="center" xs={12} sm={2}>
@@ -38,9 +38,9 @@ const IAC2022 = () => {
           item
           xs={12}
           sm={10}
-          className={cx("information")}
+          className={cx('information')}
         >
-          <Grid item xs={12} className={cx("disclaimer")}>
+          <Grid item xs={12} className={cx('disclaimer')}>
             <Typography variant="disclaimer">
               This project is still underway. Below is my current proposal on
               how I&#39;d conduct this study to meet our client and user
@@ -48,10 +48,10 @@ const IAC2022 = () => {
             </Typography>
           </Grid>
           <Grid item xs={12} sm={6}>
-            <ul className={cx("team")}>
+            <ul className={cx('team')}>
               <li>
                 <Typography>
-                  <span className={cx("label")}>Client:</span>
+                  <span className={cx('label')}>Client:</span>
                   <StyledExternalLink href="https://www.theiaconference.com/">
                     IAC
                   </StyledExternalLink>
@@ -59,7 +59,7 @@ const IAC2022 = () => {
               </li>
               <li>
                 <Typography>
-                  <span className={cx("label")}>Sponsor:</span>
+                  <span className={cx('label')}>Sponsor:</span>
                   <StyledExternalLink href="https://www.sanity.io/">
                     Sanity
                   </StyledExternalLink>
@@ -67,7 +67,7 @@ const IAC2022 = () => {
               </li>
               <li>
                 <Typography>
-                  <span className={cx("label")}> Contractor:</span>
+                  <span className={cx('label')}> Contractor:</span>
                   <StyledExternalLink href="https://www.diadesign.io/">
                     DIA Design Guild
                   </StyledExternalLink>
@@ -76,17 +76,17 @@ const IAC2022 = () => {
             </ul>
           </Grid>
           <Grid item xs={12} sm={6}>
-            <ul className={cx("details")}>
+            <ul className={cx('details')}>
               <li>
                 <Typography>
-                  <span className={cx("label")}>My Role:</span> UXR, IA, Content
+                  <span className={cx('label')}>My Role:</span> UXR, IA, Content
                   Strategy
                 </Typography>
               </li>
 
               <li>
                 <Typography>
-                  <span className={cx("label")}>Duration:</span> ~5-7 months
+                  <span className={cx('label')}>Duration:</span> ~5-7 months
                   (volunteer hours)
                 </Typography>
               </li>
@@ -95,10 +95,10 @@ const IAC2022 = () => {
           <Grid item xs={12}>
             <Typography variant="h3">IAC</Typography>
             <Typography>
-              The{" "}
+              The{' '}
               <StyledExternalLink href="https://www.theiaconference.com/">
                 IAC
-              </StyledExternalLink>{" "}
+              </StyledExternalLink>{' '}
               is a conference that offers professional talks and workshops on
               the field of Information Architecture. In addition to the event,
               it offers recordings of the speaker sessions as a resource to
@@ -118,13 +118,13 @@ const IAC2022 = () => {
         </Grid>
       </Grid>
 
-      <Grid container item xs={12} className={cx("project-section")}>
+      <Grid container item xs={12} className={cx('project-section')}>
         <Grid
           item
           alignSelf="center"
           xs={12}
           sm={2}
-          className={cx("project-step")}
+          className={cx('project-step')}
         >
           <Typography variant="h2">Objective</Typography>
         </Grid>
@@ -145,30 +145,30 @@ const IAC2022 = () => {
             <Typography variant="h3">Client Wants</Typography>
 
             <Typography>
-              A permanent website that will be maintained.{" "}
+              A permanent website that will be maintained.{' '}
             </Typography>
-            <Typography variant="body2" className={cx("emphasis", "row-start")}>
+            <Typography variant="body2" className={cx('emphasis', 'row-start')}>
               Single Event Model <ArrowRightAltIcon /> Permanent Brand Model.
             </Typography>
 
             <Typography>
-              To use{" "}
+              To use{' '}
               <StyledExternalLink href="https://www.sanity.io/">
                 Sanity
-              </StyledExternalLink>{" "}
+              </StyledExternalLink>{' '}
               as the headless CMS for managing data moving forward.
             </Typography>
           </Grid>
         </Grid>
       </Grid>
 
-      <Grid container item xs={12} className={cx("project-section")}>
+      <Grid container item xs={12} className={cx('project-section')}>
         <Grid
           item
           alignSelf="center"
           xs={12}
           sm={2}
-          className={cx("project-step")}
+          className={cx('project-step')}
         >
           <Typography variant="h2">Discovery</Typography>
         </Grid>
@@ -189,6 +189,31 @@ const IAC2022 = () => {
             website and content were a sore spot. The clamor to organize a large
             scale event always took priority to ensure the show goes on.
           </Typography>
+
+          <Grid item xs={12}>
+            <Typography variant="h3">Pain Points</Typography>
+
+            <ul className={cx('painpoints')}>
+              <Typography>
+                <li>
+                  A decentralized and volunteer based team - inconsistent
+                  availability and easily silo&#39;d
+                </li>
+              </Typography>
+              <Typography>
+                <li>
+                  Unclear lead for projects within the organization and who had
+                  final approval
+                </li>
+              </Typography>
+              <Typography>
+                <li>
+                  Identifying existing work and what we can take on without
+                  duplicating or invaliding previous efforts
+                </li>
+              </Typography>
+            </ul>
+          </Grid>
 
           <Grid item xs={12}>
             <Typography variant="h3">What We&#39;re Working With</Typography>
@@ -216,13 +241,13 @@ const IAC2022 = () => {
         </Grid>
       </Grid>
 
-      <Grid container item xs={12} className={cx("project-section")}>
+      <Grid container item xs={12} className={cx('project-section')}>
         <Grid
           item
           alignSelf="center"
           xs={12}
           sm={2}
-          className={cx("project-step")}
+          className={cx('project-step')}
         >
           <Typography variant="h2">Research</Typography>
         </Grid>
@@ -256,7 +281,7 @@ const IAC2022 = () => {
             justifyContent="center"
             item
             xs={12}
-            className={cx("slidedeck")}
+            className={cx('slidedeck')}
           >
             <CTAButton
               href="https://www.canva.com/design/DAE6Uu8Db6E/j3B_7DiXtwsm8rrHhAZlLQ/view?utm_content=DAE6Uu8Db6E&utm_campaign=designshare&utm_medium=link&utm_source=shareyourdesignpanel"
@@ -270,7 +295,7 @@ const IAC2022 = () => {
               <ul>
                 <li>
                   <Typography>
-                    <span className={cx("label")}> Existing Research:</span> IA
+                    <span className={cx('label')}> Existing Research:</span> IA
                     & IAC Community Research is currently under evaluation by
                     another team and will be reviewed and taken into
                     consideration for this project.
@@ -279,7 +304,7 @@ const IAC2022 = () => {
 
                 <li>
                   <Typography>
-                    <span className={cx("label")}>Early User Interviews:</span>{" "}
+                    <span className={cx('label')}>Early User Interviews:</span>{' '}
                     Focus on current organizer/volunteer experience, user mental
                     model of conference value and logistics, relationship to
                     professional growth, and content/resources considered
@@ -288,7 +313,7 @@ const IAC2022 = () => {
                 </li>
                 <li>
                   <Typography>
-                    <span className={cx("label")}>Late User Interviews:</span>{" "}
+                    <span className={cx('label')}>Late User Interviews:</span>{' '}
                     Re-evaluate organizer & volunteer impression and ability to
                     understand and adopt the new process.
                   </Typography>
@@ -299,20 +324,20 @@ const IAC2022 = () => {
               <Typography variant="h3">Evaluative</Typography>
 
               <Typography>
-                <span className={cx("label")}>A/B Tests:</span> Time/clicks for
+                <span className={cx('label')}>A/B Tests:</span> Time/clicks for
                 users to find information or do a call to action. Which design
                 feels more compelling, inclusive, and community driven? Can we
                 validate what contributes to this impression? Gain baseline data
                 and measurement for improvements.
               </Typography>
               <Typography>
-                <span className={cx("label")}>Tree Tests:</span> Can users find
+                <span className={cx('label')}>Tree Tests:</span> Can users find
                 core information (date, registration, program schedule, help,
                 etc.) they need? How do they search for these? What else do they
                 expect to find? Where does their confusion, if any, come up?
               </Typography>
               <Typography>
-                <span className={cx("label")}>End to End Testing:</span>{" "}
+                <span className={cx('label')}>End to End Testing:</span>{' '}
                 Validate that users are able to achieve all necessary
                 functionality and have a painless experience visiting the site.
               </Typography>
@@ -320,20 +345,20 @@ const IAC2022 = () => {
           </Grid>
         </Grid>
       </Grid>
-      <Grid container item xs={12} className={cx("project-section")}>
+      <Grid container item xs={12} className={cx('project-section')}>
         <Grid
           item
           alignSelf="center"
           xs={12}
           sm={2}
-          className={cx("project-step")}
+          className={cx('project-step')}
         >
           <Typography variant="h2">Findings</Typography>
         </Grid>
         <Grid container spacing={1} item xs={10}>
           <Grid item xs={12} sm={6}>
             <Typography variant="h3">What We Hope to Learn</Typography>
-            <ul className={cx("learnings")}>
+            <ul className={cx('learnings')}>
               <li>
                 <Typography>
                   What information is vital to ensure proper adoption and
@@ -350,10 +375,10 @@ const IAC2022 = () => {
           </Grid>
           <Grid item xs={12} sm={6}>
             <Typography variant="h3">Did We Meet Our Objective?</Typography>
-            <Typography className={cx("success-yes", "emphasis")}>
+            <Typography className={cx('success-yes', 'emphasis')}>
               Yes, if...
             </Typography>
-            <ul className={cx("success")}>
+            <ul className={cx('success')}>
               <li>
                 <Typography>
                   Time to launch a new event page is reduced
@@ -376,13 +401,13 @@ const IAC2022 = () => {
         </Grid>
       </Grid>
 
-      <Grid container item xs={12} className={cx("project-section")}>
+      <Grid container item xs={12} className={cx('project-section')}>
         <Grid
           item
           alignSelf="center"
           xs={12}
           sm={2}
-          className={cx("project-step")}
+          className={cx('project-step')}
         >
           <Typography variant="h2">Reflection</Typography>
         </Grid>
@@ -405,7 +430,7 @@ const IAC2022 = () => {
             generate year-round revenue.
           </Typography>
 
-          <Grid container item xs={12} sm={10} className={cx("impact")}>
+          <Grid container item xs={12} sm={10} className={cx('impact')}>
             <Grid item xs={12}>
               <Typography variant="h3">Impact</Typography>
             </Grid>
@@ -418,7 +443,7 @@ const IAC2022 = () => {
               <ArrowRightAltIcon fontSize="large" />
             </Grid>
             <Grid item xs={5}>
-              <Typography variant="body2" className={cx("emphasis")}>
+              <Typography variant="body2" className={cx('emphasis')}>
                 Increased numbers in volunteers and newcomers
               </Typography>
             </Grid>
@@ -431,7 +456,7 @@ const IAC2022 = () => {
               <ArrowRightAltIcon fontSize="large" />
             </Grid>
             <Grid item xs={5}>
-              <Typography variant="body2" className={cx("emphasis")}>
+              <Typography variant="body2" className={cx('emphasis')}>
                 Increased validity as a major player in the field of IA
               </Typography>
             </Grid>
@@ -445,7 +470,7 @@ const IAC2022 = () => {
               <ArrowRightAltIcon fontSize="large" />
             </Grid>
             <Grid item xs={5}>
-              <Typography variant="body2" className={cx("emphasis")}>
+              <Typography variant="body2" className={cx('emphasis')}>
                 Improved future events and attracting a more diverse set of
                 users
               </Typography>

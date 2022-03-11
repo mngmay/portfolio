@@ -1,5 +1,5 @@
-@use "variables.module";
-@use "mixins.module";
+@use 'variables.module';
+@use 'mixins.module';
 
 // Links cursor
 .logo,
@@ -55,9 +55,11 @@
 .logo {
   position: relative;
   @include mixins.col-center;
-  margin: variables.$stdPadding;
+  // top: 0;
+  left: variables.$stdPadding;
   width: 80px;
   height: 80px;
+  border: 1px solid green;
 }
 
 .logo:hover {
