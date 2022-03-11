@@ -1,21 +1,24 @@
-import type { NextPage } from "next";
-import React, { useRef } from "react";
-import Head from "next/head";
-import Hero from "../components/layout/Hero";
-import Projects from "../components/sections/Projects";
-import About from "../components/sections/About";
-import ContactMe from "../components/sections/ContactMe";
-import classnames from "classnames/bind";
-import styles from "../styles/layout.module.scss";
+import type { NextPage } from 'next';
+import React, { useRef } from 'react';
+import Head from 'next/head';
+import Hero from '../components/layout/Hero';
+import Projects from '../components/sections/Projects';
+import About from '../components/sections/About';
+import ContactMe from '../components/sections/ContactMe';
+import classnames from 'classnames/bind';
+import styles from '../styles/layout.module.scss';
 
 const cx = classnames.bind(styles);
 
 const Home: NextPage = () => {
-  const aboutRef = useRef<HTMLElement>(null);
+  const aboutRef = useRef<HTMLDivElement>(null);
 
-  function handleScrollClick(refTarget: React.RefObject<HTMLElement>) {
+  function handleScrollClick(refTarget: React.RefObject<HTMLDivElement>) {
     if (refTarget && refTarget.current) {
-      refTarget.current.scrollIntoView({ behavior: "smooth" });
+      refTarget.current.scrollIntoView({
+        behavior: 'smooth',
+        block: 'center',
+      });
     }
     return;
   }
@@ -29,13 +32,13 @@ const Home: NextPage = () => {
       </Head>
 
       <Hero handleScrollClick={() => handleScrollClick(aboutRef)} />
-      <div className={cx("section")}>
-        <About ref={aboutRef} />
+      <div className={cx('section')} ref={aboutRef}>
+        <About />
       </div>
-      <div className={cx("section")}>
+      <div className={cx('section')}>
         <Projects />
       </div>
-      <div className={cx("section")}>
+      <div className={cx('section')}>
         <ContactMe />
       </div>
     </div>
