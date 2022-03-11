@@ -11,6 +11,9 @@ const muiTheme = responsiveFontSizes(
       secondary: {
         main: variables.secondaryColor,
       },
+      warning: {
+        main: variables.alert,
+      }
     },
     typography: {
       fontFamily: [

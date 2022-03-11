@@ -5,28 +5,30 @@
 
 // about section
 .past-self {
-  @include mixins.col-center;
-  width: 100%;
-
-  > * {
-    margin-bottom: variables.$tinyPadding;
-  }
+  @include mixins.row-center;
 }
 
 .past-roles {
   @include mixins.row-between;
   width: 100%;
-  max-width: 60%;
+  max-width: 70%;
 
   li {
     color: variables.$seattleGray;
     font-style: italic;
+  }
+
+  h2 {
+    color: variables.$secondaryColor;
   }
 }
 
 @media (max-width: variables.$mobile) {
   .past-roles {
     @include mixins.col-center;
+    > * {
+      padding: variables.$tinyPadding;
+    }
   }
 }
 
@@ -49,6 +51,7 @@
 .learn-more-cta {
   margin-top: variables.$stdPadding;
 }
+//------- End of About Section
 
 // projects section
 .project-card-container {
