@@ -1,4 +1,5 @@
-import { Typography } from '@mui/material';
+import { Typography, useMediaQuery } from '@mui/material';
+import { useTheme } from '@mui/material/styles';
 import classnames from 'classnames/bind';
 import heroStyles from '../../styles/hero.module.scss';
 import utilStyles from '../../styles/utility.module.scss';
@@ -15,6 +16,9 @@ type HeroProps = {
 };
 
 export default function Hero({ handleScrollClick }: HeroProps) {
+  const theme = useTheme();
+  const mdUp = useMediaQuery(theme.breakpoints.up('md'));
+
   return (
     <div className={cx('hero-image', 'full-width')}>
       <div className={cx('hero-content')}>
@@ -37,16 +41,18 @@ export default function Hero({ handleScrollClick }: HeroProps) {
           <SocialMedia parent="hero-contact" />
         </div>
       </div>
-      <div
-        className={cx('learn-more')}
-        onClick={handleScrollClick}
-        onKeyPress={handleScrollClick}
-        role="link"
-        tabIndex={0}
-      >
-        <Typography>Learn More</Typography>
-        <ArrowDownwardIcon />
-      </div>
+      {mdUp && (
+        <div
+          className={cx('learn-more')}
+          onClick={handleScrollClick}
+          onKeyPress={handleScrollClick}
+          role="link"
+          tabIndex={0}
+        >
+          <Typography>Learn More</Typography>
+          <ArrowDownwardIcon />
+        </div>
+      )}
     </div>
   );
 }
