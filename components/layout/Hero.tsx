@@ -17,7 +17,7 @@ type HeroProps = {
 
 export default function Hero({ handleScrollClick }: HeroProps) {
   const theme = useTheme();
-  const mdUp = useMediaQuery(theme.breakpoints.up('md'));
+  const smUp = useMediaQuery(theme.breakpoints.up('sm'));
 
   return (
     <div className={cx('hero-image', 'full-width')}>
@@ -41,7 +41,7 @@ export default function Hero({ handleScrollClick }: HeroProps) {
           <SocialMedia parent="hero-contact" />
         </div>
       </div>
-      {mdUp && (
+      {smUp && (
         <div
           className={cx('learn-more')}
           onClick={handleScrollClick}
