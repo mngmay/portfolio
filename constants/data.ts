@@ -34,6 +34,7 @@ const galleryImages = [
 export const projectData = [
   {img: paint, title: `IAC Model & Website Redesign`, description: "TBD", slug: "IAC2022" }, 
   {img: paint, title: `World IA Day Virtual Event`, description: "TBD", slug: "WIADLA2022" }, 
+  {img: paint, title: `IAC Community Research`, description: "TBD", slug: "IACCOM2022" }, 
 
 ];
 
