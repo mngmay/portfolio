@@ -4,6 +4,14 @@ import { responsiveFontSizes, createTheme } from '@mui/material';
 
 const muiTheme = responsiveFontSizes(
   createTheme({
+    palette: {
+      primary: {
+        main: variables.seattleGray,
+      },
+      secondary: {
+        main: variables.secondaryColor,
+      },
+    },
     typography: {
       fontFamily: [
         variables.sansSerif,
