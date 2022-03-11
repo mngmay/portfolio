@@ -17,7 +17,7 @@ export default function ContactMe() {
       <Box sx={{ flexGrow: 1 }} className={cx("contact-me-container")}>
         <Grid container>
           <Grid item xs={12}>
-            <Typography variant="h2">Let{`'`}s Work Together!</Typography>
+            <Typography variant="h2">Let's Work Together!</Typography>
           </Grid>
           <Grid
             container
@@ -28,7 +28,7 @@ export default function ContactMe() {
           >
             <Grid item xs={12}>
               <Typography>
-                I{`'`}m currently open to opportunities to join a full time team
+                I'm currently open to opportunities to join a full time team
                 or collaborate on projects.
               </Typography>
             </Grid>

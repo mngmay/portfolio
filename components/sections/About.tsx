@@ -1,5 +1,4 @@
-import React from "react";
-import { forwardRef } from "react";
+import React, { forwardRef } from "react";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import { Typography } from "@mui/material";
@@ -35,13 +34,13 @@ export default forwardRef(function AboutSummary({ ref }: AboutSummaryProps) {
           <Grid item xs={12} className={cx("past-self")}>
             {/*Change to past roles -> UX Researcher */}
             <ul className={cx("past-roles")}>
-              <Typography>I{`'`}ve been the:</Typography>
+              <Typography>I've been the:</Typography>
               <li>End User</li>
               <li>HR Partner</li>
               <li>Recruiter</li>
               <li>Developer</li>
             </ul>
-            <Typography>Now, I{`'`}m a multi-faceted</Typography>
+            <Typography>Now, I'm a multi-faceted</Typography>
             <Typography variant="h2">UX Researcher</Typography>
           </Grid>
           <Grid item xs={12} className={cx("mini-bio")}>
@@ -65,12 +64,12 @@ export default forwardRef(function AboutSummary({ ref }: AboutSummaryProps) {
 
           <Grid container item xs={12} direction="row" justifyContent="center">
             <Typography className={cx("fun-facts")}>
-              <PanToolIcon className={cx("icon", "mirror")} />I{`'`}m a leftie
+              <PanToolIcon className={cx("icon", "mirror")} />I'm a leftie
               <br />
               <CoffeeIcon className={cx("icon")} />
               I drink my coffee black yet love milk tea (50% sweet + boba)
               <br />
-              <PetsIcon className={cx("icon")} />I{`'`}m that person who looks
+              <PetsIcon className={cx("icon")} />I'm that person who looks
               longingly at your pet as we pass on the street
             </Typography>
           </Grid>

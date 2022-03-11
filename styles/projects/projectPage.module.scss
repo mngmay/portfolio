@@ -19,8 +19,8 @@
 
 .team,
 .details {
-  label {
-    margin-right: variables.$stdPadding;
+  .label {
+    margin-right: variables.$smPadding;
   }
 }
 
@@ -32,7 +32,7 @@
     margin-bottom: variables.$stdPadding;
   }
 
-  label {
+  .label {
     color: variables.$secondaryColor;
   }
 

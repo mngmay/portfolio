@@ -44,7 +44,7 @@ const IAC2022 = () => {
           <Grid item xs={12} className={cx("disclaimer")}>
             <Typography variant="disclaimer">
               This project is still underway. Below is my current proposal on
-              how I{`'`}d conduct this study to meet our client and user
+              how I'd conduct this study to meet our client and user
               objectives.
             </Typography>
           </Grid>
@@ -52,7 +52,7 @@ const IAC2022 = () => {
             <ul className={cx("team")}>
               <li>
                 <Typography>
-                  <label>Client:</label>
+                  <span className={cx("label")}>Client:</span>
                   <StyledExternalLink href="https://www.theiaconference.com/">
                     IAC
                   </StyledExternalLink>
@@ -60,7 +60,7 @@ const IAC2022 = () => {
               </li>
               <li>
                 <Typography>
-                  <label>Sponsor:</label>
+                  <span className={cx("label")}>Sponsor:</span>
                   <StyledExternalLink href="https://www.sanity.io/">
                     Sanity
                   </StyledExternalLink>
@@ -68,7 +68,7 @@ const IAC2022 = () => {
               </li>
               <li>
                 <Typography>
-                  <label> Contractor:</label>
+                  <span className={cx("label")}> Contractor:</span>
                   <StyledExternalLink href="https://www.diadesign.io/">
                     DIA Design Guild
                   </StyledExternalLink>
@@ -80,13 +80,15 @@ const IAC2022 = () => {
             <ul className={cx("details")}>
               <li>
                 <Typography>
-                  <label>My Role:</label> UXR, IA, Content Strategy
+                  <span className={cx("label")}>My Role:</span> UXR, IA, Content
+                  Strategy
                 </Typography>
               </li>
 
               <li>
                 <Typography>
-                  <label>Duration:</label> ~5-7 months (volunteer hours)
+                  <span className={cx("label")}>Duration:</span> ~5-7 months
+                  (volunteer hours)
                 </Typography>
               </li>
             </ul>
@@ -173,7 +175,7 @@ const IAC2022 = () => {
         </Grid>
         <Grid item xs={12} sm={10}>
           <Typography variant="h3">
-            Learn from {`"`}Knowledge Holders{`"`}
+            Learn from "Knowledge Holders"
           </Typography>
 
           <Typography>
@@ -269,27 +271,27 @@ const IAC2022 = () => {
               <ul>
                 <li>
                   <Typography>
-                    <label> Existing Research:</label> IA & IAC Community
-                    Research is currently under evaluation by another team and
-                    will be reviewed and taken into consideration for this
-                    project.
+                    <span className={cx("label")}> Existing Research:</span> IA
+                    & IAC Community Research is currently under evaluation by
+                    another team and will be reviewed and taken into
+                    consideration for this project.
                   </Typography>
                 </li>
 
                 <li>
                   <Typography>
-                    <label>Early User Interviews:</label> Focus on current
-                    organizer/volunteer experience, user mental model of
-                    conference value and logistics, relationship to professional
-                    growth, and content/resources considered worthwhile and
-                    desirable.
+                    <span className={cx("label")}>Early User Interviews:</span>{" "}
+                    Focus on current organizer/volunteer experience, user mental
+                    model of conference value and logistics, relationship to
+                    professional growth, and content/resources considered
+                    worthwhile and desirable.
                   </Typography>
                 </li>
                 <li>
                   <Typography>
-                    <label>Late User Interviews:</label> Re-evaluate organizer &
-                    volunteer impression and ability to understand and adopt the
-                    new process.
+                    <span className={cx("label")}>Late User Interviews:</span>{" "}
+                    Re-evaluate organizer & volunteer impression and ability to
+                    understand and adopt the new process.
                   </Typography>
                 </li>
               </ul>
@@ -298,22 +300,22 @@ const IAC2022 = () => {
               <Typography variant="h3">Evaluative</Typography>
 
               <Typography>
-                <label>A/B Tests:</label> Time/clicks for users to find
-                information or do a call to action. Which design feels more
-                compelling, inclusive, and community driven? Can we validate
-                what contributes to this impression? Gain baseline data and
-                measurement for improvements.
+                <span className={cx("label")}>A/B Tests:</span> Time/clicks for
+                users to find information or do a call to action. Which design
+                feels more compelling, inclusive, and community driven? Can we
+                validate what contributes to this impression? Gain baseline data
+                and measurement for improvements.
               </Typography>
               <Typography>
-                <label>Tree Tests:</label> Can users find core information
-                (date, registration, program schedule, help, etc.) they need?
-                How do they search for these? What else do they expect to find?
-                Where does their confusion, if any, come up?
+                <span className={cx("label")}>Tree Tests:</span> Can users find
+                core information (date, registration, program schedule, help,
+                etc.) they need? How do they search for these? What else do they
+                expect to find? Where does their confusion, if any, come up?
               </Typography>
               <Typography>
-                <label>End to End Testing:</label> Validate that users are able
-                to achieve all necessary functionality and have a painless
-                experience visiting the site.
+                <span className={cx("label")}>End to End Testing:</span>{" "}
+                Validate that users are able to achieve all necessary
+                functionality and have a painless experience visiting the site.
               </Typography>
             </Grid>
           </Grid>

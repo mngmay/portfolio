@@ -6,5 +6,5 @@ import retroStop from "./retro-stop.png"
 module.exports = {
     retroStart,
     retroContinue,
-    retroStop
-}
+    retroStop,
+};

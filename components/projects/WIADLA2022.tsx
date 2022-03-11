@@ -57,7 +57,7 @@ const WIADLA2022 = () => {
             <ul>
               <li>
                 <Typography>
-                  <label>Client:</label>
+                  <span className={cx("label")}>Client:</span>
                   <StyledExternalLink href="https://worldiaday.org/about">
                     WIAA
                   </StyledExternalLink>
@@ -65,7 +65,7 @@ const WIADLA2022 = () => {
               </li>
               <li>
                 <Typography>
-                  <label>Sponsors:</label>
+                  <span className={cx("label")}>Sponsors: </span>
                   <StyledExternalLink href="https://app.gather.town/app">
                     Gather
                   </StyledExternalLink>
@@ -81,7 +81,7 @@ const WIADLA2022 = () => {
               </li>
               <li>
                 <Typography>
-                  <label> Contractor:</label>
+                  <span className={cx("label")}> Contractor: </span>
                   <StyledExternalLink href="https://www.diadesign.io/">
                     DIA Design Guild
                   </StyledExternalLink>
@@ -93,7 +93,8 @@ const WIADLA2022 = () => {
             <ul>
               <li>
                 <Typography>
-                  <label>My Role:</label> Event Experience Designer
+                  <span className={cx("label")}>My Role: </span> Event
+                  Experience Designer
                   <span className={cx("small-divider")}>/</span>
                   <br />
                   Event Volunteer
@@ -102,7 +103,7 @@ const WIADLA2022 = () => {
 
               <li>
                 <Typography>
-                  <label>Duration:</label> 2 months total{" "}
+                  <span className={cx("label")}>Duration: </span> 2 months total{" "}
                   <span className={cx("small-divider")}>/</span> <br />2 weeks
                   for self (volunteer hours)
                 </Typography>

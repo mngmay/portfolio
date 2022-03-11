@@ -1,16 +1,14 @@
 import Head from "next/head";
 import { NextPage } from "next/types";
 import classnames from "classnames/bind";
-import styles from "../styles/about.module.scss";
+import aboutStyles from "../styles/about.module.scss";
 import GalleryCard from "../components/GalleryCard";
 import { Typography } from "@mui/material";
-import Grid from "@mui/material/Grid";
 import utilStyles from "../styles/utility.module.scss";
-
 import galleryImages from "../constants/data";
 
+const styles = { ...utilStyles, ...aboutStyles };
 const cx = classnames.bind(styles);
-const ucx = classnames.bind(utilStyles);
 
 const About: NextPage = () => {
   return (
@@ -50,7 +48,7 @@ const About: NextPage = () => {
 
         <Typography>
           I thrive on trying new creative hobbies and then moving onto the next,
-          there{`'`}s always something new exciting to learn! I try to
+          there's always something new exciting to learn! I try to
           prioritize good food, travel, and spending time doing engaging
           activities with my friends.
         </Typography>
@@ -59,7 +57,7 @@ const About: NextPage = () => {
         </Typography>
         <ul>
           <li>
-            Baking Bread - (Sourdough start{`'`}s name is Kenny and I almost
+            Baking Bread - (Sourdough start's name is Kenny and I almost
             killed him)
           </li>
           <li>Houseplants</li>
