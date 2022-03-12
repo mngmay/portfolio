@@ -161,9 +161,11 @@ const WIADLA2022 = () => {
               of Information Architecture!
             </Typography>
             <Typography>
-              Design a space that integrates the WIAD 2022 theme of &#34;A
-              Connected World&#34; and create materials that ensure a smooth
-              user experience.
+              Design a space that integrates the WIAD 2022 theme of{' '}
+              <span className={cx('emphasis')}>
+                &#34;A Connected World&#34;
+              </span>{' '}
+              and create materials that ensure a smooth user experience.
             </Typography>
           </Grid>
           <Grid item xs={12} sm={6}>
@@ -270,9 +272,10 @@ const WIADLA2022 = () => {
           <Typography variant="h3">Coordinating Marketing Efforts</Typography>
           <Typography>
             Social media and email campaigns. Volunteers Sophie and Jane led the
-            charge writing materials to post on DIA and WIAD's various accounts.
-            Late ramp up meant our team had to gain traction fast, and made
-            posts almost daily once we were within a couple weeks of the event.
+            charge writing materials to post on DIA and WIAD&#39;s various
+            accounts. Late ramp up meant our team had to gain traction fast, and
+            made posts almost daily once we were within a couple weeks of the
+            event.
           </Typography>
           <Typography variant="h3">
             Design the Space & Onboarding Materials

@@ -264,18 +264,33 @@ const IAC2022 = () => {
           <Grid item xs={12}>
             <Typography variant="h3">Research Considerations</Typography>
             <Typography>
-              This project&#39;s priority is on the organizer experience. The
-              insights that our team uncovers from users will be used to
-              determine a model that is sustainable and scalable for the
-              internal teams.
+              It is important to remember that this this project&#39;s priority
+              is on the organizer experience, with the audience experience being
+              a secondary (but inevitable) goal. However, the studies I choose
+              to conduct will still prioritize the attendee/volunteer because of
+              the downstream effects that lead us to our primary goal.
+            </Typography>
+            <Typography className={cx('emphasis', 'row-center')}>
+              Strong understanding of the audience <ArrowRightAltIcon />
+              Strong knowledge of how we need to design IAC
+            </Typography>
+
+            <Typography>
+              Understanding the needs, wants, and mental models of our audience
+              will have direct effect on how the content strategy, information
+              architecture, and design are decided. The closer we can get to an
+              optimal user experience, the more future-proof the model and
+              processes our internal teams have to manage are.
             </Typography>
             <Typography>
-              Despite being a major website overhaul, I chose to approach the
-              redesign iteratively by page/feature so that the team can make
-              progress and adjust to feedback quickly. With the existing site
-              and proposed mock-ups infront of users, I anticipate uncovering
-              increasing clarity and insight on how to approach other pages for
-              redesign.
+              The team&#39;s disjointed schedules and bandwidth also contributed
+              to my decision to choose an extremely blended and iterative
+              approach with our interviews and various tests. This ensures the
+              team can avoid bottlenecks and make deliverables in digestable
+              chunks. It also provides a quick and clear feedback loop so that
+              each iteration can learn from the last, constantly improving at
+              each turn with the ability to pinpoint which aspects perform
+              better.
             </Typography>
           </Grid>
           <Grid
@@ -316,8 +331,10 @@ const IAC2022 = () => {
                 <li>
                   <Typography>
                     <span className={cx('label')}>Late User Interviews:</span>{' '}
-                    Re-evaluate organizer & volunteer impression and ability to
-                    understand and adopt the new process.
+                    Evaluate organizer & volunteer ability to understand and
+                    adopt the new process. Are our solutions perceived to be
+                    better? Did we meet our goals or are there areas that need
+                    more attention?
                   </Typography>
                 </li>
               </ul>
@@ -326,9 +343,12 @@ const IAC2022 = () => {
               <Typography variant="h3">Evaluative</Typography>
 
               <Typography>
-                <span className={cx('label')}>A/B Tests:</span> Time/clicks for
-                users to find information or do a call to action. Which design
-                feels more compelling, inclusive, and community driven? Can we
+                <span className={cx('label')}>
+                  Wireframing & Iterative Prototyping:
+                </span>{' '}
+                Time/clicks for users to find information or do a call to
+                action. Observe user decisions and patterns. Which design feels
+                more compelling, inclusive, and community driven? Can we
                 validate what contributes to this impression? Gain baseline data
                 and measurement for improvements.
               </Typography>
@@ -388,8 +408,8 @@ const IAC2022 = () => {
               </li>
               <li>
                 <Typography>
-                  Clear standard for content management and process is easy to
-                  understand for organizers
+                  Clear standard for content management and process is perceived
+                  to be easier for a majority of organizers
                 </Typography>
               </li>
               <li>
