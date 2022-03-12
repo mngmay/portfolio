@@ -331,9 +331,9 @@ const IAC2022 = () => {
                 <li>
                   <Typography>
                     <span className={cx('label')}>Late User Interviews:</span>{' '}
-                    Evaluate organizer & volunteer ability to understand and
-                    adopt the new process. Are our solutions perceived to be
-                    better? Did we meet our goals or are there areas that need
+                    How do organizers & volunteers perceive the new process and
+                    model to be? Are our solutions perceived to be better and
+                    easier? Did we meet our goals or are there areas that need
                     more attention?
                   </Typography>
                 </li>
@@ -351,6 +351,12 @@ const IAC2022 = () => {
                 more compelling, inclusive, and community driven? Can we
                 validate what contributes to this impression? Gain baseline data
                 and measurement for improvements.
+              </Typography>
+              <Typography>
+                <span className={cx('label')}>Card Sorting:</span> How do users
+                interpret different labels and what associates with them? What
+                was their thinking behind the groupings? Were there any they
+                struggled with or saw multiple options for?
               </Typography>
               <Typography>
                 <span className={cx('label')}>Tree Tests:</span> Can users find
