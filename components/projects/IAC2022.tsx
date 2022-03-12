@@ -7,7 +7,7 @@ import projectStyles from '../../styles/projects/projectPage.module.scss';
 import utilStyles from '../../styles/utility.module.scss';
 import CTAButton from '../CTAButton';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
-import { IAC22Homepage } from '../../assets/projects';
+import { IAC22Homepage, IACNavSiteMap } from '../../assets/projects';
 const styles = { ...utilStyles, ...projectStyles };
 const cx = classnames.bind(styles);
 
@@ -235,29 +235,45 @@ const IAC2022 = () => {
             </ul>
           </Grid>
 
-          <Grid item xs={12}>
+          <Grid item xs={12} sm={5}>
             <Typography variant="h3">What We&#39;re Working With</Typography>
-            <Typography>
-              I mapped out the information architecture of the existing website
-              and analyzed it in comparison to other major conferences related
-              to the IA/UX fields using a competitor matrix. This helped to
-              highlight prominent features and content across similar events to
-              help identify where the current site may be lacking.
-            </Typography>
-            {/* TODO: Create and add site map */}
-            <Typography>
-              I designed a future content model for the new IAC while keeping
-              our aim for a persistent and scalable website in mind.
-            </Typography>
-            {/* TODO: Create and insert content model and archived assets screenshot */}
-            <Typography>
-              Our team is currently in the process of collecting assets for an
-              initial round of categorization of content properties. Once
-              complete, we plan to run a series of Card Sort and Tree Tests with
-              users in order to tag and structure existing content and
-              anticipate future needs.
-            </Typography>
+            <Grid item xs={12}>
+              <Typography>
+                I mapped out the information architecture of the existing
+                website and analyzed it in comparison to other major conferences
+                related to the IA/UX fields using a competitor matrix. This
+                helped to highlight prominent features and content across
+                similar events to help identify where the current site may be
+                lacking.
+              </Typography>
+            </Grid>
           </Grid>
+          <Grid item xs={12} sm={5}>
+            <Image
+              src={IACNavSiteMap}
+              alt="IAC Navigation Sitemap"
+              layout="responsive"
+            />
+            <Grid item container justifyContent="center" xs={12}>
+              <CTAButton
+                href="https://docs.google.com/spreadsheets/d/1AaDtII0MQekJo0l9qh6DbzWg2hD5XW3Lahjv9Q0so1o/edit?usp=sharing"
+                text="Competitor Matrix"
+              />
+            </Grid>
+          </Grid>
+          {/* TODO: Create and add site map */}
+          <Typography>
+            I designed a future content model for the new IAC while keeping our
+            aim for a persistent and scalable website in mind.
+          </Typography>
+          {/* TODO: Create and insert content model and archived assets screenshot */}
+          <Typography>
+            Our team is currently in the process of collecting assets for an
+            initial round of categorization of content properties. Once
+            complete, we plan to run a series of Card Sort and Tree Tests with
+            users in order to tag and structure existing content and anticipate
+            future needs.
+          </Typography>
         </Grid>
       </Grid>
 
@@ -282,11 +298,14 @@ const IAC2022 = () => {
           <Grid item xs={12}>
             <Typography variant="h3">Research Considerations</Typography>
             <Typography>
-              It is important to remember that this this project&#39;s priority
-              is on the organizer experience, with the audience experience being
-              a secondary (but inevitable) goal. However, the studies I choose
-              to conduct will still prioritize the attendee/volunteer because of
-              the downstream effects that lead us to our primary goal.
+              It is important to remember that{' '}
+              <span className={cx('emphasis')}>
+                this project&#39;s priority is on the organizer experience
+              </span>
+              , with the audience experience technically being a secondary goal.
+              However, the studies I choose to conduct will still prioritize the
+              attendee/volunteer because of the downstream effects that lead us
+              to our primary goal.
             </Typography>
             <Typography className={cx('emphasis', 'row-center')}>
               Strong understanding of the audience <ArrowRightAltIcon />
@@ -364,11 +383,10 @@ const IAC2022 = () => {
                 <span className={cx('label')}>
                   Wireframing & Iterative Prototyping:
                 </span>{' '}
-                Time/clicks for users to find information or do a call to
-                action. Observe user decisions and patterns. Which design feels
-                more compelling, inclusive, and community driven? Can we
-                validate what contributes to this impression? Gain baseline data
-                and measurement for improvements.
+                Time/clicks for users to complete tasks. Where are sticking
+                points? Which design feels more compelling, inclusive, and
+                community driven? Can we validate what contributes to this
+                impression? Gain baseline data and measurement for improvements.
               </Typography>
               <Typography>
                 <span className={cx('label')}>Card Sorting:</span> How do users

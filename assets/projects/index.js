@@ -1,5 +1,5 @@
 export { slideDeckPg1 } from './IACComResearch';
-export { IAC22Homepage } from './IAC2022';
+export { IAC22Homepage, IACNavSiteMap } from './IAC2022';
 export {
   retroStart,
   retroContinue,
