@@ -53,7 +53,7 @@ const muiTheme = responsiveFontSizes(
         fontSize: 12,
       },
       navLink: {
-        fontSize: 22,
+        fontSize: 22,      
       },
       cardTitle: {
         fontSize: 25,

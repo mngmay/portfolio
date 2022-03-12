@@ -1,5 +1,5 @@
-@use "../variables.module";
-@use "../mixins.module";
+@use '../variables.module';
+@use '../mixins.module';
 
 .case-study-container {
   h1 {
@@ -38,6 +38,7 @@
 
   // Research Layout
 
+  ul.must-haves,
   ul.learnings,
   ul.success,
   ul.painpoints,

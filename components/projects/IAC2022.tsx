@@ -172,32 +172,34 @@ const IAC2022 = () => {
         >
           <Typography variant="h2">Discovery</Typography>
         </Grid>
-        <Grid item xs={12} sm={10}>
-          <Typography variant="h3">
-            Learn from &#34;Knowledge Holders&#34;
-          </Typography>
+        <Grid container spacing={2} item xs={12} sm={10}>
+          <Grid item xs={12} sm={6}>
+            <Typography variant="h3">
+              Learn from &#34;Knowledge Holders&#34;
+            </Typography>
 
-          <Typography>
-            Our fresh team of volunteers needed to identify who to talk to in
-            the community to get as much of the picture as possible. We talked
-            with stakeholders from IAC, Sanity, and as many volunteers as we
-            could get in touch with to learn the history of IAC and identify
-            where this project was in the process.
-          </Typography>
-          <Typography>
-            It was clear speaking with those who have managed IAC, that the
-            website and content were a sore spot. The clamor to organize a large
-            scale event always took priority to ensure the show goes on.
-          </Typography>
+            <Typography>
+              Our fresh team of volunteers needed to identify who to talk to in
+              the community to get as much of the picture as possible. We talked
+              with stakeholders from IAC, Sanity, and as many volunteers as we
+              could get in touch with to learn the history of IAC and identify
+              where this project was in the process.
+            </Typography>
+            <Typography>
+              It was clear speaking with those who have managed IAC, that the
+              website and content were a sore spot. The clamor to organize a
+              large scale event always took priority to ensure the show goes on.
+            </Typography>
+          </Grid>
 
-          <Grid item xs={12}>
+          <Grid item xs={12} sm={6}>
             <Typography variant="h3">Pain Points</Typography>
 
             <ul className={cx('painpoints')}>
               <Typography>
                 <li>
-                  A decentralized and volunteer based team - inconsistent
-                  availability and easily silo&#39;d
+                  A decentralized and volunteer based team has resulted in
+                  feeling easily silo&#39;d and heavy time constraints
                 </li>
               </Typography>
               <Typography>

@@ -31,6 +31,7 @@
   background-color: variables.$offWhite;
   z-index: 100;
   width: 100%;
+  top: 0; // necessary for project pages
   @include mixins.row-between;
   height: variables.$headerSize;
 }
