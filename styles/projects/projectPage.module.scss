@@ -12,6 +12,9 @@
     margin-bottom: variables.$tinyPadding;
   }
 }
+.main-project-image {
+  margin: variables.$stdPadding 0;
+}
 
 .project-section:last-child {
   border: none;

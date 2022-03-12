@@ -6,7 +6,7 @@ import pup from "../assets/may-pup.jpeg";
 import weld from "../assets/may-weld.jpeg";
 import woodworking from "../assets/may-woodworking.jpeg";
 import ramen from "../assets/may-ramen.jpeg";
-import {gatherNetworkMap, IAC22Homepage, slideDeckPg1} from "../assets/projects"
+import {gatherNetworkMap, IAC22Homepage} from "../assets/projects"
 
 export const gatherOnboardingVideo = 'https://drive.google.com/file/d/1_oUvkRjYK_Ck_fFC14M-0bpoEfNRnNfq/view?usp=sharing'
 
@@ -36,7 +36,7 @@ const galleryImages = [
 export const projectData = [
   {img: IAC22Homepage, title: `IAC Model & Website Redesign`, description: "TBD", slug: "IAC2022" }, 
   {img: gatherNetworkMap, title: `World IA Day Virtual Event`, description: "TBD", slug: "WIADLA2022" }, 
-  {img: slideDeckPg1, title: `IAC Community Research`, description: "TBD", slug: "IACCOM2022" }, 
+  // {img: slideDeckPg1, title: `IAC Community Research`, description: "TBD", slug: "IACCOM2022" }, /*Include when more polished and I have more contributions*/ 
 
 ];
 

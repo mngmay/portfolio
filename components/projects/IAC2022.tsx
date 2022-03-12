@@ -1,11 +1,13 @@
 import { Typography } from '@mui/material';
 import Grid from '@mui/material/Grid';
+import Image from 'next/image';
 import classnames from 'classnames/bind';
 import StyledExternalLink from '../StyledExternalLink';
 import projectStyles from '../../styles/projects/projectPage.module.scss';
 import utilStyles from '../../styles/utility.module.scss';
 import CTAButton from '../CTAButton';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
+import { IAC22Homepage } from '../../assets/projects';
 const styles = { ...utilStyles, ...projectStyles };
 const cx = classnames.bind(styles);
 
@@ -20,7 +22,23 @@ const IAC2022 = () => {
       </Grid>
 
       {/*TODO: Insert existing website image */}
-
+      <Grid
+        container
+        justifyContent="center"
+        xs={12}
+        className={cx('main-project-image')}
+      >
+        <Grid item xs={12} sm={5}>
+          <Image
+            src={IAC22Homepage}
+            alt="IAC2022 Homepage"
+            layout="responsive"
+          />
+          <Typography variant="caption" className={cx('row-center')}>
+            IAC 2022 Homepage before our team&#39;s redesign
+          </Typography>
+        </Grid>
+      </Grid>
       <Grid
         container
         spacing={1}
