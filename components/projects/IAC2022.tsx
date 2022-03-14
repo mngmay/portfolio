@@ -261,19 +261,18 @@ const IAC2022 = () => {
               />
             </Grid>
           </Grid>
-          {/* TODO: Create and add site map */}
-          <Typography>
-            I designed a future content model for the new IAC while keeping our
-            aim for a persistent and scalable website in mind.
-          </Typography>
-          {/* TODO: Create and insert content model and archived assets screenshot */}
-          <Typography>
-            Our team is currently in the process of collecting assets for an
-            initial round of categorization of content properties. Once
-            complete, we plan to run a series of Card Sort and Tree Tests with
-            users in order to tag and structure existing content and anticipate
-            future needs.
-          </Typography>
+          <Grid item xs={12} sm={10}>
+            <Typography>
+              I designed a future content model for the new IAC while keeping
+              our aim for a persistent and scalable website in mind.
+            </Typography>
+            {/* TODO: Create and insert content model and archived assets screenshot */}
+            <Typography>
+              Our team is currently in the process of collecting assets for an
+              initial round of categorization of content properties. Once
+              complete, we plan to proceed with our research plan phase 1.
+            </Typography>
+          </Grid>
         </Grid>
       </Grid>
 
