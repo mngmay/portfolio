@@ -25,6 +25,7 @@ const IAC2022 = () => {
       <Grid
         container
         justifyContent="center"
+        spacing={2}
         xs={12}
         className={cx('main-project-image')}
       >
@@ -166,7 +167,7 @@ const IAC2022 = () => {
               A permanent website that will be maintained.{' '}
             </Typography>
             <Typography variant="body2" className={cx('emphasis', 'row-start')}>
-              Single Event Model <ArrowRightAltIcon /> Permanent Brand Model.
+              Single Event Model <ArrowRightAltIcon /> Global Brand Model.
             </Typography>
 
             <Typography>
@@ -235,7 +236,7 @@ const IAC2022 = () => {
             </ul>
           </Grid>
 
-          <Grid item xs={12} sm={5}>
+          <Grid item xs={12} sm={6}>
             <Typography variant="h3">What We&#39;re Working With</Typography>
             <Grid item xs={12}>
               <Typography>
@@ -246,22 +247,22 @@ const IAC2022 = () => {
                 similar events to help identify where the current site may be
                 lacking.
               </Typography>
+              <Grid item container justifyContent="center" xs={12}>
+                <CTAButton
+                  href="https://docs.google.com/spreadsheets/d/1AaDtII0MQekJo0l9qh6DbzWg2hD5XW3Lahjv9Q0so1o/edit?usp=sharing"
+                  text="Competitor Matrix"
+                />
+              </Grid>
             </Grid>
           </Grid>
-          <Grid item xs={12} sm={5}>
+          <Grid item xs={12} sm={6}>
             <Image
               src={IACNavSiteMap}
               alt="IAC Navigation Sitemap"
               layout="responsive"
             />
-            <Grid item container justifyContent="center" xs={12}>
-              <CTAButton
-                href="https://docs.google.com/spreadsheets/d/1AaDtII0MQekJo0l9qh6DbzWg2hD5XW3Lahjv9Q0so1o/edit?usp=sharing"
-                text="Competitor Matrix"
-              />
-            </Grid>
           </Grid>
-          <Grid item xs={12} sm={10}>
+          <Grid item xs={12}>
             <Typography>
               I designed a future content model for the new IAC while keeping
               our aim for a persistent and scalable website in mind.

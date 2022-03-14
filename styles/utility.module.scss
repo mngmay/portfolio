@@ -51,6 +51,10 @@
   @include mixins.row-start;
 }
 
+.col-center {
+  @include mixins.col-center;
+}
+
 // Specific reusable components
 // Logo
 .logo {
