@@ -1,11 +1,11 @@
-import Head from "next/head";
-import { NextPage } from "next/types";
-import classnames from "classnames/bind";
-import aboutStyles from "../styles/about.module.scss";
-import GalleryCard from "../components/GalleryCard";
-import { Typography } from "@mui/material";
-import utilStyles from "../styles/utility.module.scss";
-import galleryImages from "../constants/data";
+import Head from 'next/head';
+import { NextPage } from 'next/types';
+import classnames from 'classnames/bind';
+import aboutStyles from '../styles/about.module.scss';
+import GalleryCard from '../components/GalleryCard';
+import { Grid, Typography } from '@mui/material';
+import utilStyles from '../styles/utility.module.scss';
+import galleryImages from '../constants/data';
 
 const styles = { ...utilStyles, ...aboutStyles };
 const cx = classnames.bind(styles);
@@ -22,18 +22,18 @@ const About: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className={cx("about-container")}>
-        <div className={cx("about-banner")}>
-          <div className={cx("about-picture")} />
-          <div className={cx("quote")}>
+      <Grid container item xs={12} className={cx('about-container')}>
+        <Grid container item xs={12} className={cx('about-banner')}>
+          <Grid item xs={12} sm={6} className={cx('about-picture')} />
+          <Grid item xs={12} sm={6} className={cx('quote')}>
             <Typography variant="h2">
               “I have no special talent, I am only passionately curious”
             </Typography>
-            <Typography variant="h2" className={cx("quoter")}>
+            <Typography variant="h2" className={cx('quoter')}>
               - Albert Einstein
             </Typography>
-          </div>
-        </div>
+          </Grid>
+        </Grid>
         <Typography variant="h1">My Story</Typography>
         <Typography>
           Hometown and upbringing, set path lack of passion. Achieved goals but
@@ -44,7 +44,6 @@ const About: NextPage = () => {
           personality or values at a time. Found UX which lets me practice it
           all.
         </Typography>
-        <Typography></Typography>
 
         <Typography>
           I thrive on trying new creative hobbies and then moving onto the next,
@@ -77,12 +76,12 @@ const About: NextPage = () => {
         * and many more awesome people who build my support network :) Without you I wouldn't be able to take the risks I have to try things
         */}
 
-        <div className={cx("may-gallery")}>
+        <div className={cx('may-gallery')}>
           {galleryImages.map(({ img, description }) => (
             <GalleryCard img={img} description={description} key={`${img}`} />
           ))}
         </div>
-      </div>
+      </Grid>
     </>
   );
 };

@@ -7,7 +7,11 @@ import projectStyles from '../../styles/projects/projectPage.module.scss';
 import utilStyles from '../../styles/utility.module.scss';
 import CTAButton from '../CTAButton';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
-import { IAC22Homepage, IACNavSiteMap } from '../../assets/projects';
+import {
+  IAC22Homepage,
+  IAC2022_Sitemap,
+  IACContentModel,
+} from '../../assets/projects';
 const styles = { ...utilStyles, ...projectStyles };
 const cx = classnames.bind(styles);
 
@@ -255,19 +259,29 @@ const IAC2022 = () => {
               </Grid>
             </Grid>
           </Grid>
-          <Grid item xs={12} sm={6}>
+          <Grid item xs={12} sm={6} className={cx('image-container')}>
             <Image
-              src={IACNavSiteMap}
-              alt="IAC Navigation Sitemap"
+              src={IAC2022_Sitemap}
+              alt="IAC Sitemap"
               layout="responsive"
+              className={cx('image')}
             />
           </Grid>
-          <Grid item xs={12}>
+          <Grid container item xs={12}>
             <Typography>
               I designed a future content model for the new IAC while keeping
-              our aim for a persistent and scalable website in mind.
+              our aim for a persistent and scalable website in mind. This will
+              serve as a launching off point for discussions with the board on
+              how they envision the future model of IAC.
             </Typography>
-            {/* TODO: Create and insert content model and archived assets screenshot */}
+            <Grid item xs={12} className={cx('image-container')}>
+              <Image
+                src={IACContentModel}
+                alt="IAC Sitemap"
+                layout="responsive"
+                className={cx('image')}
+              />
+            </Grid>
             <Typography>
               Our team is currently in the process of collecting assets for an
               initial round of categorization of content properties. Once
