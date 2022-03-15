@@ -32,7 +32,7 @@ export const hobbyImages = [
 
 export const projectData = [
   {img: IAC22Homepage, title: `IAC Model & Website Redesign`, description: "TBD", slug: "IAC2022" }, 
-  {img: gatherNetworkMap, title: `World IA Day Virtual Event`, description: "TBD", slug: "WIADLA2022" }, 
+  // {img: gatherNetworkMap, title: `World IA Day Virtual Event`, description: "TBD", slug: "WIADLA2022" }, 
   // {img: slideDeckPg1, title: `IAC Community Research`, description: "TBD", slug: "IACCOM2022" }, /*Include when more polished and I have more contributions*/ 
 
 ];
