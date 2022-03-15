@@ -83,9 +83,9 @@ const About: NextPage = () => {
             <Typography>
               UX blends the relationship building, creative problem solving, and
               technical side of my former experiences into a wide array of
-              delighfully dynamic roles. From research, information
-              architecture, content strategy, or design, I think may have found
-              something to call my career passion.
+              delightfully dynamic roles. From research, information
+              architecture, content strategy, or design, I think I may have
+              found something to call my career passion.
             </Typography>
 
             <Typography>
