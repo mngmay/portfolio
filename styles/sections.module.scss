@@ -1,5 +1,5 @@
-@use "variables.module";
-@use "mixins.module";
+@use 'variables.module';
+@use 'mixins.module';
 
 /* Sections on the homepage after the hero */
 
@@ -46,6 +46,10 @@
     margin: variables.$stdPadding;
     margin-top: 0;
   }
+}
+
+.fun-facts {
+  margin-bottom: 0;
 }
 
 .learn-more-cta {

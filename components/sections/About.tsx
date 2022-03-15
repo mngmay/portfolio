@@ -82,8 +82,9 @@ export default function AboutSummary() {
               xs={12}
               direction="row"
               justifyContent="center"
+              className={cx('fun-facts')}
             >
-              <Typography className={cx('fun-facts')}>
+              <Typography>
                 <PanToolIcon className={cx('icon', 'mirror')} />
                 I&#39;m a leftie
                 <br />
