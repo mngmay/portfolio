@@ -57,7 +57,7 @@ const About: NextPage = () => {
             <Typography>
               I&#39;m a first generation Chinese American woman who grew up in a
               small city in Washington state. A child of immigrant parents who
-              worked hard to own and run their small business, I followed what{' '}
+              worked hard to own and run their family business, I followed what{' '}
               <StyledExternalLink href="https://en.wikipedia.org/wiki/Subtle_Asian_Traits">
                 Subtle Asian Traits
               </StyledExternalLink>{' '}
@@ -90,11 +90,12 @@ const About: NextPage = () => {
 
             <Typography>
               Besides exploring my curiousity in my professional life, I also
-              love to try new creative hobbies. While the commitment to each
-              hobby may vary, I can always trust that there&#39;s always
-              something exciting to learn! I try to prioritize good food,
-              exploring new places, and spending time with the important people
-              in my life.
+              love to try new creative hobbies. There&#39;s always something
+              exciting to learn!
+            </Typography>
+            <Typography>
+              I try to prioritize exploring new places, good food, and spending
+              time with the important people in my life.
             </Typography>
           </Grid>
           <Grid
