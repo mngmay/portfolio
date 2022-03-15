@@ -1,5 +1,4 @@
-import { Typography } from '@mui/material';
-import Grid from '@mui/material/Grid';
+import { Grid, Typography } from '@mui/material';
 import Image from 'next/image';
 import classnames from 'classnames/bind';
 import StyledExternalLink from '../StyledExternalLink';
@@ -24,8 +23,6 @@ const IAC2022 = () => {
           Chaotic Event to Steadfast Brand Presence & Community Resource
         </Typography>
       </Grid>
-
-      {/*TODO: Insert existing website image */}
       <Grid
         container
         justifyContent="center"

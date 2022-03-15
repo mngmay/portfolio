@@ -16,9 +16,6 @@
   margin: variables.$stdPadding 0;
 }
 
-// .image-container {
-//   max-width: 600px;
-// }
 .project-section:last-child {
   border: none;
 }
@@ -49,13 +46,7 @@
   ul.success,
   ul.painpoints,
   .key-takeaways {
-    list-style-type: square;
-    margin-inline-end: variables.$tinyPadding;
-    padding-inline-start: variables.$stdPadding;
-
-    li {
-      margin-bottom: -10px;
-    }
+    @include mixins.ul-sq;
   }
 
   .success-yes {

@@ -6,11 +6,7 @@ import PublicIcon from '@mui/icons-material/Public';
 import Image from 'next/image';
 import projectStyles from '../../styles/projects/projectPage.module.scss';
 import utilStyles from '../../styles/utility.module.scss';
-import {
-  retroStop,
-  retroContinue,
-  retroStart,
-} from '../../assets/projects/WIADLA2022';
+import { retroStop, retroContinue, retroStart } from '../../assets/projects';
 
 const styles = { ...utilStyles, ...projectStyles };
 const cx = classnames.bind(styles);

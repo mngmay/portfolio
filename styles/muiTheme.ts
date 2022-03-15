@@ -72,6 +72,10 @@ const muiTheme = responsiveFontSizes(
         fontStyle: 'italic',
         color: variables.seattleGray,
       },
+      label: {
+        fontSize: 18,
+        color: variables.secondaryColor,
+      },
       caption: {
         fontSize: 11,
         fontStyle: 'italic',

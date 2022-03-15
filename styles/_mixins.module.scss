@@ -1,4 +1,4 @@
-@use "variables.module";
+@use 'variables.module';
 
 @mixin base-flex {
   display: flex;
@@ -68,4 +68,15 @@
 @mixin col-end {
   @include base-col;
   justify-content: flex-end;
+}
+
+@mixin ul-sq {
+  list-style-type: square;
+  margin-inline-end: variables.$tinyPadding;
+  padding-inline-start: variables.$stdPadding;
+
+  li {
+    margin-bottom: -10px;
+    margin-bottom: variables.$stdPadding;
+  }
 }

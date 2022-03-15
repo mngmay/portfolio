@@ -1,37 +1,34 @@
-import paint from "../assets/may-paint.jpeg";
-import bread from "../assets/may-bread.jpeg";
-import bread2 from "../assets/may-bread2.jpeg";
-import plant from "../assets/may-plant.jpeg";
-import pup from "../assets/may-pup.jpeg";
-import weld from "../assets/may-weld.jpeg";
-import woodworking from "../assets/may-woodworking.jpeg";
-import ramen from "../assets/may-ramen.jpeg";
+import { bread, bread2, plant, pup, weld, woodworking, ramen, boldnbrash} from "../assets"
 import {gatherNetworkMap, IAC22Homepage} from "../assets/projects"
 
 export const gatherOnboardingVideo = 'https://drive.google.com/file/d/1_oUvkRjYK_Ck_fFC14M-0bpoEfNRnNfq/view?usp=sharing'
 
-const galleryImages = [
-    { img: paint, description: "Acrylic Paint" },
+export const hobbyImages = [
+    { img: boldnbrash, description: "Bold and Brash" },
     { img: bread, description: "Sourdough Foccacia made with Kenny" },
-    {
-      img: ramen,
-      description: "Big Cup O Noodles, Big Hug",
-    },
-    { img: bread2, description: "Sourdough made with Kenny" },
     {
       img: plant,
       description: "A very expensive plant that I did not buy",
     },
-    { img: pup, description: "Hugging a puppy that isn't mine" },
     {
       img: weld,
-      description: "Blacksmithin a knife that can only cut butter",
+      description: "Forged a knife that can only cut butter",
     },
+    { img: bread2, description: "Sourdough made with Kenny" },
     {
       img: woodworking,
       description: "Made a workbench and kept all my fingers!",
     },
   ];
+
+  export const aboutMayImages = [
+    { img: pup, description: "Hugging a puppy that isn't mine" },
+    {
+      img: ramen,
+      description: "Big Cup O Noodles, Big Hug",
+    },
+
+  ]
 
 export const projectData = [
   {img: IAC22Homepage, title: `IAC Model & Website Redesign`, description: "TBD", slug: "IAC2022" }, 
@@ -40,5 +37,5 @@ export const projectData = [
 
 ];
 
-export default galleryImages
+
   

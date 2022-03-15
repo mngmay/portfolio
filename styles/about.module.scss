@@ -1,26 +1,33 @@
-@use "variables.module";
-@use "mixins.module";
+@use 'variables.module';
+@use 'mixins.module';
 
 // about page
 
 .about-banner {
-  @include mixins.row-center;
+  height: 350px;
 
   > * {
-    padding: 0 30px;
+    padding: 0 50px;
+  }
+
+  @media (max-width: variables.$mobile) {
+    height: 450px;
+    > * {
+      padding: 0 variables.$stdPadding;
+    }
   }
 }
 
 .about-picture {
   position: relative;
-  background-image: url("../assets/may-mtn.jpeg");
+  background-image: url('../assets/may-mtn.jpeg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 300px;
-  width: 250px;
-  height: 300px;
-  border-radius: 20px;
+  max-height: 325px;
+  height: 100%;
+  border-radius: 50%;
 }
 
 .quote {
@@ -30,13 +37,31 @@
   max-width: 60%;
 }
 
-.quoter {
-  position: absolute;
-  right: 100px;
+@media (max-width: variables.$mobile) {
+  .quote {
+    max-width: 100%;
+  }
 }
 
+.story {
+  > * {
+    padding: variables.$smPadding 0;
+  }
+}
+
+.hobbies {
+  @include mixins.ul-sq;
+}
+
+.hobby-gallery,
 .may-gallery {
-  @include mixins.col-center;
+  @include mixins.row-center;
+}
+
+.support-network {
+  > * {
+    padding: variables.$tinyPadding 0;
+  }
 }
 
 .gallery-card-container {
