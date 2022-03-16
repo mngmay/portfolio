@@ -30,7 +30,7 @@ const IAC2022 = () => {
         xs={12}
         className={cx('main-project-image')}
       >
-        <Grid item xs={12} sm={5}>
+        <Grid item xs={12} lg={5}>
           <Image
             src={IAC22Homepage}
             alt="IAC2022 Homepage"
@@ -49,7 +49,7 @@ const IAC2022 = () => {
         className={cx('project-section')}
       >
         {/* Description */}
-        <Grid item alignSelf="center" xs={12} sm={2}>
+        <Grid item alignSelf="center" xs={12} lg={2}>
           <Typography variant="h2">About</Typography>
         </Grid>
         <Grid
@@ -57,7 +57,7 @@ const IAC2022 = () => {
           spacing={1}
           item
           xs={12}
-          sm={10}
+          lg={10}
           className={cx('information')}
         >
           <Grid item xs={12} className={cx('disclaimer')}>
@@ -67,7 +67,7 @@ const IAC2022 = () => {
               objectives.
             </Typography>
           </Grid>
-          <Grid item xs={12} sm={6}>
+          <Grid item xs={12} lg={6}>
             <ul className={cx('team')}>
               <li>
                 <Typography>
@@ -95,7 +95,7 @@ const IAC2022 = () => {
               </li>
             </ul>
           </Grid>
-          <Grid item xs={12} sm={6}>
+          <Grid item xs={12} lg={6}>
             <ul className={cx('details')}>
               <li>
                 <Typography>
@@ -143,14 +143,14 @@ const IAC2022 = () => {
           item
           alignSelf="center"
           xs={12}
-          sm={2}
+          lg={2}
           className={cx('project-step')}
         >
           <Typography variant="h2">Objective</Typography>
         </Grid>
 
-        <Grid container spacing={2} item xs={12} sm={10}>
-          <Grid item xs={12} sm={6}>
+        <Grid container spacing={2} item xs={12} lg={10}>
+          <Grid item xs={12} lg={6}>
             <Typography variant="h3">Goal</Typography>
             <Typography>
               Make the adoption and management of IAC easier for future
@@ -161,7 +161,7 @@ const IAC2022 = () => {
               supporting documentation and repositories as needed.
             </Typography>
           </Grid>
-          <Grid item xs={12} sm={6}>
+          <Grid item xs={12} lg={6}>
             <Typography variant="h3">Client Wants</Typography>
 
             <Typography>
@@ -187,13 +187,13 @@ const IAC2022 = () => {
           item
           alignSelf="center"
           xs={12}
-          sm={2}
+          lg={2}
           className={cx('project-step')}
         >
           <Typography variant="h2">Discovery</Typography>
         </Grid>
-        <Grid container spacing={2} item xs={12} sm={10}>
-          <Grid item xs={12} sm={6}>
+        <Grid container spacing={2} item xs={12} lg={10}>
+          <Grid item xs={12} lg={6}>
             <Typography variant="h3">
               Learn from &#34;Knowledge Holders&#34;
             </Typography>
@@ -212,7 +212,7 @@ const IAC2022 = () => {
             </Typography>
           </Grid>
 
-          <Grid item xs={12} sm={6}>
+          <Grid item xs={12} lg={6}>
             <Typography variant="h3">Pain Points</Typography>
 
             <ul className={cx('painpoints')}>
@@ -237,7 +237,7 @@ const IAC2022 = () => {
             </ul>
           </Grid>
 
-          <Grid item xs={12} sm={6}>
+          <Grid item xs={12} lg={6}>
             <Typography variant="h3">What We&#39;re Working With</Typography>
             <Grid item xs={12}>
               <Typography>
@@ -257,7 +257,7 @@ const IAC2022 = () => {
               </Grid>
             </Grid>
           </Grid>
-          <Grid item xs={12} sm={6} className={cx('image-container')}>
+          <Grid item xs={12} lg={6} className={cx('image-container')}>
             <Image
               src={IAC2022_Sitemap}
               alt="IAC Sitemap"
@@ -294,7 +294,7 @@ const IAC2022 = () => {
           item
           alignSelf="center"
           xs={12}
-          sm={2}
+          lg={2}
           className={cx('project-step')}
         >
           <Typography variant="h2">Research</Typography>
@@ -305,7 +305,7 @@ const IAC2022 = () => {
           item
           justifyContent="center"
           xs={12}
-          sm={10}
+          lg={10}
         >
           <Grid item xs={12}>
             <Typography variant="h3">Research Considerations</Typography>
@@ -350,13 +350,13 @@ const IAC2022 = () => {
             className={cx('slidedeck')}
           >
             <CTAButton
-              href="https://www.canva.com/design/DAE6Uu8Db6E/j3B_7DiXtwsm8rrHhAZlLQ/view?utm_content=DAE6Uu8Db6E&utm_campaign=designshare&utm_medium=link&utm_source=shareyourdesignpanel"
+              href="https://www.canva.com/design/DAE6Uu8Db6E/j3B_7DiXtwlg8rrHhAZlLQ/view?utm_content=DAE6Uu8Db6E&utm_campaign=designshare&utm_medium=link&utm_source=shareyourdesignpanel"
               text="Research Plan Slide Deck"
               external
             />
           </Grid>
           <Grid container spacing={2} item xs={12}>
-            <Grid item xs={12} sm={6}>
+            <Grid item xs={12} lg={6}>
               <Typography variant="h3">Generative</Typography>
               <ul>
                 <li>
@@ -388,7 +388,7 @@ const IAC2022 = () => {
                 </li>
               </ul>
             </Grid>
-            <Grid item xs={12} sm={6}>
+            <Grid item xs={12} lg={6}>
               <Typography variant="h3">Evaluative</Typography>
 
               <Typography>
@@ -426,13 +426,13 @@ const IAC2022 = () => {
           item
           alignSelf="center"
           xs={12}
-          sm={2}
+          lg={2}
           className={cx('project-step')}
         >
           <Typography variant="h2">Findings</Typography>
         </Grid>
         <Grid container spacing={1} item xs={10}>
-          <Grid item xs={12} sm={6}>
+          <Grid item xs={12} lg={6}>
             <Typography variant="h3">What We Hope to Learn</Typography>
             <ul className={cx('learnings')}>
               <li>
@@ -449,7 +449,7 @@ const IAC2022 = () => {
               </li>
             </ul>
           </Grid>
-          <Grid item xs={12} sm={6}>
+          <Grid item xs={12} lg={6}>
             <Typography variant="h3">Did We Meet Our Objective?</Typography>
             <Typography className={cx('success-yes', 'emphasis')}>
               Yes, if...
@@ -482,12 +482,12 @@ const IAC2022 = () => {
           item
           alignSelf="center"
           xs={12}
-          sm={2}
+          lg={2}
           className={cx('project-step')}
         >
           <Typography variant="h2">Reflection</Typography>
         </Grid>
-        <Grid item xs={12} sm={10}>
+        <Grid item xs={12} lg={10}>
           <Typography variant="h3">Hypotheses</Typography>
           <Typography>
             Migrating to a persistent and consistent data model will likely
@@ -496,7 +496,7 @@ const IAC2022 = () => {
           </Typography>
           <Typography>
             A lot of content bloat will be cut, leaving streamlined and
-            simplified IA and content. This will result in a smoother user
+            simplified IA and content. This will result in a lgoother user
             experience and stronger understanding of IAC and its offerings.
           </Typography>
           <Typography>
@@ -506,13 +506,13 @@ const IAC2022 = () => {
             generate year-round revenue.
           </Typography>
 
-          <Grid container item xs={12} sm={10} className={cx('impact')}>
+          <Grid container item xs={12} lg={10} className={cx('impact')}>
             <Grid item xs={12}>
               <Typography variant="h3">Impact</Typography>
             </Grid>
             <Grid item xs={5}>
               <Typography variant="body2">
-                Smoother organizer and attendee experience
+                lgoother organizer and attendee experience
               </Typography>
             </Grid>
             <Grid container item xs={2}>
