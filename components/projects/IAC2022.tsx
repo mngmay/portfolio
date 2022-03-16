@@ -252,6 +252,7 @@ const IAC2022 = () => {
                 <CTAButton
                   href="https://docs.google.com/spreadsheets/d/1AaDtII0MQekJo0l9qh6DbzWg2hD5XW3Lahjv9Q0so1o/edit?usp=sharing"
                   text="Competitor Matrix"
+                  external
                 />
               </Grid>
             </Grid>
