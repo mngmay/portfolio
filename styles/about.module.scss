@@ -5,17 +5,21 @@
 
 .about-banner {
   height: 350px;
-
-  > * {
-    padding: 0 50px;
-  }
+  width: 100%;
+  margin: 0;
 
   @media (max-width: variables.$mobile) {
     height: 450px;
-    > * {
-      padding: 0 variables.$stdPadding;
-    }
   }
+}
+
+.about-section {
+  padding: variables.$stdPadding 0;
+  border-bottom: variables.$sectionDivider;
+}
+
+.about-section:last-child {
+  border: none;
 }
 
 .about-picture {
@@ -53,9 +57,20 @@
   @include mixins.ul-sq;
 }
 
+// Image galleries
+
 .hobby-gallery,
 .may-gallery {
   @include mixins.row-center;
+
+  > * {
+    margin: 2px;
+  }
+}
+
+.may-gallery {
+  @media (max-width: variables.$mobile) {
+  }
 }
 
 .support-network {
@@ -68,6 +83,11 @@
   position: relative;
   width: 250px;
   height: 250px;
+
+  @media (max-width: variables.$mobile) {
+    width: 150px;
+    height: 150px;
+  }
 }
 
 .gallery-image {
@@ -96,10 +116,8 @@
 
 .gallery-card-container:hover .gallery-image {
   opacity: 0.3;
-  cursor: pointer;
 }
 
 .gallery-card-container:hover .image-info {
   opacity: 1;
-  cursor: pointer;
 }
