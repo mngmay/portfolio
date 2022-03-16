@@ -65,27 +65,25 @@ const About: NextPage = () => {
             </Typography>
             <Typography>
               I studied hard and kept advancing in school until I graduated
-              college and got my first career-type job. I found that while I was
-              fine doing whatever came along, I wasn&#39;t sure what I actually
-              wanted to spend a majority of my life doing. &#34;Follow your
-              passion&#34;, while already questionable advice at times,
-              wasn&#39;t even advice I knew how to follow.
+              college and got my first career-type job. I had checked off my
+              major goals, but realized &#34;Follow your passion&#34;,
+              wasn&#39;t advice I knew how to follow.
             </Typography>
             <Typography>
               Without a clear life-calling, I&#39;ve learned to take every job
               as an opportunity to reflect on what aspects of work I enjoyed
-              most, what I&#39;m not as fond of, and learn about things beyond
-              the scope of my role incase that might spark an interest. After
-              getting to work in a few different professional fields and
-              industries, I&#39;ve been fortunate enough to find the field of
-              UX.
+              most and learn beyond the scope of my role to try new things.
+              After getting to work in a few different fields such as HR and
+              software development, I&#39;ve been fortunate enough to find the
+              field of UX.
             </Typography>
             <Typography>
               UX blends the relationship building, creative problem solving, and
-              technical side of my former experiences into a wide array of
-              delightfully dynamic roles. From research, information
-              architecture, content strategy, or design, I think I may have
-              found something to call my career passion.
+              technical side of my former experiences that I connected with the
+              most. I'm energized by how dynamic and meaningful the roles in
+              this field are. From research, information architecture, content
+              strategy, or design, I think I may have found something to call my
+              career passion.
             </Typography>
 
             <Typography>
@@ -170,10 +168,10 @@ const About: NextPage = () => {
           </Grid>
           <Grid item xs={12} className={cx('support-network')}>
             <Typography>
-              I wouldn&#39;t have had the privilege of the jobs that I&#39;ve
-              had and the risks that I&#39;ve taken without an amazing support
+              I wouldn&#39;t have had the privilege of the risks that I&#39;ve
+              taken to chase new opportunities without an amazing support
               network. Endless gratitude to the people who have helped me on my
-              journey, with special shout outs to those who keep me hopeful.
+              journey.
             </Typography>
             <Typography>
               <Typography variant="label">UX: </Typography>

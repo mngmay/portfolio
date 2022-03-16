@@ -86,10 +86,10 @@ export default function AboutSummary() {
             >
               <Typography>
                 <PanToolIcon className={cx('icon', 'mirror')} />
-                I&#39;m a leftie
+                I&#39;m a leftie & an ambivert
                 <br />
                 <CoffeeIcon className={cx('icon')} />
-                I drink my coffee black yet love milk tea (50% sweet + boba)
+                I drink my coffee black & love milk tea (50% sweet + boba)
                 <br />
                 <PetsIcon className={cx('icon')} />
                 I&#39;m that person who looks longingly at your pet as we pass

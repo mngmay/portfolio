@@ -1,9 +1,8 @@
-import { useRouter } from "next/router";
-import React from "react";
-import * as Projects from "../../components/projects";
-import classnames from "classnames/bind";
-import styles from "../../styles/projects.module.scss";
-import Error404 from "../../components/Error404";
+import { useRouter } from 'next/router';
+import * as Projects from '../../components/projects';
+import classnames from 'classnames/bind';
+import styles from '../../styles/projects.module.scss';
+import Error404 from '../../components/Error404';
 
 const cx = classnames.bind(styles);
 
@@ -27,7 +26,7 @@ const ProjectPage = () => {
   const ProjectComponent = newSlug ? projects[newSlug] : false;
 
   return (
-    <div className={cx("project-page-container")}>
+    <div className={cx('project-page-container')}>
       {/* TODO: Get rid of 404 blink, needs to fully load */}
       {ProjectComponent ? <ProjectComponent /> : <Error404 />}
     </div>
