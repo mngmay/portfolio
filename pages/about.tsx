@@ -63,7 +63,7 @@ const About: NextPage = () => {
           <Typography>
             I studied hard and kept advancing in school until I graduated
             college and got my first career-type job. I had checked off my major
-            goals, but realized &#34;Follow your passion&#34;, wasn&#39;t advice
+            goals, but realized &#34;follow your passion&#34; wasn&#39;t advice
             I knew how to follow.
           </Typography>
           <Typography>
