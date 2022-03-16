@@ -1,5 +1,5 @@
 import { bread, bread2, plant, pup, weld, woodworking, ramen, boldnbrash} from "../assets"
-import {gatherNetworkMap, IAC22Homepage} from "../assets/projects"
+import {IAC22Homepage} from "../assets/projects"
 
 export const gatherOnboardingVideo = 'https://drive.google.com/file/d/1_oUvkRjYK_Ck_fFC14M-0bpoEfNRnNfq/view?usp=sharing'
 

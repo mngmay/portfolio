@@ -80,7 +80,7 @@ const About: NextPage = () => {
             <Typography>
               UX blends the relationship building, creative problem solving, and
               technical side of my former experiences that I connected with the
-              most. I'm energized by how dynamic and meaningful the roles in
+              most. I&#39;m energized by how dynamic and meaningful the roles in
               this field are. From research, information architecture, content
               strategy, or design, I think I may have found something to call my
               career passion.
