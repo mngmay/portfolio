@@ -496,7 +496,7 @@ const IAC2022 = () => {
           </Typography>
           <Typography>
             A lot of content bloat will be cut, leaving streamlined and
-            simplified IA and content. This will result in a lgoother user
+            simplified IA and content. This will result in a smoother user
             experience and stronger understanding of IAC and its offerings.
           </Typography>
           <Typography>
