@@ -512,7 +512,7 @@ const IAC2022 = () => {
             </Grid>
             <Grid item xs={5}>
               <Typography variant="body2">
-                lgoother organizer and attendee experience
+                Smoother organizer and attendee experience
               </Typography>
             </Grid>
             <Grid container item xs={2}>
