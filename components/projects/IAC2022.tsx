@@ -7,6 +7,7 @@ import projectStyles from '../../styles/projects/projectPage.module.scss';
 import utilStyles from '../../styles/utility.module.scss';
 import CTAButton from '../CTAButton';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
+import { researchSlideDeck } from '../../constants/data';
 import {
   IAC22Homepage,
   IAC2022_Sitemap,
@@ -364,7 +365,7 @@ const IAC2022 = () => {
               className={cx('slidedeck')}
             >
               <CTAButton
-                href="https://www.canva.com/design/DAE6Uu8Db6E/j3B_7DiXtwlg8rrHhAZlLQ/view?utm_content=DAE6Uu8Db6E&utm_campaign=designshare&utm_medium=link&utm_source=shareyourdesignpanel"
+                href={researchSlideDeck}
                 text="Research Plan Slide Deck"
                 external
               />

@@ -37,5 +37,6 @@ export const projectData = [
 
 ];
 
+export const researchSlideDeck = 'https://www.canva.com/design/DAE6Uu8Db6E/CnRqJ7yfNf3va3Oiq-bb8w/view?utm_content=DAE6Uu8Db6E&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton'
 
   
